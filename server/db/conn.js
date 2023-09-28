@@ -1,14 +1,6 @@
 const mongoose = require('mongoose');
-// mongoose.connect(DB,{
-//     useNewUrlParser:true,
-//     useCreateIndex:true,
-//     useUnifiedTopology:true,
-//     useFindAndModify:false 
-// }).then(()=>{
-//     console.log(`Connection Successfull`);
-// }).catch((err) =>
-//     console.log(`no connection`)
-// );
+
+const DB = process.env.DATABASE;
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = process.env.DATABASE;
@@ -24,11 +16,17 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
-    // Connect the client to the server	(optional starting in v4.7)
+    // Connect the client to the server (optional starting in v4.7)
     await client.connect();
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
+
+    // Connect to Mongoose
+    await mongoose.connect(DB,{
+      useUnifiedTopology:true
+    });
+    console.log(`Connection Successfull`);
   } finally {
     // Ensures that the client will close when you finish/error
     await client.close();
