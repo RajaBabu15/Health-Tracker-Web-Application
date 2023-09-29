@@ -11,6 +11,7 @@ require('./db/conn');
 app.use(express.json());
 
 app.use(require('./router/auth'));
+app.use(require('./router/project'));
 
 const PORT = process.env.PORT;
 
