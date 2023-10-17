@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
+import { NavLink,useNavigate } from "react-router-dom";
+
 
 const Signup = () => {
+    const navigate = useNavigate();
   const [name, setName] = useState("");
   const nameRef = useRef();
 
@@ -16,8 +19,8 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const passwordRef = useRef();
 
-  const [confirmPassword, setConfirmPassword] = useState("");
-  const confirmPasswordRef = useRef();
+  const [cpassword, setcpassword] = useState("");
+  const cpasswordRef = useRef();
 
   useEffect(() => {
     const nameElement = nameRef.current;
@@ -65,15 +68,39 @@ const Signup = () => {
       }
     }
 
-    const confirmPasswordElement = confirmPasswordRef.current;
-    if (confirmPasswordElement && confirmPasswordElement.focus) {
-      if (confirmPassword === "") {
-        confirmPasswordElement.style.notch = "true";
+    const cpasswordElement = cpasswordRef.current;
+    if (cpasswordElement && cpasswordElement.focus) {
+      if (cpassword === "") {
+        cpasswordElement.style.notch = "true";
       } else {
-        confirmPasswordElement.style.notch = "false";
+        cpasswordElement.style.notch = "false";
       }
     }
-  }, [name, email, phone, work, password, confirmPassword]);
+  }, [name, email, phone, work, password, cpassword]);
+
+  const PostData = async (e) =>{
+    console.log(e);
+    console.log("Fucker it");
+    const res = await fetch('/register',{
+        method: "POST",
+        headers:{
+             "Content-Type":"application/json"
+        },
+        body:JSON.stringify({
+            name, email, phone, work, password, cpassword
+        })
+    });
+    
+    const data = await res.json();
+    if(data.status === 422 || !data) {
+        window.alert("Invalid Registration");
+        console.log("Invalid Registration");
+    }else {
+        window.alert("valid Registration");
+        console.log("valid Registration");
+        navigate('/login');
+    }
+  };
   return (
     <>
       <section className="vh-100" styles="background-color: #eee;">
@@ -88,13 +115,14 @@ const Signup = () => {
                         Sign up
                       </p>
 
-                      <form className="mx-1 mx-md-4">
+                      <form method="POST" className="mx-1 mx-md-4">
                         <div className="d-flex flex-row align-items-center mb-4">
                           <i className="fas fa-user fa-lg me-3 fa-fw"></i>
                           <div className="form-outline flex-fill mb-0">
-                          <input
+                            <input
                               type="text"
-                              id="form3Example1c"
+                              id="name"
+                              name="name"
                               className="form-control"
                               ref={nameRef}
                               value={name}
@@ -103,7 +131,8 @@ const Signup = () => {
                             {name === "" && (
                               <label
                                 className="form-label"
-                                for="form3Example1c"
+                                for="name"
+                                autoCorrect="off"
                               >
                                 Your Name
                               </label>
@@ -115,16 +144,20 @@ const Signup = () => {
                           <div className="form-outline flex-fill mb-0">
                             <input
                               type="email"
-                              id="form3Example3c"
-                              className="form-control" 
+                              id="email"
+                              name="email"
+                              className="form-control"
                               ref={emailRef}
                               value={email}
                               onChange={(e) => setEmail(e.target.value)}
                             />
                             {email === "" && (
-                            <label className="form-label" for="form3Example3c">
-                              Your Email
-                            </label>
+                              <label
+                                className="form-label"
+                                for="email"
+                              >
+                                Your Email
+                              </label>
                             )}
                           </div>
                         </div>
@@ -134,16 +167,20 @@ const Signup = () => {
                           <div className="form-outline flex-fill mb-0">
                             <input
                               type="tel"
-                              id="form3Example5c1"
+                              id="phone"
+                              name="phone"
                               className="form-control"
                               ref={phoneRef}
                               value={phone}
                               onChange={(e) => setPhone(e.target.value)}
                             />
                             {phone === "" && (
-                            <label className="form-label" for="form3Example3c1">
-                              Phone
-                            </label>
+                              <label
+                                className="form-label"
+                                for="phone"
+                              >
+                                Phone
+                              </label>
                             )}
                           </div>
                         </div>
@@ -153,16 +190,20 @@ const Signup = () => {
                           <div className="form-outline flex-fill mb-0">
                             <input
                               type="text"
-                              id="form3Example3c2"
+                              id="work"
+                              name="work"
                               className="form-control"
                               ref={workRef}
                               value={work}
                               onChange={(e) => setWork(e.target.value)}
                             />
                             {work === "" && (
-                            <label className="form-label" for="form3Example3c2">
-                              Work
-                            </label>
+                              <label
+                                className="form-label"
+                                for="work"
+                              >
+                                Work
+                              </label>
                             )}
                           </div>
                         </div>
@@ -172,16 +213,20 @@ const Signup = () => {
                           <div className="form-outline flex-fill mb-0">
                             <input
                               type="password"
-                              id="form3Example4c"
+                              id="password"
+                              name="password"
                               className="form-control"
                               ref={passwordRef}
                               value={password}
                               onChange={(e) => setPassword(e.target.value)}
                             />
                             {password === "" && (
-                            <label className="form-label" for="form3Example4c">
-                              Password
-                            </label>
+                              <label
+                                className="form-label"
+                                for="password"
+                              >
+                                Password
+                              </label>
                             )}
                           </div>
                         </div>
@@ -191,16 +236,22 @@ const Signup = () => {
                           <div className="form-outline flex-fill mb-0">
                             <input
                               type="password"
-                              id="form3Example4cd"
+                              id="cpassword"
+                              name="cpassword"
                               className="form-control"
-                              ref={confirmPasswordRef}
-                              value={confirmPassword}
-                              onChange={(e) => setConfirmPassword(e.target.value)}
+                              ref={cpasswordRef}
+                              value={cpassword}
+                              onChange={(e) =>
+                                setcpassword(e.target.value)
+                              }
                             />
-                            {confirmPassword === "" && (
-                            <label className="form-label" for="form3Example4cd">
-                              Repeat your password
-                            </label>
+                            {cpassword === "" && (
+                              <label
+                                className="form-label"
+                                for="cpassword"
+                              >
+                                Repeat your password
+                              </label>
                             )}
                           </div>
                         </div>
@@ -224,12 +275,20 @@ const Signup = () => {
                         <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                           <button
                             type="button"
-                            className="btn btn-primary btn-lg"
+                            name="signup"
+                            id="signup"
+                            onClick={PostData}
+                            className="btn btn-primary btn-lg form-submit"
                           >
                             Register
                           </button>
                         </div>
                       </form>
+                      <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                        <NavLink to="/login" className="text-decoration-none">
+                          Already have an account? Login here.
+                        </NavLink>
+                      </div>
                     </div>
                     <div className="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
                       <img

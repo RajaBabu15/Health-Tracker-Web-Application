@@ -5,21 +5,25 @@ const app = express();
 
 
 dotenv.config({path:'./config.env'});
-require('./db/conn');
-// const User = require('./model/userSchema');
+
+require('./db/conn'); // connecting to the mongo db
+const project=require('./router/api/project'); // calling to the predict function 
+app.use(require('./router/auth'));
 
 app.use(express.json());
 
-app.use(require('./router/auth'));
-app.use(require('./router/project'));
+app.use('/',project);
 
-const PORT = process.env.PORT;
+
+const PORT = process.env.PORT || 5000;
 
 
 const middleware = (req,res,next)=>{
     console.log(`Hello my middleware`);
     next();
 }
+
+
 
 
 app.get('/', (req, res) => {
@@ -41,6 +45,11 @@ app.get('/signin', (req, res) => {
 app.get('/signup', (req, res) => {
     res.send(`Hello Registration world from the server`);
 });
+
+
+if(process.env.NODE_ENV == "production"){
+    app.use(express.static('client/build'));
+}
 
 app.listen(PORT, () => {
     console.log(`Server is Running at the port ${PORT}`);

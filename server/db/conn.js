@@ -11,21 +11,23 @@ const client = new MongoClient(uri, {
     version: ServerApiVersion.v1,
     strict: true,
     deprecationErrors: true,
+    tls: true,
+    useUnifiedTopology: true
   }
 });
 
 async function run() {
   try {
-    // Connect the client to the server (optional starting in v4.7)
-    await client.connect();
-    // Send a ping to confirm a successful connection
-    await client.db("admin").command({ ping: 1 });
-    console.log("Pinged your deployment. You successfully connected to MongoDB!");
+    // Connect the client to the s erver (optional starting in v4.7)
+    // console.log('Before connect');
+    // await client.connect();
+    // console.log('After connect');
+    // // Send a ping to confirm a successful connection
+    // await client.db("admin").command({ ping: 1 });
+    // console.log("Pinged your deployment. You successfully connected to MongoDB!");
 
     // Connect to Mongoose
-    await mongoose.connect(DB,{
-      useUnifiedTopology:true
-    });
+    await mongoose.connect(DB);
     console.log(`Connection Successfull`);
   } finally {
     // Ensures that the client will close when you finish/error
