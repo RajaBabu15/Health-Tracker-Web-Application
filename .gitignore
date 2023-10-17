@@ -44,7 +44,6 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
 
 # Dependency directories
 node_modules/
@@ -92,8 +91,6 @@ web_modules/
 .parcel-cache
 
 # Next.js build output
-.next
-out
 
 # Nuxt.js build / generate output
 .nuxt
@@ -181,7 +178,6 @@ e2e/*.map
 /out/
 
 # production
-/build
 
 # misc
 .DS_Store
@@ -290,7 +286,6 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-build/
 develop-eggs/
 downloads/
 eggs/
@@ -348,7 +343,6 @@ instance/
 .scrapy
 
 # Sphinx documentation
-docs/_build/
 
 # PyBuilder
 .pybuilder/
