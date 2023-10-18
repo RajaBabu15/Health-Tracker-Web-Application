@@ -6,8 +6,7 @@ import {
   MDBValidationItem,
   MDBTextArea,
 } from "mdb-react-ui-kit";
-import React, { useState, useEffect, useRef } from "react";
-import { NavLink } from "react-router-dom";
+import React from "react";
 
 const Contact = () => {
   return (

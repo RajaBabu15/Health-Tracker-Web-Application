@@ -9,7 +9,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ErrorPage from "./components/ErrorPage";
 import Predictor from "./components/predictor";
-import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
+import { BrowserRouter as  Routes, Route, Link, useNavigate } from "react-router-dom";
 
 const App = () => {
   const navigate = useNavigate();
