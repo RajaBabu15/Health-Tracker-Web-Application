@@ -19,7 +19,10 @@
     "web-vitals": "^2.1.4"
   }, 
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.16.0"
+    "@babel/core": "7.22.5",
+    "@babel/eslint-parser": "7.22.5",
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
+    "@babel/preset-env": "7.22.5",
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start ",
