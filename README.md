@@ -10,48 +10,66 @@ pinned: false
 ---
 
 
+# Health Tracker Web Application
 
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Models](#models)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [License](#license)
 
-## 
+## Introduction
+The Health Tracker Web Application is a comprehensive tool designed to help users monitor and improve their mental health. It leverages machine learning models to provide insights and predictions based on user data.
 
-This project provides a web-based application to track and manage your mental health. It leverages various technologies to offer a comprehensive solution:
+## Features
+- User-friendly web interface for tracking mental health metrics
+- Machine learning models for predicting mental health outcomes
+- API for integration with other applications
+- Interactive visualizations and reports
 
-* **Machine Learning:** Analyzes data to potentially predict mental health concerns (using Python and Jupyter Notebook notebooks).
-* **Web Development:** Presents a user-friendly interface for interacting with the application (built with JavaScript and HTML/CSS).
-* **Backend:** Manages user registration, authentication, and data persistence (implemented using a server-side framework like Node.js with Express).
-* **Database:** Stores user data securely (likely a database like MongoDB or PostgreSQL).
+## Installation
+To run this application locally, follow these steps:
 
-**Key Features:**
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/yourusername/Health-Tracker-Web-Application.git
+    cd Health-Tracker-Web-Application
+    ```
 
-* **Prediction:** Leverages machine learning models to provide insights into mental health.
-* **Data Tracking:** Enables users to record and monitor their health trends over time.
-* **Visualization:** Offers clear and informative visualizations to help understand personal health data.
-* **User Management:** Allows users to register, log in, and securely manage their health information.
+2. **Set up a virtual environment:**
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
 
-**Getting Started**
+3. **Install the dependencies:**
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-1. **Prerequisites:** Ensure you have Node.js and npm (or yarn) installed on your system.
-2. **Clone the Repository:** Use `git clone https://github.com/RajaBabu15/Health-Tracker-Web-Application.git` to clone this repository.
-3. **Install Dependencies:** Navigate to the project directory and run `npm install` (or `yarn install`) to install the required dependencies.
-4. **Database Setup:** Configure your database connection details in the `server/db/conn.js` file.
-5. **Run the Application:** Start the server using `npm start` (or `yarn start`). The application will typically be accessible at http://localhost:3000/ (the exact port may vary).
+4. **Set up the configuration:**
+    Ensure the configuration settings in `config/config.py` are correct.
 
-**Machine Learning Model (Optional)**
+5. **Run the application:**
+    ```sh
+    python app.py
+    ```
 
-* This project may include a pre-trained machine learning model for mental health prediction (stored in `model.pkl`).
-* The notebooks (`apii.ipynb` and `mental_health.ipynb`) might contain code for training or evaluating the model.
-* Refer to the notebooks for specific instructions on running and interpreting the model.
+## Usage
+Once the application is running, you can access it via `http://localhost:5000` in your web browser.
 
-**Contributing**
+### Using the Jupyter Notebooks
+To use the Jupyter notebooks for data processing and model training:
+1. Navigate to the `notebooks` directory.
+2. Run the Jupyter notebook server:
+    ```sh
+    jupyter notebook
+    ```
+3. Open `mental_health.ipynb` to explore and execute the notebook cells.
 
-We welcome contributions to this project! Please look at the CONTRIBUTING.md file (if present) for guidelines on submitting pull requests.
-
-**License**
-
-This project is licensed under MIT: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT).
-
-**Additional Notes**
-
-* The `pivker.py` script's purpose requires further investigation.
-* Consider creating a CONTRIBUTING.md file to outline contribution guidelines.
-
+## Project Structure
