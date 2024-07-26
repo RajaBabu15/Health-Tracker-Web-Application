@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
+from datetime import datetime
 
 # Load the preprocessor and model from the pickle files
 with open('preprocesor.pkl', 'rb') as file:
@@ -11,7 +12,7 @@ with open('model.pkl', 'rb') as file:
 
 # Define the app
 def run():
-    st.title("Model Testing App")
+    st.title("Health Tracker Model Testing App")
 
     # Create inputs for all features
     Timestamp = st.date_input("Timestamp")
@@ -31,15 +32,18 @@ def run():
     wellness_program = st.selectbox("Wellness Program", ["Yes", "No", "Don't know"])
     seek_help = st.selectbox("Seek Help", ["Yes", "No", "Don't know"])
     anonymity = st.selectbox("Anonymity", ["Yes", "No", "Don't know"])
-    leave = st.selectbox("Leave", ["Somewhat easy","Somewhat difficult","Very difficult","Don't know"])
-    mental_health_consequence = st.selectbox("Mental Health Consequence", ["Yes","No","Maybe"])
-    phys_health_consequence = st.selectbox("Physical Health Consequence", ["Yes","No","Maybe"])
-    coworkers = st.selectbox("Coworkers", ["Yes","No","Some of them"])
-    supervisor = st.selectbox("Supervisor", ["Yes","No","Some of them"])
-    mental_health_interview = st.selectbox("Mental Health Interview", ["Yes","No","Maybe"])
-    phys_health_interview = st.selectbox("Physical Health Interview", ["Yes","No","Maybe"])
-    mental_vs_physical = st.selectbox("Mental vs Physical", ["Yes","No","Don't know"])
-    obs_consequence = st.selectbox("Obs Consequence", ["Yes","No"])
+    leave = st.selectbox("Leave", ["Somewhat easy", "Somewhat difficult", "Very difficult", "Don't know"])
+    mental_health_consequence = st.selectbox("Mental Health Consequence", ["Yes", "No", "Maybe"])
+    phys_health_consequence = st.selectbox("Physical Health Consequence", ["Yes", "No", "Maybe"])
+    coworkers = st.selectbox("Coworkers", ["Yes", "No", "Some of them"])
+    supervisor = st.selectbox("Supervisor", ["Yes", "No", "Some of them"])
+    mental_health_interview = st.selectbox("Mental Health Interview", ["Yes", "No", "Maybe"])
+    phys_health_interview = st.selectbox("Physical Health Interview", ["Yes", "No", "Maybe"])
+    mental_vs_physical = st.selectbox("Mental vs Physical", ["Yes", "No", "Don't know"])
+    obs_consequence = st.selectbox("Obs Consequence", ["Yes", "No"])
+
+    # Convert Timestamp to string for consistent DataFrame creation
+    Timestamp = datetime.strftime(Timestamp, "%Y-%m-%d %H:%M:%S")
 
     # Create a new data point
     new_data = pd.DataFrame({
@@ -72,18 +76,17 @@ def run():
     })
 
     # Preprocess the new data
-    new_data_transformed = preprocessor.transform(new_data.drop(columns=['treatment'],axis=1))
+    new_data_transformed = preprocessor.transform(new_data.drop(columns=['treatment'], axis=1))
 
     # Make a prediction
     prediction = model.predict(new_data_transformed)[0]
 
     if st.button('Predict'):
         if prediction == 1:
-            result ='Yes'
-            st.success('The output is {}'.format(result))
+            result = 'Yes'
         else:
-            result ='No'
-            st.success('The output is {}'.format(result))
+            result = 'No'
+        st.success(f'The prediction for treatment is: {result}')
 
-if __name__=='__main__':
-	run()
+if __name__ == '__main__':
+    run()
