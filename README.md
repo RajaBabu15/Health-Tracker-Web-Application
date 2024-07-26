@@ -8,8 +8,9 @@ sdk_version: 1.27.2
 app_file: app.py
 pinned: false
 ---
+Sure, here is a comprehensive `README.md` for your Health Tracker Web Application project:
 
-
+```markdown
 # Health Tracker Web Application
 
 ## Table of Contents
@@ -73,3 +74,52 @@ To use the Jupyter notebooks for data processing and model training:
 3. Open `mental_health.ipynb` to explore and execute the notebook cells.
 
 ## Project Structure
+```
+Health-Tracker-Web-Application/
+├── .github/                 # GitHub-related files
+├── config/                  # Configuration settings
+│   ├── config.py
+├── Dataset/                 # Data files
+├── docs/                    # Documentation
+├── models/                  # Saved machine learning models
+├── notebooks/               # Jupyter notebooks
+│   ├── mental_health.ipynb
+├── scripts/                 # Scripts for data processing and other tasks
+├── server/                  # Backend server code
+│   ├── api.py
+│   ├── app.py
+├── templates/               # HTML templates for the web application
+├── tests/                   # Test cases
+├── .gitignore               # Git ignore file
+├── Procfile                 # Heroku deployment file
+├── README.md                # Project documentation
+├── requirements.txt         # Python dependencies
+├── runtime.txt              # Python runtime version
+```
+
+## Models
+The application uses several machine learning models to predict mental health outcomes. The models are trained and tuned using the hyperparameters specified in the code. The models include:
+- Logistic Regression
+- Decision Tree Classifier
+- K-Neighbors Classifier
+- Random Forest Classifier
+- AdaBoost Classifier
+- Gradient Boosting Classifier
+- XGBoost Classifier
+
+## API Endpoints
+The application provides several API endpoints for interacting with the models and retrieving data. Detailed documentation for these endpoints is available in the `server/api.py` file.
+
+## Contributing
+Contributions are welcome! Please follow these steps to contribute:
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Create a pull request with a description of your changes.
+
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+```
+
+Feel free to customize the sections as needed, especially the "API Endpoints" section if you have specific endpoints you want to document in detail. This `README.md` should provide a solid foundation for your project documentation.
