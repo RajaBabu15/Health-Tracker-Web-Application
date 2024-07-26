@@ -8,9 +8,7 @@ sdk_version: 1.27.2
 app_file: app.py
 pinned: false
 ---
-Sure, here is a comprehensive `README.md` for your Health Tracker Web Application project:
 
-```markdown
 # Health Tracker Web Application
 
 ## Table of Contents
@@ -120,6 +118,6 @@ Contributions are welcome! Please follow these steps to contribute:
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
-```
+
 
 Feel free to customize the sections as needed, especially the "API Endpoints" section if you have specific endpoints you want to document in detail. This `README.md` should provide a solid foundation for your project documentation.
