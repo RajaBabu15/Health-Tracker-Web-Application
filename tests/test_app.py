@@ -8,7 +8,7 @@ class TestMentalHealthModel(unittest.TestCase):
     def setUpClass(cls):
         # Load the preprocessor and model from the pickle files
         try:
-            with open('preprocesor.pkl', 'rb') as file:
+            with open('./models/preprocessed.pkl', 'rb') as file:
                 cls.preprocessor = pickle.load(file)
             print("Preprocessor loaded successfully.")
         except FileNotFoundError:
@@ -19,7 +19,7 @@ class TestMentalHealthModel(unittest.TestCase):
             exit(1)
 
         try:
-            with open('model.pkl', 'rb') as file:
+            with open('./models/model.pkl', 'rb') as file:
                 cls.model = pickle.load(file)
             print("Model loaded successfully.")
         except FileNotFoundError:

@@ -4,10 +4,10 @@ import pickle
 from datetime import datetime
 
 # Load the preprocessor and model from the pickle files
-with open('preprocesor.pkl', 'rb') as file:
+with open('./models/preprocessed.pkl', 'rb') as file:
     preprocessor = pickle.load(file)
 
-with open('model.pkl', 'rb') as file:
+with open('./models/model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Define the app

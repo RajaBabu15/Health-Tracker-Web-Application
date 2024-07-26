@@ -1,0 +1,46 @@
+[2024-07-26 18:07:40,103] - INFO - Evaluating LogisticRegression...
+[2024-07-26 18:07:42,270] - INFO - Best score for LogisticRegression: 0.8400315208825846
+[2024-07-26 18:07:42,271] - INFO - Time elapsed for LogisticRegression: 2.17 seconds
+[2024-07-26 18:07:42,278] - INFO - Accuracy for LogisticRegression: 0.8126984126984127
+[2024-07-26 18:07:42,279] - INFO - Classification Report for LogisticRegression:
+              precision    recall  f1-score   support
+
+           0       0.86      0.75      0.80       158
+           1       0.78      0.87      0.82       157
+
+    accuracy                           0.81       315
+   macro avg       0.82      0.81      0.81       315
+weighted avg       0.82      0.81      0.81       315
+
+[2024-07-26 18:07:42,279] - INFO - AUC Score for LogisticRegression: 0.8128880109650891
+[2024-07-26 18:07:42,281] - INFO - Evaluating DecisionTreeClassifier...
+[2024-07-26 18:07:42,546] - INFO - Best score for DecisionTreeClassifier: 0.8357930879207475
+[2024-07-26 18:07:42,546] - INFO - Time elapsed for DecisionTreeClassifier: 0.26 seconds
+[2024-07-26 18:07:42,554] - INFO - Accuracy for DecisionTreeClassifier: 0.819047619047619
+[2024-07-26 18:07:42,554] - INFO - Classification Report for DecisionTreeClassifier:
+              precision    recall  f1-score   support
+
+           0       0.93      0.69      0.79       158
+           1       0.75      0.95      0.84       157
+
+    accuracy                           0.82       315
+   macro avg       0.84      0.82      0.82       315
+weighted avg       0.84      0.82      0.82       315
+
+[2024-07-26 18:07:42,555] - INFO - AUC Score for DecisionTreeClassifier: 0.8194590018543901
+[2024-07-26 18:07:42,557] - INFO - Evaluating KNeighborsClassifier...
+[2024-07-26 18:07:42,633] - INFO - Best score for KNeighborsClassifier: 0.7256219745581448
+[2024-07-26 18:07:42,634] - INFO - Time elapsed for KNeighborsClassifier: 0.08 seconds
+[2024-07-26 18:07:42,654] - INFO - Accuracy for KNeighborsClassifier: 0.7746031746031746
+[2024-07-26 18:07:42,655] - INFO - Classification Report for KNeighborsClassifier:
+              precision    recall  f1-score   support
+
+           0       0.76      0.81      0.78       158
+           1       0.79      0.74      0.77       157
+
+    accuracy                           0.77       315
+   macro avg       0.78      0.77      0.77       315
+weighted avg       0.78      0.77      0.77       315
+
+[2024-07-26 18:07:42,656] - INFO - AUC Score for KNeighborsClassifier: 0.7744900427315972
+[2024-07-26 18:07:42,656] - INFO - Evaluating RandomForestClassifier...
