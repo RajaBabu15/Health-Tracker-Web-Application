@@ -44,3 +44,66 @@ weighted avg       0.78      0.77      0.77       315
 
 [2024-07-26 18:07:42,656] - INFO - AUC Score for KNeighborsClassifier: 0.7744900427315972
 [2024-07-26 18:07:42,656] - INFO - Evaluating RandomForestClassifier...
+[2024-07-26 18:08:39,285] - INFO - Best score for RandomForestClassifier: 0.8357987166497803
+[2024-07-26 18:08:39,285] - INFO - Time elapsed for RandomForestClassifier: 56.63 seconds
+[2024-07-26 18:08:39,304] - INFO - Accuracy for RandomForestClassifier: 0.8253968253968254
+[2024-07-26 18:08:39,304] - INFO - Classification Report for RandomForestClassifier:
+              precision    recall  f1-score   support
+
+           0       0.88      0.75      0.81       158
+           1       0.78      0.90      0.84       157
+
+    accuracy                           0.83       315
+   macro avg       0.83      0.83      0.82       315
+weighted avg       0.83      0.83      0.82       315
+
+[2024-07-26 18:08:39,305] - INFO - AUC Score for RandomForestClassifier: 0.8256268644682738
+[2024-07-26 18:08:39,307] - INFO - Evaluating AdaBoostClassifier...
+[2024-07-26 18:08:46,890] - INFO - Best score for AdaBoostClassifier: 0.8326184847461443
+[2024-07-26 18:08:46,891] - INFO - Time elapsed for AdaBoostClassifier: 7.58 seconds
+[2024-07-26 18:08:46,915] - INFO - Accuracy for AdaBoostClassifier: 0.8158730158730159
+[2024-07-26 18:08:46,916] - INFO - Classification Report for AdaBoostClassifier:
+              precision    recall  f1-score   support
+
+           0       0.92      0.69      0.79       158
+           1       0.75      0.94      0.84       157
+
+    accuracy                           0.82       315
+   macro avg       0.84      0.82      0.81       315
+weighted avg       0.84      0.82      0.81       315
+
+[2024-07-26 18:08:46,916] - INFO - AUC Score for AdaBoostClassifier: 0.816274288478594
+[2024-07-26 18:08:46,917] - INFO - Evaluating GradientBoostingClassifier...
+[2024-07-26 18:09:21,534] - INFO - Best score for GradientBoostingClassifier: 0.8315602836879433
+[2024-07-26 18:09:21,535] - INFO - Time elapsed for GradientBoostingClassifier: 34.62 seconds
+[2024-07-26 18:09:21,543] - INFO - Accuracy for GradientBoostingClassifier: 0.8095238095238095
+[2024-07-26 18:09:21,544] - INFO - Classification Report for GradientBoostingClassifier:
+              precision    recall  f1-score   support
+
+           0       0.88      0.72      0.79       158
+           1       0.76      0.90      0.82       157
+
+    accuracy                           0.81       315
+   macro avg       0.82      0.81      0.81       315
+weighted avg       0.82      0.81      0.81       315
+
+[2024-07-26 18:09:21,544] - INFO - AUC Score for GradientBoostingClassifier: 0.8098040796581473
+[2024-07-26 18:09:21,545] - INFO - Evaluating XGBClassifier...
+[2024-07-26 18:09:26,167] - INFO - Best score for XGBClassifier: 0.8421479229989869
+[2024-07-26 18:09:26,168] - INFO - Time elapsed for XGBClassifier: 4.62 seconds
+[2024-07-26 18:09:26,178] - INFO - Accuracy for XGBClassifier: 0.8126984126984127
+[2024-07-26 18:09:26,179] - INFO - Classification Report for XGBClassifier:
+              precision    recall  f1-score   support
+
+           0       0.86      0.75      0.80       158
+           1       0.78      0.88      0.82       157
+
+    accuracy                           0.81       315
+   macro avg       0.82      0.81      0.81       315
+weighted avg       0.82      0.81      0.81       315
+
+[2024-07-26 18:09:26,179] - INFO - AUC Score for XGBClassifier: 0.81290816737886
+[2024-07-26 18:09:26,180] - INFO - Best model: RandomForestClassifier
+[2024-07-26 18:09:26,181] - INFO - Best score: 0.825397
+[2024-07-26 18:09:26,181] - INFO - Best report: {'accuracy': 0.8253968253968254, 'classification_report': '              precision    recall  f1-score   support\n\n           0       0.88      0.75      0.81       158\n           1       0.78      0.90      0.84       157\n\n    accuracy                           0.83       315\n   macro avg       0.83      0.83      0.82       315\nweighted avg       0.83      0.83      0.82       315\n', 'auc': 0.8256268644682738, 'confusion_matrix': array([[119,  39],
+       [ 16, 141]], dtype=int64)}
