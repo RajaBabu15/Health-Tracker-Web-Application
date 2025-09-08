@@ -1,20 +1,83 @@
-name: Sync to Hugging Face hub
+name: Deploy to Hugging Face Spaces
+
 on:
   push:
-    branches: [main]
-
-  # to run this workflow manually from the Actions tab
+    branches: [mental-health-app-root-structure]
   workflow_dispatch:
 
 jobs:
-  sync-to-hub:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           lfs: true
-      - name: Push to hub
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install huggingface_hub
+
+      - name: Create Space files
+        run: |
+          # Create README.md for Hugging Face Space
+          cat > README.md << 'EOF'
+          ---
+          title: Mental Health Risk Predictor
+          emoji: 🧠
+          colorFrom: blue
+          colorTo: purple
+          sdk: streamlit
+          sdk_version: 1.29.0
+          app_file: app.py
+          pinned: false
+          license: mit
+          short_description: Predict likelihood of seeking mental health treatment
+          ---
+          
+          # 🧠 Mental Health Risk Predictor
+          
+          An AI-powered tool to predict the likelihood of seeking mental health treatment based on workplace and personal factors.
+          
+          ## Features
+          - Interactive assessment form
+          - Real-time ML predictions
+          - Risk level visualization with gauge chart
+          - Personalized recommendations
+          - Color-coded test cases from real data
+          
+          ## Model Performance
+          - ROC AUC: 0.798
+          - Accuracy: 77%
+          - Excellent probability calibration
+          
+          Built with LightGBM and optimized using Optuna hyperparameter tuning.
+          EOF
+
+      - name: Deploy to Hugging Face Spaces
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://rajababu15:$HF_TOKEN@huggingface.co/spaces/rajababu15/ht_bk main
+        run: |
+          python -c "
+          from huggingface_hub import HfApi
+          import os
+          
+          api = HfApi()
+          
+          # Upload all files to the space
+          api.upload_folder(
+              folder_path='.',
+              repo_id='rajababu15/Health-Tracker-Web-Application',
+              repo_type='space',
+              token=os.environ['HF_TOKEN'],
+              ignore_patterns=['.git*', '__pycache__*', '*.pyc', '.DS_Store', 'logs/*', 'notebooks/*', 'docs/*', 'tests/*']
+          )
+          print('Successfully deployed to Hugging Face Spaces!')
+          "
