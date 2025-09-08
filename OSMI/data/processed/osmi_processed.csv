@@ -1,0 +1,1434 @@
+are_you_selfemployed,company_size,is_your_employer_primarily_a_tech_companyorganization,is_your_primary_role_within_your_company_related_to_techit,do_you_know_the_options_for_mental_health_care_available_under_your_employerprovided_coverage,has_your_employer_ever_formally_discussed_mental_health_for_example_as_part_of_a_wellness_campaign_or_other_official_communication,does_your_employer_offer_resources_to_learn_more_about_mental_health_concerns_and_options_for_seeking_help,is_your_anonymity_protected_if_you_choose_to_take_advantage_of_mental_health_or_substance_abuse_treatment_resources_provided_by_your_employer,if_a_mental_health_issue_prompted_you_to_request_a_medical_leave_from_work_asking_for_that_leave_would_be,do_you_think_that_discussing_a_mental_health_disorder_with_your_employer_would_have_negative_consequences,do_you_think_that_discussing_a_physical_health_issue_with_your_employer_would_have_negative_consequences,would_you_feel_comfortable_discussing_a_mental_health_disorder_with_your_coworkers,would_you_feel_comfortable_discussing_a_mental_health_disorder_with_your_direct_supervisors,do_you_feel_that_your_employer_takes_mental_health_as_seriously_as_physical_health,have_you_heard_of_or_observed_negative_consequences_for_coworkers_who_have_been_open_about_mental_health_issues_in_your_workplace,do_you_have_medical_coverage_private_insurance_or_stateprovided_which_includes_treatment_of_mental_health_issues,do_you_know_local_or_online_resources_to_seek_help_for_a_mental_health_disorder,if_you_have_been_diagnosed_or_treated_for_a_mental_health_disorder_do_you_ever_reveal_this_to_clients_or_business_contacts,if_you_have_revealed_a_mental_health_issue_to_a_client_or_business_contact_do_you_believe_this_has_impacted_you_negatively,if_you_have_been_diagnosed_or_treated_for_a_mental_health_disorder_do_you_ever_reveal_this_to_coworkers_or_employees,treatment_sought
+0,26-100,1.0,,,No,No,Don't know,Very Easy,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,6-25,1.0,,Yes,Yes,Yes,Yes,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,6-25,1.0,,,No,No,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",Maybe,"Sometimes, If It Comes Up",
+0,6-25,0.0,1.0,Yes,No,No,No,Neither Easy Nor Difficult,Yes,Maybe,Maybe,No,No,No,,,,,,0.0
+0,More Than 1000,1.0,,Maybe,No,Yes,Yes,Somewhat Easy,Yes,Yes,Maybe,Yes,No,Yes,,,,,,1.0
+0,26-100,1.0,,No,No,No,Don't know,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,More Than 1000,1.0,,Yes,No,Yes,Yes,Very Easy,No,No,Maybe,Yes,Don't know,No,,,,,,1.0
+0,26-100,0.0,1.0,No,No,No,Don't know,Very Difficult,Yes,Yes,Yes,Maybe,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Doesn'T Matter",,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Maybe,Yes,Yes,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,100-500,0.0,1.0,Yes,No,Don't know,Don't know,Somewhat Difficult,Yes,No,No,No,No,No,,,,,,
+0,100-500,1.0,,Maybe,No,No,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,100-500,0.0,1.0,Yes,Yes,Yes,Yes,Somewhat Easy,No,No,No,Maybe,Yes,No,,,,,,1.0
+0,100-500,1.0,,Yes,No,Don't know,Yes,Very Easy,No,No,Yes,Yes,No,No,,,,,,
+0,100-500,1.0,,No,No,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,No,No,No,Don't know,Very Difficult,Maybe,No,Maybe,Maybe,No,No,,,,,,0.0
+0,500-1000,1.0,,No,No,No,Don't know,Don't know,Maybe,No,Yes,Maybe,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",Yes,"No, Because It Would Impact Me Negatively",
+0,100-500,0.0,1.0,No,No,No,Don't know,Don't know,Yes,No,No,No,Yes,No,,,,,,0.0
+0,6-25,1.0,,,No,No,Don't know,Very Easy,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,No,Yes,Don't know,Don't know,Somewhat Easy,No,No,Maybe,Yes,Don't know,No,,,,,,
+0,26-100,1.0,,Yes,No,No,Don't know,Very Easy,Maybe,Maybe,Maybe,No,Don't know,No,,,,,,0.0
+0,1-5,1.0,,Yes,No,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,100-500,0.0,1.0,Yes,Don't know,Yes,Yes,Very Easy,No,No,Maybe,Maybe,Yes,No,,,,,,1.0
+0,26-100,0.0,1.0,No,No,No,Don't know,Very Difficult,Yes,Yes,No,No,No,No,,,,,,0.0
+0,100-500,1.0,,No,No,No,Don't know,Somewhat Difficult,No,No,No,No,Don't know,No,,,,,,0.0
+0,500-1000,0.0,1.0,No,Yes,Yes,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,Maybe,Don't know,Yes,,,,,,1.0
+0,6-25,1.0,,,No,No,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,100-500,1.0,,Yes,No,No,Don't know,Somewhat Easy,Maybe,No,Maybe,Maybe,No,No,,,,,,0.0
+0,100-500,1.0,,Yes,No,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,1.0,,Maybe,No,No,Don't know,Very Easy,Maybe,No,No,Maybe,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,Don't know,"No, Because It Doesn'T Matter",No,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Maybe,No,Don't know,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+0,100-500,1.0,,No,No,Yes,Don't know,Somewhat Easy,Maybe,No,No,No,Don't know,Yes,,,,,,1.0
+0,26-100,1.0,,Maybe,No,Yes,Yes,Very Easy,No,No,Yes,Maybe,Yes,No,,,,,,1.0
+0,100-500,1.0,,Yes,No,No,Don't know,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,100-500,1.0,,Maybe,Yes,No,Don't know,Somewhat Easy,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,More Than 1000,1.0,,Yes,Don't know,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,No,Yes,Yes,Don't know,Yes,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Doesn'T Matter",Yes,"Sometimes, If It Comes Up",
+0,100-500,1.0,,Maybe,No,Don't know,Yes,Somewhat Easy,No,No,Maybe,Yes,No,No,,,,,,
+0,More Than 1000,1.0,,Maybe,No,No,Yes,Somewhat Difficult,Yes,Maybe,Yes,Yes,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"Sometimes, If It Comes Up",
+0,More Than 1000,0.0,1.0,Maybe,No,No,No,Somewhat Difficult,Maybe,No,No,No,No,No,,,,,,0.0
+0,6-25,1.0,,Yes,Don't know,Yes,Don't know,Somewhat Easy,Maybe,Maybe,Maybe,Maybe,No,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"Sometimes, If It Comes Up",Maybe,"Sometimes, If It Comes Up",
+0,6-25,1.0,,No,No,Don't know,Don't know,Don't know,Maybe,No,No,Maybe,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Doesn'T Matter",,Not Applicable To Me,
+0,6-25,1.0,,Yes,No,No,Yes,Very Easy,No,No,Yes,Maybe,Don't know,No,,,,,,0.0
+0,26-100,1.0,,,No,No,Don't know,Somewhat Easy,Maybe,Maybe,No,No,Don't know,No,,,,,,0.0
+0,6-25,1.0,,Yes,No,No,Yes,Very Easy,Maybe,Maybe,Yes,Yes,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,1.0,,Yes,No,Yes,Don't know,Somewhat Difficult,Maybe,Maybe,Maybe,Yes,Yes,No,,,,,,1.0
+0,500-1000,0.0,1.0,Yes,No,No,Don't know,Don't know,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,0.0,No,Yes,Yes,Don't know,Somewhat Difficult,Maybe,Maybe,Yes,Yes,Don't know,No,,,,,,1.0
+0,26-100,1.0,,Yes,No,Yes,Don't know,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,100-500,0.0,1.0,Yes,No,Don't know,Yes,Somewhat Difficult,Maybe,No,Maybe,Yes,No,No,,,,,,
+0,6-25,0.0,1.0,Maybe,No,No,Don't know,Somewhat Difficult,No,No,No,Maybe,Don't know,No,,,,,,0.0
+0,100-500,0.0,1.0,No,No,No,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,No,Don't know,No,,,,,,0.0
+0,More Than 1000,1.0,,Maybe,Yes,Yes,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Yes,No,No,,,,,,1.0
+0,26-100,0.0,1.0,,No,No,Don't know,Very Difficult,Yes,No,No,Maybe,No,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,No,Don't know,Somewhat Easy,No,No,Yes,Yes,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,6-25,0.0,0.0,Yes,No,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,Maybe,No,Yes,,,,,,0.0
+0,More Than 1000,1.0,,Maybe,Yes,Yes,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,No,No,Don't know,No,,,,,,1.0
+0,100-500,1.0,,Maybe,No,Don't know,Yes,Don't know,Maybe,Maybe,No,Maybe,Don't know,No,,,,,,
+0,26-100,0.0,1.0,Yes,No,Don't know,Yes,Very Easy,No,No,No,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,I Know Some,Not Applicable To Me,,"Sometimes, If It Comes Up",
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Maybe,Don't know,No,,,,,,
+0,6-25,0.0,1.0,No,No,No,Don't know,Very Difficult,Yes,Maybe,No,No,No,No,,,,,,0.0
+0,1-5,1.0,,No,No,Don't know,Don't know,Very Easy,No,No,Yes,Yes,Don't know,No,,,,,,
+0,26-100,1.0,,Yes,No,No,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,26-100,1.0,,,No,No,Don't know,Very Easy,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",Yes,"No, Because It Would Impact Me Negatively",
+0,6-25,1.0,,Maybe,No,No,No,Somewhat Easy,No,No,Yes,Maybe,Yes,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,Don't know,Don't know,Somewhat Difficult,Maybe,No,No,No,No,No,,,,,,
+0,26-100,1.0,,Yes,No,Yes,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,1-5,1.0,,Yes,No,Don't know,Yes,Don't know,No,No,Maybe,Yes,Don't know,No,,,,,,
+0,1-5,1.0,,No,No,No,Don't know,Very Difficult,Maybe,Maybe,No,No,Don't know,Yes,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Maybe,No,Don't know,Yes,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",No,"Sometimes, If It Comes Up",
+0,6-25,1.0,,No,No,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,No,No,Maybe,No,No,,,,,,
+0,26-100,1.0,,No,No,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,Maybe,No,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,Don't know,Don't know,Somewhat Difficult,Maybe,No,No,No,No,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",No,"Yes, Always",
+0,26-100,1.0,,Maybe,Yes,Yes,Yes,Very Easy,No,No,Maybe,Maybe,Yes,No,,,,,,1.0
+0,100-500,0.0,1.0,,No,No,Don't know,Don't know,Maybe,No,No,No,Don't know,No,,,,,,0.0
+0,More Than 1000,1.0,,Yes,Don't know,Yes,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,1.0
+0,6-25,1.0,,,Yes,Don't know,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Yes,Yes,No,,,,,,
+0,6-25,1.0,,,No,No,Don't know,Somewhat Difficult,Yes,No,No,Yes,No,Yes,,,,,,0.0
+0,6-25,0.0,1.0,Maybe,No,No,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,Maybe,No,Don't know,Don't know,Very Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,Maybe,Yes,Don't know,Yes,Don't know,No,No,No,No,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Doesn'T Matter",Maybe,"No, Because It Doesn'T Matter",
+0,100-500,1.0,,Yes,No,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,Yes,No,No,,,,,,0.0
+0,500-1000,1.0,,No,Don't know,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,No,No,No,Don't know,No,,,,,,
+0,100-500,1.0,,No,No,No,Don't know,Don't know,Yes,No,Maybe,Yes,No,No,,,,,,0.0
+0,6-25,1.0,,Maybe,No,No,Don't know,Neither Easy Nor Difficult,No,No,Yes,Yes,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Maybe,Don't know,Don't know,Don't know,Very Easy,Maybe,Maybe,No,No,Don't know,No,,,,,,
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Difficult,Yes,No,Maybe,Maybe,No,Yes,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,26-100,1.0,,Yes,No,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,No,No,No,,,,,,0.0
+0,More Than 1000,1.0,,Yes,No,Yes,Yes,Don't know,Maybe,Maybe,Maybe,Maybe,No,No,,,,,,1.0
+0,6-25,1.0,,Yes,No,No,Yes,Very Easy,No,No,No,Yes,Yes,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",No,"Sometimes, If It Comes Up",
+0,100-500,0.0,0.0,No,No,Don't know,Don't know,Somewhat Easy,No,No,Yes,Yes,Don't know,No,,,,,,
+0,26-100,1.0,,Yes,Yes,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,1.0,,Maybe,No,Don't know,Don't know,Somewhat Difficult,Yes,No,No,No,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,Don't know,"No, Because It Doesn'T Matter",Maybe,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"Sometimes, If It Comes Up",
+0,26-100,0.0,1.0,Yes,No,Yes,Yes,Don't know,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,1.0
+0,26-100,0.0,1.0,No,No,No,Don't know,Don't know,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Yes,Yes,Yes,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Maybe,Don't know,No,,,,,,
+0,6-25,1.0,,No,No,No,No,Neither Easy Nor Difficult,Maybe,No,No,No,Don't know,No,,,,,,0.0
+0,500-1000,1.0,,Maybe,No,No,Don't know,Neither Easy Nor Difficult,No,No,Yes,Yes,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Yes,Yes,Don't know,Don't know,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,26-100,0.0,1.0,Yes,No,No,Don't know,Somewhat Difficult,Yes,Maybe,No,Maybe,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several",Not Applicable To Me,,Not Applicable To Me,
+0,1-5,0.0,1.0,No,Yes,No,Don't know,Very Difficult,Yes,Maybe,Yes,No,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,100-500,1.0,,No,Don't know,Don't know,Don't know,Very Easy,Maybe,Maybe,Yes,Yes,Don't know,No,,,,,,
+0,26-100,1.0,,No,No,No,No,Somewhat Easy,Maybe,No,No,Maybe,Yes,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,Maybe,No,Don't know,Don't know,Very Difficult,Maybe,Maybe,No,Maybe,Don't know,No,,,,,,
+0,6-25,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,Yes,Maybe,Maybe,No,No,No,,,,,,
+0,500-1000,1.0,,Maybe,No,No,Don't know,Somewhat Difficult,Yes,No,Maybe,Yes,No,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,No,No,Yes,Yes,Don't know,Maybe,No,Maybe,Yes,Don't know,No,,,,,,1.0
+0,More Than 1000,1.0,,No,Yes,Don't know,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Yes,Yes,No,,,,,,
+0,More Than 1000,0.0,1.0,Maybe,No,Don't know,Yes,Don't know,Maybe,No,No,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,No,No,Don't know,Don't know,Don't know,No,No,No,Maybe,Yes,No,,,,,,
+0,26-100,1.0,,Maybe,No,Don't know,Don't know,Somewhat Easy,No,No,Yes,Yes,Don't know,No,,,,,,
+0,100-500,1.0,,Yes,No,Don't know,Don't know,Somewhat Difficult,Yes,No,No,No,No,No,,,,,,
+0,100-500,1.0,,Yes,Yes,Yes,Yes,Somewhat Easy,No,No,Yes,Yes,Don't know,No,,,,,,1.0
+0,1-5,1.0,,Yes,No,No,No,Very Difficult,Maybe,Maybe,No,No,Don't know,No,,,,,,0.0
+0,26-100,1.0,,No,No,Don't know,Don't know,Don't know,Yes,Maybe,No,Maybe,Don't know,No,,,,,,
+0,500-1000,1.0,,No,No,Don't know,Don't know,Don't know,Maybe,No,Maybe,Yes,Yes,No,,,,,,
+0,26-100,1.0,,Maybe,Don't know,No,Don't know,Don't know,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,No,Somewhat Easy,Maybe,No,No,Yes,Yes,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Doesn'T Matter",,"No, Because It Doesn'T Matter",
+0,26-100,1.0,,No,No,No,Don't know,Very Difficult,Yes,Maybe,Maybe,Maybe,No,Yes,,,,,,0.0
+0,6-25,1.0,,Yes,No,Don't know,No,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,6-25,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,No,No,Yes,Yes,Yes,No,,,,,,
+0,More Than 1000,1.0,,,No,No,Don't know,Very Difficult,Yes,Maybe,No,No,No,Yes,,,,,,0.0
+0,More Than 1000,0.0,1.0,Yes,Don't know,Yes,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"Sometimes, If It Comes Up",No,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,100-500,1.0,,No,Don't know,Don't know,Don't know,Don't know,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",Maybe,Not Applicable To Me,
+0,26-100,1.0,,No,Yes,No,Don't know,Very Easy,No,No,Yes,Yes,Don't know,No,,,,,,0.0
+0,100-500,1.0,,No,No,Don't know,Don't know,Somewhat Easy,Maybe,Maybe,Yes,Yes,Don't know,No,,,,,,
+0,26-100,1.0,,Maybe,No,Don't know,Yes,Very Difficult,Yes,Maybe,Maybe,Maybe,Don't know,No,,,,,,
+0,More Than 1000,0.0,1.0,No,No,No,Don't know,Somewhat Difficult,Yes,Maybe,No,No,No,No,,,,,,0.0
+0,500-1000,1.0,,Yes,No,Don't know,Yes,Somewhat Easy,Maybe,Maybe,No,No,No,No,,,,,,
+0,6-25,1.0,,Yes,No,Yes,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Yes,No,Don't know,Don't know,Somewhat Difficult,Maybe,Maybe,Maybe,Maybe,Yes,No,,,,,,
+0,100-500,1.0,,Yes,No,Yes,Don't know,Somewhat Easy,Maybe,No,Maybe,No,Don't know,No,,,,,,1.0
+0,More Than 1000,0.0,0.0,Yes,Yes,Yes,Yes,Very Easy,Yes,Maybe,No,No,Yes,No,,,,,,1.0
+0,More Than 1000,1.0,,Yes,Yes,Yes,Yes,Neither Easy Nor Difficult,Maybe,No,Maybe,Maybe,No,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Maybe,Yes,No,Don't know,Very Easy,Maybe,Maybe,No,Maybe,Yes,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,No,No,Don't know,Yes,Very Easy,Maybe,Maybe,Maybe,Yes,Don't know,No,,,,,,
+0,More Than 1000,0.0,1.0,Yes,No,Yes,Don't know,Don't know,Maybe,No,No,No,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,No,Not Applicable To Me,
+0,More Than 1000,0.0,1.0,Maybe,Yes,Don't know,Don't know,Somewhat Easy,Maybe,No,No,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,Maybe,No,No,No,Somewhat Easy,Maybe,Maybe,Yes,Maybe,No,No,,,,,,0.0
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,Yes,Don't know,No,,,,,,
+0,6-25,1.0,,Maybe,No,No,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,No,No,Yes,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,No,Maybe,No,No,,,,,,1.0
+0,6-25,1.0,,,No,No,No,Neither Easy Nor Difficult,Maybe,Maybe,Yes,Yes,No,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,Don't know,Yes,Somewhat Easy,Maybe,Maybe,Maybe,No,Don't know,No,,,,,,
+0,26-100,1.0,,Yes,No,No,Yes,Somewhat Difficult,Maybe,No,No,No,No,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,6-25,1.0,,,Yes,No,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,100-500,1.0,,Maybe,Don't know,Don't know,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,6-25,1.0,,,No,Yes,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,100-500,1.0,,Maybe,No,No,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,No,No,Yes,No,,,,,,0.0
+0,1-5,1.0,,,Yes,Don't know,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,500-1000,1.0,,No,No,No,Yes,Very Easy,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,No,Yes,Somewhat Difficult,Maybe,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,1-5,1.0,,No,No,No,No,Somewhat Easy,No,No,Maybe,Yes,No,No,,,,,,0.0
+0,100-500,1.0,,Yes,Yes,Yes,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,100-500,1.0,,Yes,Don't know,Yes,Yes,Somewhat Difficult,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,1.0,,No,No,Don't know,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,500-1000,1.0,,No,No,Don't know,Don't know,Very Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+0,500-1000,1.0,,Maybe,Don't know,Yes,Don't know,Somewhat Easy,Maybe,No,Maybe,Maybe,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several",Not Applicable To Me,,Not Applicable To Me,
+0,26-100,1.0,,No,No,No,Don't know,Neither Easy Nor Difficult,No,No,No,No,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,1.0,,Yes,No,No,Don't know,Somewhat Difficult,Maybe,Maybe,Yes,Yes,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Easy,Maybe,No,Yes,Yes,No,No,,,,,,0.0
+0,100-500,1.0,,No,No,No,Don't know,Somewhat Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",Yes,"Sometimes, If It Comes Up",
+0,500-1000,1.0,,Yes,Yes,Yes,Yes,Neither Easy Nor Difficult,Maybe,No,Yes,Maybe,Yes,No,,,,,,1.0
+0,More Than 1000,1.0,,Yes,No,Yes,Don't know,Somewhat Difficult,Yes,Maybe,No,No,No,No,,,,,,1.0
+0,100-500,1.0,,Yes,No,Yes,Yes,Somewhat Difficult,Maybe,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,26-100,1.0,,,No,Don't know,Yes,Very Easy,No,No,Yes,Yes,Don't know,No,,,,,,
+0,500-1000,1.0,,No,No,Don't know,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,500-1000,1.0,,Yes,No,Yes,Don't know,Somewhat Easy,No,No,Yes,Yes,No,Yes,,,,,,1.0
+0,100-500,1.0,,Maybe,No,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,6-25,1.0,,,No,No,No,Somewhat Easy,No,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,500-1000,1.0,,No,Yes,Don't know,Don't know,Somewhat Easy,Maybe,No,Yes,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,No,No,No,Don't know,Somewhat Difficult,Maybe,No,No,No,Don't know,No,,,,,,0.0
+0,6-25,1.0,,No,No,No,Don't know,Somewhat Difficult,Yes,No,No,No,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Maybe,No,Yes,Don't know,Somewhat Easy,No,No,Maybe,Maybe,No,No,,,,,,1.0
+0,500-1000,1.0,,No,No,No,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,100-500,1.0,,Yes,Don't know,Don't know,Yes,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+0,1-5,1.0,,No,No,No,Don't know,Somewhat Easy,Maybe,No,Yes,Yes,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Don't know,Maybe,Maybe,No,Maybe,No,No,,,,,,
+0,500-1000,1.0,,No,No,No,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,No,Maybe,Yes,No,,,,,,0.0
+0,6-25,1.0,,No,No,No,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,No,No,Yes,No,,,,,,0.0
+0,500-1000,1.0,,No,Don't know,Don't know,Don't know,Don't know,Maybe,Maybe,Maybe,Maybe,No,No,,,,,,
+0,26-100,1.0,,,No,No,Don't know,Somewhat Easy,No,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,500-1000,1.0,,Maybe,No,Don't know,Don't know,Somewhat Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,
+0,More Than 1000,1.0,,No,No,No,No,Somewhat Easy,Yes,No,No,No,No,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,No,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,26-100,1.0,,No,No,No,Don't know,Don't know,Maybe,No,Maybe,No,Yes,No,,,,,,0.0
+0,100-500,1.0,,No,No,Don't know,Don't know,Somewhat Easy,No,No,Maybe,Yes,No,No,,,,,,
+0,6-25,1.0,,,Yes,No,Yes,Somewhat Easy,Maybe,Maybe,Yes,Yes,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Yes,No,No,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,500-1000,1.0,,Maybe,No,Don't know,Don't know,Somewhat Easy,Maybe,No,Maybe,Maybe,Yes,No,,,,,,
+0,26-100,1.0,,No,No,No,Don't know,Somewhat Easy,Maybe,Maybe,No,No,Don't know,Yes,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,No,Somewhat Easy,Maybe,No,Maybe,No,Yes,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,No,Don't know,Neither Easy Nor Difficult,Maybe,No,Yes,Yes,No,No,,,,,,0.0
+0,100-500,1.0,,Yes,No,Yes,Don't know,Somewhat Difficult,Maybe,Maybe,No,No,Don't know,Yes,,,,,,1.0
+0,26-100,1.0,,No,No,Yes,No,Somewhat Difficult,Maybe,Maybe,No,No,No,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Yes,Yes,Yes,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,500-1000,1.0,,Maybe,No,No,Yes,Very Easy,No,No,No,No,Yes,No,,,,,,0.0
+0,500-1000,1.0,,Yes,Don't know,Don't know,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,More Than 1000,1.0,,Yes,Yes,Yes,No,Very Difficult,Yes,No,Maybe,No,No,No,,,,,,1.0
+0,26-100,1.0,,Yes,No,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,100-500,1.0,,No,No,Don't know,Don't know,Very Easy,Maybe,No,No,No,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Doesn'T Matter",Maybe,"Sometimes, If It Comes Up",
+0,100-500,1.0,,No,No,No,Don't know,Very Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Maybe,Yes,No,Don't know,Neither Easy Nor Difficult,Yes,Maybe,No,No,Yes,No,,,,,,0.0
+0,6-25,1.0,,No,No,Don't know,Don't know,Somewhat Easy,Maybe,No,Yes,Maybe,No,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,Don't know,"No, Because It Doesn'T Matter",,"No, Because It Would Impact Me Negatively",
+0,500-1000,1.0,,Maybe,No,Don't know,Don't know,Very Easy,No,No,No,Maybe,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,6-25,1.0,,Maybe,No,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,
+0,More Than 1000,1.0,,,Yes,Yes,Yes,Very Easy,Yes,No,Maybe,Maybe,Yes,No,,,,,,1.0
+0,6-25,1.0,,,No,No,Don't know,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,Maybe,No,Don't know,Don't know,Somewhat Difficult,Maybe,Maybe,No,No,No,No,,,,,,
+0,500-1000,1.0,,Yes,No,Yes,Don't know,Don't know,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,1.0
+0,More Than 1000,1.0,,Yes,Yes,Yes,Yes,Very Difficult,Maybe,Maybe,No,Maybe,No,No,,,,,,1.0
+0,500-1000,1.0,,Maybe,No,Yes,Don't know,Don't know,Maybe,No,No,No,Don't know,Yes,,,,,,1.0
+0,26-100,1.0,,Yes,Yes,Yes,Don't know,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,26-100,1.0,,Yes,Yes,No,Yes,Neither Easy Nor Difficult,Maybe,Maybe,Maybe,Maybe,No,Yes,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",Maybe,"Sometimes, If It Comes Up",
+0,1-5,0.0,1.0,Yes,Yes,No,No,Somewhat Easy,No,No,Yes,Yes,No,No,,,,,,0.0
+0,26-100,1.0,,Yes,Yes,Yes,Yes,Somewhat Easy,No,No,Maybe,Maybe,Yes,Yes,,,,,,1.0
+0,26-100,1.0,,Maybe,Don't know,Don't know,Don't know,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+0,500-1000,1.0,,Yes,No,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,No,Don't know,No,,,,,,
+0,26-100,1.0,,Maybe,No,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,26-100,1.0,,Yes,Don't know,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,26-100,1.0,,No,Yes,Yes,Yes,Neither Easy Nor Difficult,No,No,Maybe,Yes,No,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Yes,Yes,Yes,Yes,Neither Easy Nor Difficult,Maybe,Maybe,Maybe,Maybe,Yes,Yes,,,,,,1.0
+0,More Than 1000,1.0,,Yes,No,Yes,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,Yes,Don't know,No,,,,,,1.0
+0,100-500,1.0,,Yes,Yes,Yes,Don't know,Somewhat Difficult,Yes,Maybe,Maybe,No,No,No,,,,,,1.0
+0,26-100,1.0,,No,No,No,Don't know,Somewhat Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Maybe,Yes,Don't know,Don't know,Somewhat Difficult,Maybe,No,Maybe,Maybe,No,No,,,,,,
+0,26-100,1.0,,Yes,Don't know,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,100-500,1.0,,No,No,No,Don't know,Very Difficult,Yes,Maybe,No,No,No,Yes,,,,,,0.0
+0,26-100,1.0,,Yes,No,Yes,Yes,Somewhat Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,1.0
+0,6-25,1.0,,Yes,No,No,Don't know,Somewhat Easy,No,No,No,Maybe,Yes,Yes,,,,,,0.0
+0,26-100,1.0,,Yes,Yes,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,1.0,,Yes,Yes,Yes,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,26-100,1.0,,Maybe,Don't know,Yes,Don't know,Very Easy,No,No,Maybe,Maybe,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,500-1000,1.0,,Yes,No,No,Don't know,Very Difficult,Maybe,Maybe,Maybe,Maybe,No,No,,,,,,0.0
+0,100-500,0.0,1.0,Maybe,No,Yes,Don't know,Very Difficult,Yes,Yes,No,Maybe,No,Yes,,,,,,1.0
+0,More Than 1000,1.0,,Maybe,Don't know,Don't know,Don't know,Neither Easy Nor Difficult,No,No,Yes,No,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,I Know Some,"Sometimes, If It Comes Up",Yes,"Sometimes, If It Comes Up",
+0,26-100,1.0,,No,Yes,Don't know,Yes,Very Difficult,Maybe,Maybe,Maybe,No,Don't know,No,,,,,,
+0,More Than 1000,1.0,,Maybe,Don't know,Yes,Don't know,Somewhat Easy,No,No,No,Maybe,Don't know,No,,,,,,1.0
+0,100-500,1.0,,Yes,No,No,Don't know,Don't know,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,6-25,1.0,,Yes,No,No,Don't know,Very Difficult,Yes,Maybe,No,No,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,100-500,0.0,1.0,,No,Yes,Don't know,Neither Easy Nor Difficult,Yes,No,Maybe,Maybe,Don't know,No,,,,,,1.0
+0,100-500,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,Yes,Maybe,No,No,Don't know,No,,,,,,
+0,100-500,1.0,,No,No,No,Don't know,Very Easy,Maybe,No,Maybe,Maybe,No,Yes,,,,,,0.0
+0,500-1000,1.0,,Maybe,No,Yes,Don't know,Neither Easy Nor Difficult,No,No,No,Yes,Yes,No,,,,,,1.0
+0,6-25,1.0,,No,No,No,No,Somewhat Difficult,Yes,Maybe,No,No,No,No,,,,,,0.0
+0,500-1000,1.0,,No,No,No,Don't know,Somewhat Easy,No,No,No,Maybe,Don't know,No,,,,,,0.0
+0,6-25,1.0,,No,No,No,No,Don't know,Maybe,Maybe,No,No,No,Yes,,,,,,0.0
+0,26-100,1.0,,Maybe,No,Don't know,Don't know,Don't know,No,No,Maybe,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,No,Yes,Don't know,Don't know,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,100-500,1.0,,No,No,No,Don't know,Don't know,Yes,Yes,No,No,Don't know,No,,,,,,0.0
+0,100-500,1.0,,No,No,No,Don't know,Very Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,Don't know,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,More Than 1000,1.0,,Maybe,No,No,Yes,Very Easy,No,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,100-500,0.0,1.0,Maybe,Yes,Yes,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,,No,No,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,6-25,1.0,,,No,No,No,Somewhat Difficult,No,No,No,Yes,Don't know,No,,,,,,0.0
+0,500-1000,1.0,,Yes,Yes,Yes,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,,No,No,Don't know,Somewhat Easy,Maybe,No,Yes,Yes,No,No,,,,,,0.0
+0,1-5,0.0,1.0,Maybe,No,No,Don't know,Very Difficult,Maybe,Maybe,Maybe,Maybe,No,Yes,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,100-500,1.0,,Maybe,No,Don't know,Yes,Don't know,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+0,1-5,1.0,,No,Don't know,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,500-1000,1.0,,No,No,Don't know,Don't know,Very Easy,No,No,Maybe,Maybe,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,Don't know,"No, Because It Would Impact Me Negatively",Maybe,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,0.0,I Know Some,"Sometimes, If It Comes Up",Maybe,"Sometimes, If It Comes Up",
+0,6-25,1.0,,No,No,Yes,Don't know,Neither Easy Nor Difficult,Maybe,No,No,Maybe,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several","No, Because It Doesn'T Matter",Maybe,"Sometimes, If It Comes Up",
+0,100-500,1.0,,Maybe,Yes,No,Don't know,Very Easy,No,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,6-25,1.0,,,No,No,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,Maybe,Maybe,Yes,No,,,,,,0.0
+0,26-100,1.0,,Maybe,Yes,No,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",Yes,"Sometimes, If It Comes Up",
+0,26-100,0.0,1.0,No,No,No,Don't know,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,Don't know,Don't know,Somewhat Difficult,Maybe,No,Maybe,Maybe,Yes,No,,,,,,
+0,6-25,1.0,,Maybe,No,No,Yes,Very Easy,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Yes,No,No,Don't know,Don't know,Maybe,Maybe,Yes,Maybe,Don't know,No,,,,,,0.0
+0,6-25,1.0,,Maybe,No,Don't know,Don't know,Very Difficult,Maybe,Maybe,Maybe,No,Don't know,Yes,,,,,,
+0,26-100,1.0,,Yes,No,No,Yes,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,6-25,1.0,,Maybe,No,Don't know,Don't know,Somewhat Difficult,Maybe,No,Yes,Yes,Yes,No,,,,,,
+0,6-25,1.0,,Yes,No,No,Don't know,Neither Easy Nor Difficult,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,Don't know,Don't know,Don't know,No,No,Maybe,Maybe,Don't know,No,,,,,,
+0,6-25,1.0,,Yes,Yes,Yes,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,6-25,1.0,,No,Yes,No,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,100-500,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,Maybe,No,No,No,Don't know,No,,,,,,
+0,26-100,1.0,,,No,No,Don't know,Somewhat Difficult,Yes,Maybe,No,No,Don't know,No,,,,,,0.0
+0,26-100,0.0,1.0,No,No,Don't know,Don't know,Somewhat Difficult,Yes,No,Maybe,Yes,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",No,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Maybe,No,Yes,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,26-100,1.0,,No,No,No,Don't know,Very Difficult,Yes,Maybe,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,500-1000,1.0,,Yes,Yes,Yes,Yes,Somewhat Easy,Maybe,No,Yes,Maybe,Yes,No,,,,,,1.0
+0,6-25,1.0,,,Yes,No,Don't know,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,More Than 1000,1.0,,Maybe,No,No,Don't know,Somewhat Easy,No,No,Maybe,Yes,No,No,,,,,,0.0
+0,26-100,1.0,,Yes,Yes,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,No,Not Applicable To Me,
+0,26-100,1.0,,Yes,Yes,Yes,Don't know,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,1-5,1.0,,Yes,No,Yes,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,26-100,1.0,,Yes,No,No,Don't know,Somewhat Difficult,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,6-25,1.0,,,No,No,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,100-500,1.0,,No,No,No,Don't know,Very Easy,No,No,No,No,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Yes,Don't know,Yes,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,No,No,No,Don't know,Somewhat Difficult,Maybe,No,No,Yes,No,No,,,,,,0.0
+0,More Than 1000,1.0,,No,No,No,No,Somewhat Easy,Maybe,No,No,No,Don't know,No,,,,,,0.0
+0,6-25,1.0,,No,No,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,100-500,1.0,,Maybe,No,No,Don't know,Very Easy,Maybe,No,Yes,Yes,Don't know,No,,,,,,0.0
+0,500-1000,1.0,,No,No,Don't know,Don't know,Don't know,Maybe,No,Maybe,Maybe,No,No,,,,,,
+0,100-500,1.0,,No,No,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,No,No,No,,,,,,0.0
+0,1-5,1.0,,Maybe,No,Don't know,No,Neither Easy Nor Difficult,No,No,Maybe,Yes,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Doesn'T Matter",,"No, Because It Doesn'T Matter",
+0,More Than 1000,0.0,1.0,Maybe,No,No,Don't know,Somewhat Difficult,No,No,Yes,Yes,Don't know,No,,,,,,0.0
+0,100-500,1.0,,No,No,Yes,Yes,Don't know,Yes,Maybe,No,No,Don't know,No,,,,,,1.0
+0,26-100,1.0,,Yes,Yes,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,100-500,1.0,,Yes,No,No,Don't know,Somewhat Difficult,Yes,No,No,No,No,No,,,,,,0.0
+0,100-500,1.0,,Maybe,No,No,Don't know,Don't know,Yes,Maybe,No,Maybe,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,500-1000,1.0,,No,No,Don't know,Don't know,Somewhat Easy,Maybe,Maybe,Yes,Yes,Don't know,No,,,,,,
+0,100-500,1.0,,No,No,No,Don't know,Somewhat Difficult,Yes,No,Maybe,Maybe,No,No,,,,,,0.0
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Somewhat Easy,No,No,Maybe,Maybe,No,No,,,,,,
+0,100-500,1.0,,Yes,Yes,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,100-500,1.0,,Maybe,Yes,Yes,Yes,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,6-25,1.0,,,No,No,Don't know,Don't know,Maybe,No,Yes,Maybe,Don't know,No,,,,,,0.0
+0,100-500,1.0,,No,Yes,Yes,Don't know,Don't know,Maybe,Yes,Yes,Maybe,Yes,No,,,,,,1.0
+0,6-25,1.0,,Maybe,No,No,Yes,Somewhat Easy,Maybe,Maybe,Maybe,Maybe,Yes,No,,,,,,0.0
+0,26-100,1.0,,No,No,Yes,Don't know,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,500-1000,1.0,,Yes,Don't know,Don't know,Yes,Somewhat Easy,Maybe,Maybe,Maybe,Yes,Yes,No,,,,,,
+0,6-25,1.0,,Maybe,No,No,Yes,Neither Easy Nor Difficult,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,6-25,1.0,,No,No,Don't know,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Doesn'T Matter",,Not Applicable To Me,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"Sometimes, If It Comes Up",Maybe,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Maybe,No,Don't know,Don't know,Don't know,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+0,500-1000,1.0,,No,Yes,No,Don't know,Very Easy,Maybe,No,No,No,Yes,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,Yes,Yes,Neither Easy Nor Difficult,Yes,Maybe,Maybe,Maybe,No,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Yes, Always",No,"No, Because It Doesn'T Matter",
+0,More Than 1000,0.0,1.0,Maybe,Yes,Yes,Yes,Don't know,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,1.0
+0,26-100,1.0,,No,No,No,No,Somewhat Easy,Yes,Maybe,Yes,Maybe,No,Yes,,,,,,0.0
+0,More Than 1000,0.0,1.0,Yes,Yes,Yes,Don't know,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,100-500,1.0,,Maybe,Yes,Yes,Yes,Very Easy,No,No,Maybe,Yes,Don't know,No,,,,,,1.0
+0,26-100,1.0,,Yes,Yes,Yes,Yes,Very Easy,No,No,Maybe,Maybe,Yes,No,,,,,,1.0
+0,1-5,1.0,,,No,No,Don't know,Somewhat Difficult,Yes,Maybe,No,No,Don't know,No,,,,,,0.0
+0,500-1000,1.0,,Maybe,No,Don't know,Don't know,Somewhat Easy,Maybe,No,Maybe,No,No,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,Don't know,"Sometimes, If It Comes Up",Yes,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,1.0,,Maybe,No,Don't know,Don't know,Somewhat Difficult,Yes,Yes,Maybe,No,No,No,,,,,,
+0,100-500,1.0,,Yes,No,Don't know,Don't know,Very Easy,No,No,Yes,Yes,Don't know,No,,,,,,
+0,100-500,1.0,,Yes,Don't know,Yes,Yes,Don't know,Yes,Yes,No,No,Don't know,No,,,,,,1.0
+0,More Than 1000,1.0,,Maybe,Don't know,Yes,Yes,Somewhat Easy,Maybe,No,No,No,Don't know,No,,,,,,1.0
+0,100-500,1.0,,Yes,No,Don't know,Don't know,Somewhat Easy,No,No,No,Yes,Yes,No,,,,,,
+0,100-500,1.0,,No,No,Yes,Don't know,Neither Easy Nor Difficult,Maybe,No,No,Maybe,Don't know,Yes,,,,,,1.0
+0,500-1000,1.0,,No,Don't know,Yes,Don't know,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,"Sometimes, If It Comes Up",
+0,6-25,1.0,,,No,No,Don't know,Somewhat Easy,No,No,No,Maybe,Yes,No,,,,,,0.0
+0,26-100,1.0,,No,Yes,Don't know,Yes,Somewhat Easy,Maybe,Maybe,Maybe,No,Yes,No,,,,,,
+0,500-1000,1.0,,Maybe,Yes,Yes,Don't know,Somewhat Easy,No,Maybe,Maybe,Maybe,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Doesn'T Matter",Maybe,"Sometimes, If It Comes Up",
+0,100-500,1.0,,Maybe,No,Don't know,Yes,Somewhat Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+0,6-25,1.0,,Yes,No,No,Yes,Very Easy,Maybe,No,No,Yes,Yes,No,,,,,,0.0
+0,100-500,1.0,,No,No,No,Don't know,Somewhat Easy,Maybe,Maybe,Yes,Yes,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,26-100,1.0,,No,Yes,No,Don't know,Very Easy,Yes,Maybe,Maybe,Maybe,Yes,No,,,,,,0.0
+0,26-100,0.0,1.0,Maybe,No,No,Don't know,Very Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"Sometimes, If It Comes Up",Maybe,Not Applicable To Me,
+0,100-500,1.0,,Yes,No,Don't know,Don't know,Don't know,Maybe,No,Maybe,Yes,No,No,,,,,,
+0,100-500,1.0,,No,No,No,Don't know,Don't know,Maybe,No,No,No,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,No,Don't know,Somewhat Easy,No,No,Yes,Maybe,Don't know,No,,,,,,0.0
+0,100-500,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,Maybe,Maybe,No,Maybe,Don't know,No,,,,,,
+0,More Than 1000,1.0,,Maybe,Yes,Don't know,Don't know,Don't know,Maybe,No,Maybe,Yes,Don't know,No,,,,,,
+0,26-100,1.0,,Maybe,No,No,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Maybe,No,Yes,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,Don't know,"Sometimes, If It Comes Up",No,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Maybe,Yes,Don't know,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,6-25,0.0,1.0,Maybe,No,Yes,No,Neither Easy Nor Difficult,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,26-100,1.0,,No,Yes,No,Don't know,Very Difficult,No,No,Yes,Yes,Yes,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several","Sometimes, If It Comes Up",No,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",No,"No, Because It Would Impact Me Negatively",
+0,26-100,1.0,,No,No,No,Don't know,Don't know,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Yes,Yes,Yes,Don't know,Don't know,Maybe,Maybe,Yes,Maybe,Don't know,No,,,,,,1.0
+0,100-500,1.0,,Maybe,No,No,Don't know,Somewhat Difficult,No,No,Maybe,Maybe,No,No,,,,,,0.0
+0,100-500,1.0,,Yes,Yes,Yes,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,No,Don't know,Yes,Don't know,Somewhat Difficult,Maybe,Maybe,No,No,No,No,,,,,,1.0
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Very Difficult,Maybe,Maybe,No,No,Don't know,No,,,,,,
+0,26-100,1.0,,Maybe,No,Don't know,Don't know,Don't know,No,No,Yes,Yes,Don't know,No,,,,,,
+0,More Than 1000,1.0,,Yes,Yes,Yes,Yes,Don't know,Maybe,No,No,No,Don't know,No,,,,,,1.0
+0,100-500,1.0,,No,No,No,Don't know,Don't know,Yes,Maybe,No,No,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",No,"No, Because It Doesn'T Matter",
+0,26-100,1.0,,Yes,No,Yes,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,No,No,No,,,,,,1.0
+0,100-500,1.0,,No,Don't know,Don't know,Don't know,Somewhat Easy,No,No,Yes,Yes,Don't know,No,,,,,,
+0,26-100,0.0,1.0,Maybe,No,No,Don't know,Somewhat Easy,No,No,Maybe,Maybe,Yes,Yes,,,,,,0.0
+0,100-500,1.0,,,Yes,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,100-500,1.0,,,No,No,Yes,Don't know,Maybe,No,Maybe,No,Don't know,No,,,,,,0.0
+0,100-500,1.0,,,Don't know,Don't know,Don't know,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,500-1000,1.0,,No,No,No,Don't know,Somewhat Easy,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,26-100,0.0,1.0,No,No,No,Don't know,Somewhat Difficult,Maybe,No,No,Yes,No,Yes,,,,,,0.0
+0,26-100,1.0,,No,No,Don't know,Yes,Neither Easy Nor Difficult,Maybe,Maybe,Yes,Maybe,Don't know,No,,,,,,
+0,100-500,1.0,,No,Don't know,No,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,100-500,0.0,1.0,Maybe,No,No,Don't know,Somewhat Easy,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,Don't know,"No, Because It Doesn'T Matter",No,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Doesn'T Matter",,"No, Because It Doesn'T Matter",
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,0.0,I Know Some,Not Applicable To Me,Maybe,Not Applicable To Me,
+0,More Than 1000,0.0,1.0,Maybe,No,No,No,Neither Easy Nor Difficult,Yes,No,No,Maybe,Don't know,No,,,,,,0.0
+0,100-500,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,Maybe,Maybe,Maybe,No,Yes,No,,,,,,
+0,6-25,1.0,,Maybe,Yes,Yes,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Somewhat Easy,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,No,No,No,No,Somewhat Difficult,Maybe,Maybe,No,No,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several",Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,0.0,1.0,Yes,No,Yes,Yes,Neither Easy Nor Difficult,Maybe,No,Maybe,Yes,No,No,,,,,,1.0
+0,1-5,1.0,,,No,No,No,Very Difficult,Yes,No,No,No,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,No,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,500-1000,1.0,,Maybe,Yes,No,Don't know,Very Easy,No,No,Yes,Yes,Don't know,No,,,,,,0.0
+0,6-25,1.0,,No,No,No,Don't know,Very Easy,Maybe,Maybe,No,Maybe,No,No,,,,,,0.0
+0,6-25,1.0,,Yes,No,Yes,Don't know,Somewhat Difficult,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,1.0,,No,No,Don't know,Don't know,Somewhat Easy,Maybe,Maybe,Maybe,Maybe,No,No,,,,,,
+0,6-25,1.0,,Maybe,No,Don't know,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,1-5,0.0,1.0,,Yes,No,Yes,Neither Easy Nor Difficult,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,1-5,1.0,,,No,No,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,No,No,Don't know,No,,,,,,0.0
+0,1-5,1.0,,Maybe,No,No,Don't know,Neither Easy Nor Difficult,Yes,Yes,No,No,No,No,,,,,,0.0
+0,6-25,0.0,1.0,Maybe,No,No,Don't know,Somewhat Easy,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,0.0,1.0,No,No,No,Don't know,Very Difficult,Yes,No,No,No,No,No,,,,,,0.0
+0,26-100,1.0,,No,No,No,Don't know,Neither Easy Nor Difficult,No,No,Yes,Yes,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,No,No,Somewhat Easy,No,No,Maybe,Maybe,No,No,,,,,,0.0
+0,6-25,1.0,,No,No,No,Don't know,Somewhat Difficult,Yes,No,No,No,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",Yes,"Sometimes, If It Comes Up",
+0,More Than 1000,0.0,1.0,Yes,Yes,Yes,Don't know,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,6-25,1.0,,No,No,Don't know,Don't know,Neither Easy Nor Difficult,No,No,Yes,Yes,Don't know,No,,,,,,
+0,More Than 1000,0.0,1.0,Maybe,Don't know,Yes,Yes,Very Easy,No,No,Maybe,Yes,Don't know,No,,,,,,1.0
+0,6-25,1.0,,Maybe,No,No,Don't know,Somewhat Easy,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,26-100,0.0,1.0,Yes,No,No,Yes,Neither Easy Nor Difficult,No,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,1-5,1.0,,Maybe,No,No,Don't know,Very Easy,No,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,More Than 1000,1.0,,Maybe,No,Yes,Don't know,Somewhat Difficult,Maybe,No,No,No,Don't know,No,,,,,,1.0
+0,6-25,1.0,,Maybe,No,No,Don't know,Somewhat Easy,Maybe,Maybe,No,No,Don't know,No,,,,,,0.0
+0,6-25,0.0,1.0,Maybe,No,No,Yes,Somewhat Difficult,Maybe,Maybe,No,Maybe,No,No,,,,,,0.0
+0,6-25,1.0,,Maybe,No,No,Don't know,Don't know,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,100-500,1.0,,No,No,Don't know,Don't know,Neither Easy Nor Difficult,Yes,No,No,No,Don't know,No,,,,,,
+0,6-25,1.0,,No,No,No,Don't know,Don't know,Yes,No,No,No,Don't know,No,,,,,,0.0
+0,100-500,1.0,,No,No,Yes,Yes,Don't know,Maybe,No,No,No,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Maybe,Yes,Yes,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,Maybe,No,No,,,,,,1.0
+0,6-25,1.0,,Maybe,No,Don't know,No,Neither Easy Nor Difficult,Maybe,Maybe,No,Maybe,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,Don't know,"Sometimes, If It Comes Up",No,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Doesn'T Matter",,"No, Because It Doesn'T Matter",
+0,6-25,0.0,0.0,Maybe,Don't know,Don't know,Don't know,Don't know,Yes,Maybe,Maybe,Maybe,No,Yes,,,,,,
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several","No, Because It Doesn'T Matter",No,"Sometimes, If It Comes Up",
+0,500-1000,1.0,,Maybe,Don't know,Don't know,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,6-25,1.0,,,No,No,Don't know,Somewhat Difficult,Maybe,Maybe,Yes,Maybe,No,No,,,,,,0.0
+0,100-500,1.0,,No,No,Yes,Don't know,Somewhat Difficult,Yes,No,No,Maybe,Don't know,No,,,,,,1.0
+0,6-25,1.0,,Maybe,Yes,No,Don't know,Somewhat Difficult,Maybe,No,No,Maybe,Don't know,No,,,,,,0.0
+0,100-500,1.0,,No,No,Don't know,Don't know,Very Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,Yes,No,Don't know,Don't know,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+0,100-500,1.0,,Yes,No,No,Yes,Very Difficult,Maybe,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Yes,Yes,No,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,500-1000,0.0,1.0,No,No,Don't know,Don't know,Very Easy,Maybe,Maybe,Yes,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several",Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",No,"Sometimes, If It Comes Up",
+0,More Than 1000,1.0,,Maybe,No,Don't know,Don't know,Don't know,Maybe,Maybe,No,No,No,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",Yes,"No, Because It Would Impact Me Negatively",
+0,More Than 1000,1.0,,Maybe,No,Don't know,No,Very Difficult,Yes,Maybe,Maybe,No,No,Yes,,,,,,
+0,6-25,1.0,,Maybe,No,No,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,Yes,No,No,,,,,,0.0
+0,More Than 1000,1.0,,No,Yes,Don't know,Don't know,Somewhat Easy,No,Maybe,Maybe,Yes,Don't know,No,,,,,,
+0,1-5,1.0,,Yes,No,No,No,Very Difficult,Yes,No,No,No,No,Yes,,,,,,0.0
+0,26-100,1.0,,,No,No,Don't know,Very Difficult,Yes,Maybe,Maybe,No,No,No,,,,,,0.0
+0,6-25,1.0,,Yes,No,No,Don't know,Somewhat Difficult,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,6-25,1.0,,No,No,No,Don't know,Very Difficult,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,100-500,1.0,,No,No,Yes,No,Neither Easy Nor Difficult,Yes,Yes,Maybe,No,No,Yes,,,,,,1.0
+0,More Than 1000,0.0,1.0,Maybe,Yes,Yes,Yes,Somewhat Difficult,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,1.0,,Yes,Yes,Yes,Don't know,Don't know,Maybe,No,No,Maybe,Don't know,No,,,,,,1.0
+0,26-100,1.0,,No,Yes,Yes,Don't know,Don't know,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,6-25,1.0,,Yes,No,No,Don't know,Neither Easy Nor Difficult,No,No,No,Maybe,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,Maybe,Yes,Don't know,Yes,Somewhat Easy,Yes,No,No,No,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,0.0,1.0,No,Yes,Yes,Don't know,Somewhat Easy,Maybe,No,No,No,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"Sometimes, If It Comes Up",No,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Maybe,No,No,Don't know,Don't know,Yes,Yes,No,No,No,No,,,,,,0.0
+0,26-100,1.0,,,No,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,No,No,Maybe,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,6-25,1.0,,No,No,No,No,Somewhat Difficult,Yes,Maybe,No,No,Don't know,Yes,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"Sometimes, If It Comes Up",No,Not Applicable To Me,
+0,26-100,1.0,,Maybe,No,No,Yes,Somewhat Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,More Than 1000,1.0,,Maybe,Yes,Yes,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,6-25,0.0,1.0,No,No,No,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,Maybe,Yes,Don't know,No,,,,,,0.0
+0,6-25,1.0,,Maybe,No,Don't know,Yes,Somewhat Easy,Yes,No,No,No,Don't know,No,,,,,,
+0,100-500,1.0,,Yes,No,Don't know,Don't know,Neither Easy Nor Difficult,No,No,No,Maybe,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",No,"Sometimes, If It Comes Up",
+0,26-100,0.0,1.0,No,No,No,Don't know,Very Difficult,Maybe,No,No,No,No,No,,,,,,0.0
+0,6-25,0.0,1.0,,No,No,Don't know,Somewhat Easy,Maybe,Maybe,No,Yes,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",,"Yes, Always",
+0,26-100,0.0,1.0,Maybe,No,No,Don't know,Neither Easy Nor Difficult,No,No,No,No,Yes,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Easy,Yes,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,1-5,1.0,,No,No,No,No,Somewhat Difficult,Maybe,No,No,No,Don't know,No,,,,,,0.0
+0,26-100,1.0,,No,No,No,Don't know,Somewhat Easy,Maybe,No,Yes,Yes,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,Maybe,Not Applicable To Me,
+0,6-25,1.0,,Maybe,Don't know,Don't know,Yes,Very Easy,No,No,Maybe,Maybe,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"Sometimes, If It Comes Up",Maybe,"No, Because It Would Impact Me Negatively",
+0,6-25,1.0,,No,No,No,Don't know,Don't know,Maybe,No,Maybe,No,No,No,,,,,,0.0
+0,26-100,1.0,,No,Don't know,No,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,500-1000,0.0,1.0,Maybe,Yes,Don't know,Don't know,Somewhat Easy,Maybe,No,Yes,No,Don't know,No,,,,,,
+0,26-100,0.0,1.0,,Yes,Yes,Yes,Very Easy,No,No,No,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Easy,Maybe,Maybe,No,No,No,No,,,,,,0.0
+0,100-500,1.0,,No,No,Yes,Don't know,Neither Easy Nor Difficult,Maybe,No,Yes,Yes,Don't know,No,,,,,,1.0
+0,100-500,1.0,,Maybe,Don't know,Yes,Don't know,Very Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,1.0
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Somewhat Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,More Than 1000,0.0,1.0,No,Don't know,Yes,Don't know,Somewhat Difficult,Maybe,Maybe,No,No,Don't know,No,,,,,,1.0
+0,100-500,1.0,,No,No,Don't know,Don't know,Very Easy,No,No,No,No,Yes,No,,,,,,
+0,100-500,0.0,1.0,Maybe,Yes,Don't know,Don't know,Don't know,Maybe,No,Yes,Maybe,Don't know,No,,,,,,
+0,100-500,1.0,,Yes,No,No,Don't know,Somewhat Difficult,Yes,No,Maybe,No,No,No,,,,,,0.0
+0,100-500,1.0,,No,No,Don't know,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Yes,Don't know,No,,,,,,
+0,1-5,1.0,,,No,No,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,More Than 1000,1.0,,Yes,No,No,Yes,Very Easy,Yes,No,No,No,No,Yes,,,,,,0.0
+0,More Than 1000,0.0,1.0,Maybe,No,No,Don't know,Neither Easy Nor Difficult,No,Maybe,No,No,Don't know,No,,,,,,0.0
+0,6-25,1.0,,,No,No,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,6-25,1.0,,Maybe,No,Don't know,Yes,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+0,More Than 1000,1.0,,Maybe,Don't know,Don't know,Don't know,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,100-500,1.0,,No,Don't know,Don't know,Don't know,Don't know,No,No,Maybe,Maybe,Don't know,No,,,,,,
+0,6-25,1.0,,No,No,No,Don't know,Don't know,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,6-25,1.0,,Maybe,No,No,Don't know,Very Difficult,Yes,Maybe,No,Maybe,No,No,,,,,,0.0
+0,More Than 1000,1.0,,No,No,No,Don't know,Somewhat Difficult,Maybe,Maybe,No,No,No,No,,,,,,0.0
+0,26-100,1.0,,Maybe,Yes,Yes,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,100-500,1.0,,No,Don't know,Don't know,Don't know,Somewhat Difficult,No,No,Maybe,Yes,Don't know,No,,,,,,
+0,6-25,1.0,,,No,No,Don't know,Somewhat Difficult,Maybe,No,No,No,No,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,More Than 1000,1.0,,No,Yes,Don't know,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,More Than 1000,0.0,1.0,Yes,No,Don't know,Don't know,Don't know,Maybe,Maybe,No,Maybe,No,No,,,,,,
+0,100-500,0.0,1.0,Yes,Yes,Don't know,Don't know,Neither Easy Nor Difficult,No,No,Yes,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,Don't know,"No, Because It Would Impact Me Negatively",,"Sometimes, If It Comes Up",
+0,6-25,1.0,,No,No,Don't know,Don't know,Don't know,Yes,No,No,No,No,No,,,,,,
+0,6-25,0.0,1.0,Maybe,No,Don't know,Don't know,Somewhat Easy,No,No,No,Yes,Yes,No,,,,,,
+0,100-500,1.0,,Yes,No,No,Don't know,Don't know,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Easy,Maybe,No,Maybe,Yes,Yes,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,6-25,1.0,,Yes,No,No,No,Somewhat Difficult,Yes,No,No,No,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,1.0,,Maybe,Don't know,Don't know,Don't know,Somewhat Difficult,Yes,No,Maybe,Maybe,Don't know,Yes,,,,,,
+0,6-25,1.0,,No,No,Don't know,Yes,Somewhat Easy,No,No,Maybe,Maybe,Yes,No,,,,,,
+0,26-100,1.0,,Yes,No,No,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,26-100,1.0,,,No,No,Don't know,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,500-1000,0.0,1.0,Yes,Don't know,Don't know,Don't know,Somewhat Difficult,Yes,Maybe,No,No,Don't know,Yes,,,,,,
+0,More Than 1000,1.0,,Maybe,No,No,Don't know,Somewhat Easy,Maybe,No,Maybe,No,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Maybe,No,Don't know,No,Somewhat Easy,Maybe,No,Maybe,Maybe,No,No,,,,,,
+0,More Than 1000,1.0,,Maybe,No,No,Don't know,Somewhat Easy,No,No,Yes,Yes,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,Yes,No,Yes,Yes,Neither Easy Nor Difficult,No,No,Yes,Maybe,Don't know,No,,,,,,1.0
+0,26-100,0.0,1.0,Yes,No,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Easy,No,No,Yes,Yes,Don't know,No,,,,,,0.0
+0,More Than 1000,1.0,,Yes,Don't know,Don't know,Don't know,Very Difficult,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,
+0,6-25,1.0,,Maybe,No,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,No,No,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Doesn'T Matter",,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,1.0,Don't know,"No, Because It Would Impact Me Negatively",Yes,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Yes,No,Don't know,Yes,Very Easy,No,No,Maybe,Maybe,Yes,No,,,,,,
+0,26-100,0.0,1.0,Yes,Yes,Yes,Don't know,Don't know,Maybe,Maybe,Yes,Maybe,Don't know,No,,,,,,1.0
+0,26-100,0.0,1.0,Maybe,Yes,No,Don't know,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,26-100,0.0,1.0,,No,No,No,Very Easy,No,No,Maybe,Maybe,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Doesn'T Matter",Yes,"Sometimes, If It Comes Up",
+0,1-5,1.0,,Yes,Yes,No,No,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,26-100,1.0,,,No,No,Don't know,Don't know,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,500-1000,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,Maybe,Maybe,Maybe,Maybe,No,No,,,,,,
+0,More Than 1000,1.0,,Maybe,No,Yes,Don't know,Very Easy,Maybe,Maybe,No,No,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,6-25,1.0,,Yes,No,No,Yes,Very Easy,Maybe,No,No,No,No,No,,,,,,0.0
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Somewhat Easy,Maybe,Maybe,Yes,Maybe,Don't know,No,,,,,,
+0,500-1000,0.0,1.0,,Yes,Yes,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,1.0,,No,No,Don't know,Don't know,Very Difficult,Yes,No,No,Maybe,Don't know,No,,,,,,
+0,26-100,0.0,1.0,,No,No,Don't know,Very Difficult,Maybe,Maybe,Yes,Maybe,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,100-500,1.0,,No,No,No,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,6-25,1.0,,Yes,Yes,Yes,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,1.0,,Yes,Don't know,Don't know,No,Somewhat Difficult,Yes,No,Maybe,Yes,No,No,,,,,,
+0,More Than 1000,1.0,,,Yes,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,6-25,1.0,,Maybe,Yes,Yes,Yes,Very Easy,No,No,Yes,Yes,Don't know,No,,,,,,1.0
+0,More Than 1000,1.0,,Maybe,No,Don't know,Don't know,Very Difficult,Maybe,No,Maybe,Yes,No,No,,,,,,
+0,More Than 1000,0.0,1.0,No,Yes,Yes,Yes,Neither Easy Nor Difficult,No,No,No,Maybe,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",,Not Applicable To Me,
+0,100-500,1.0,,Maybe,No,No,Yes,Somewhat Difficult,Maybe,No,Maybe,No,Don't know,No,,,,,,0.0
+0,6-25,0.0,1.0,Maybe,No,No,Don't know,Don't know,Yes,Maybe,No,No,No,No,,,,,,0.0
+0,6-25,1.0,,,No,No,No,Somewhat Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,6-25,1.0,,,No,No,Don't know,Somewhat Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,More Than 1000,1.0,,Maybe,No,Yes,Don't know,Somewhat Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,1.0
+0,6-25,1.0,,Maybe,No,No,Don't know,Somewhat Difficult,Maybe,No,No,Maybe,Don't know,No,,,,,,0.0
+0,6-25,1.0,,Maybe,Yes,Yes,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",Maybe,Not Applicable To Me,
+0,100-500,0.0,0.0,Yes,Yes,No,Yes,Somewhat Difficult,Maybe,Maybe,No,Maybe,Yes,No,,,,,,0.0
+0,More Than 1000,0.0,0.0,No,Yes,Yes,Yes,Somewhat Difficult,Yes,Maybe,No,No,Yes,No,,,,,,1.0
+0,6-25,1.0,,Yes,No,No,Don't know,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,100-500,1.0,,Maybe,No,Don't know,Yes,Neither Easy Nor Difficult,Maybe,No,Maybe,Maybe,No,No,,,,,,
+0,26-100,1.0,,No,No,Yes,Don't know,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,26-100,1.0,,Yes,No,No,Don't know,Somewhat Easy,Maybe,No,Maybe,Yes,No,No,,,,,,0.0
+0,6-25,1.0,,,No,No,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"No, Because It Would Impact Me Negatively",
+0,6-25,1.0,,No,No,No,Yes,Somewhat Difficult,Maybe,No,Maybe,No,Don't know,No,,,,,,0.0
+0,6-25,1.0,,,No,No,Don't know,Somewhat Easy,Maybe,Maybe,Maybe,Maybe,Yes,No,,,,,,0.0
+0,6-25,1.0,,,No,No,Yes,Somewhat Difficult,Maybe,Maybe,Yes,Maybe,Don't know,No,,,,,,0.0
+0,26-100,1.0,,No,No,No,Don't know,Somewhat Easy,Maybe,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,More Than 1000,1.0,,Yes,Yes,Yes,Don't know,Somewhat Difficult,Maybe,No,Yes,Yes,Yes,No,,,,,,1.0
+0,26-100,1.0,,Maybe,Yes,Don't know,Don't know,Somewhat Easy,No,No,No,Yes,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Doesn'T Matter",Maybe,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,500-1000,1.0,,No,Yes,Yes,Don't know,Don't know,Yes,Maybe,No,Maybe,No,No,,,,,,1.0
+0,26-100,1.0,,No,Don't know,Don't know,Don't know,Don't know,Maybe,No,No,Maybe,Don't know,No,,,,,,
+0,6-25,1.0,,No,No,No,Yes,Very Difficult,Yes,Yes,No,No,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,0.0,1.0,No,Don't know,Don't know,Don't know,Don't know,Maybe,No,No,No,Don't know,No,,,,,,
+0,1-5,1.0,,,No,No,No,Very Difficult,Yes,Yes,No,No,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Yes,No,Yes,Yes,Don't know,Yes,No,No,No,No,No,,,,,,1.0
+0,6-25,1.0,,Maybe,No,Don't know,No,Somewhat Easy,Yes,No,No,No,Don't know,No,,,,,,
+0,More Than 1000,1.0,,Maybe,Yes,Yes,Don't know,Somewhat Easy,Maybe,No,Maybe,Yes,Don't know,No,,,,,,1.0
+0,500-1000,0.0,1.0,No,Yes,Yes,Yes,Don't know,No,Maybe,No,Yes,Yes,No,,,,,,1.0
+0,26-100,1.0,,No,Yes,Don't know,Don't know,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+0,6-25,1.0,,Maybe,No,No,Yes,Very Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,Don't know,Neither Easy Nor Difficult,Yes,No,No,No,No,Yes,,,,,,0.0
+0,500-1000,1.0,,Yes,Yes,Yes,Yes,Neither Easy Nor Difficult,No,No,Yes,Maybe,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",Yes,"No, Because It Would Impact Me Negatively",
+0,6-25,1.0,,Maybe,No,No,Don't know,Somewhat Easy,Maybe,Maybe,Yes,No,Don't know,No,,,,,,0.0
+0,6-25,1.0,,No,Don't know,Don't know,Don't know,Neither Easy Nor Difficult,Yes,Maybe,No,No,Don't know,No,,,,,,
+0,6-25,1.0,,Maybe,No,No,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,No,Yes,Somewhat Difficult,Yes,No,Maybe,Maybe,No,Yes,,,,,,0.0
+0,More Than 1000,0.0,1.0,Yes,No,Yes,Yes,Neither Easy Nor Difficult,Maybe,No,Maybe,No,No,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",No,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Yes,No,No,No,Very Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Difficult,Maybe,Maybe,No,No,Don't know,Yes,,,,,,0.0
+0,More Than 1000,0.0,1.0,Maybe,No,Don't know,Don't know,Somewhat Difficult,Maybe,No,No,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,Maybe,No,Yes,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,No,No,Don't know,Don't know,Neither Easy Nor Difficult,Yes,Maybe,Maybe,Maybe,No,Yes,,,,,,
+0,100-500,0.0,1.0,Yes,No,No,Yes,Very Difficult,Yes,No,No,No,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,No,Yes,Yes,Yes,Somewhat Easy,Maybe,No,No,Maybe,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",Yes,"No, Because It Would Impact Me Negatively",
+0,100-500,1.0,,No,No,Yes,Yes,Very Easy,No,No,No,Yes,Don't know,No,,,,,,1.0
+0,100-500,1.0,,Maybe,Yes,No,Don't know,Somewhat Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,26-100,0.0,0.0,Yes,Yes,Yes,Yes,Neither Easy Nor Difficult,Maybe,No,Yes,Yes,Don't know,Yes,,,,,,1.0
+0,6-25,1.0,,Yes,No,No,Yes,Somewhat Difficult,Yes,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,26-100,0.0,1.0,No,No,No,Don't know,Don't know,No,No,No,No,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,100-500,1.0,,No,No,No,Don't know,Somewhat Easy,Maybe,No,No,Maybe,Don't know,No,,,,,,0.0
+0,26-100,0.0,1.0,Yes,No,Yes,Don't know,Somewhat Easy,No,No,Maybe,Maybe,Yes,No,,,,,,1.0
+0,26-100,1.0,,Yes,Yes,Yes,Don't know,Neither Easy Nor Difficult,Yes,No,Maybe,No,Yes,No,,,,,,1.0
+0,More Than 1000,0.0,0.0,Yes,Yes,Yes,Yes,Neither Easy Nor Difficult,No,Maybe,Maybe,No,Yes,No,,,,,,1.0
+0,26-100,0.0,1.0,Maybe,Yes,Yes,Yes,Neither Easy Nor Difficult,Maybe,No,Yes,Maybe,Don't know,Yes,,,,,,1.0
+0,6-25,1.0,,No,No,No,Don't know,Very Easy,Yes,No,Yes,Yes,Don't know,No,,,,,,0.0
+0,1-5,1.0,,Yes,No,No,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Yes,No,Don't know,Don't know,Somewhat Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+0,6-25,1.0,,Yes,No,No,No,Very Difficult,Yes,Yes,Maybe,No,No,No,,,,,,0.0
+0,1-5,1.0,,No,Yes,Yes,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,26-100,1.0,,Maybe,Don't know,Don't know,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Yes,Yes,No,,,,,,
+0,More Than 1000,1.0,,No,No,Don't know,Yes,Very Difficult,Maybe,No,No,No,No,Yes,,,,,,
+0,More Than 1000,1.0,,Maybe,Yes,Yes,Don't know,Don't know,Maybe,No,Maybe,Maybe,No,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Doesn'T Matter",,Not Applicable To Me,
+0,1-5,1.0,,No,No,Don't know,No,Very Difficult,Maybe,Maybe,No,No,No,Yes,,,,,,
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",Yes,"Yes, Always",
+0,More Than 1000,0.0,1.0,No,No,No,Don't know,Very Difficult,Maybe,Maybe,No,Yes,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",Maybe,"Sometimes, If It Comes Up",
+0,6-25,0.0,1.0,No,No,No,Don't know,Somewhat Difficult,Maybe,No,Yes,No,Don't know,No,,,,,,0.0
+0,1-5,0.0,1.0,Maybe,No,No,Don't know,Very Difficult,Maybe,Maybe,No,No,Yes,No,,,,,,0.0
+0,26-100,1.0,,,No,No,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,26-100,1.0,,No,No,No,Don't know,Somewhat Easy,No,No,Yes,Yes,No,No,,,,,,0.0
+0,100-500,1.0,,No,Yes,Yes,No,Somewhat Easy,Yes,No,No,Yes,Don't know,Yes,,,,,,1.0
+0,6-25,1.0,,No,No,No,Don't know,Somewhat Difficult,Maybe,No,No,No,Don't know,No,,,,,,0.0
+0,6-25,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,Yes,Maybe,No,Maybe,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several","No, Because It Doesn'T Matter",Maybe,"Sometimes, If It Comes Up",
+0,6-25,0.0,1.0,Maybe,No,Don't know,Don't know,Don't know,Maybe,No,No,No,Don't know,No,,,,,,
+0,500-1000,0.0,1.0,Maybe,Yes,Yes,No,Very Difficult,Yes,No,Maybe,No,No,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several",Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"Sometimes, If It Comes Up",
+0,More Than 1000,1.0,,Yes,Don't know,Don't know,Don't know,Neither Easy Nor Difficult,No,No,Yes,Yes,Yes,No,,,,,,
+0,More Than 1000,0.0,1.0,,No,Yes,Don't know,Very Difficult,Yes,No,No,No,No,No,,,,,,1.0
+0,1-5,1.0,,Maybe,No,Yes,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,Don't know,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,More Than 1000,0.0,1.0,No,Yes,Yes,Yes,Somewhat Difficult,No,No,Yes,Maybe,No,No,,,,,,1.0
+0,100-500,1.0,,Yes,No,Yes,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several",Not Applicable To Me,,Not Applicable To Me,
+0,100-500,1.0,,Maybe,Yes,Don't know,Don't know,Very Easy,No,No,Yes,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,Yes,Yes,No,No,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,26-100,1.0,,No,Yes,No,Don't know,Don't know,Yes,Yes,No,No,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,26-100,1.0,,Maybe,No,Don't know,Don't know,Somewhat Difficult,Maybe,No,Maybe,Maybe,No,No,,,,,,
+0,More Than 1000,0.0,1.0,No,No,No,Don't know,Somewhat Difficult,Maybe,Maybe,No,No,No,No,,,,,,0.0
+0,6-25,0.0,0.0,Yes,No,No,Yes,Somewhat Difficult,Yes,No,No,No,Don't know,Yes,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"Sometimes, If It Comes Up",Maybe,"Sometimes, If It Comes Up",
+0,More Than 1000,0.0,1.0,Yes,Yes,Yes,Yes,Neither Easy Nor Difficult,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,1-5,1.0,,,Don't know,Don't know,Don't know,Somewhat Difficult,No,No,No,Maybe,Don't know,No,,,,,,
+0,More Than 1000,0.0,1.0,Maybe,No,Don't know,Don't know,Neither Easy Nor Difficult,No,No,No,Maybe,Don't know,No,,,,,,
+0,More Than 1000,1.0,,Yes,No,Don't know,Don't know,Somewhat Easy,Maybe,No,No,No,No,No,,,,,,
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Don't know,No,No,Yes,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",Yes,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Doesn'T Matter",Maybe,"Sometimes, If It Comes Up",
+0,500-1000,1.0,,Maybe,Yes,Yes,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Maybe,No,Yes,Yes,Somewhat Easy,No,No,Yes,Yes,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,1.0,,Yes,Yes,Yes,Yes,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,6-25,1.0,,Maybe,Yes,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,26-100,1.0,,Yes,No,No,Don't know,Very Easy,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,100-500,1.0,,Yes,No,No,Don't know,Somewhat Difficult,Maybe,No,No,Maybe,Don't know,No,,,,,,0.0
+0,More Than 1000,1.0,,Maybe,No,Yes,Yes,Very Easy,No,No,Yes,Yes,No,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"No, Because It Would Impact Me Negatively",
+1,,,,,,,,,,,,,,,0.0,Don't know,"No, Because It Doesn'T Matter",Maybe,Not Applicable To Me,
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",Yes,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,0.0,1.0,,No,No,Don't know,Very Difficult,Yes,Yes,No,No,No,Yes,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several",Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",Yes,"No, Because It Would Impact Me Negatively",
+0,6-25,1.0,,No,No,No,No,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,More Than 1000,1.0,,No,No,No,Yes,Somewhat Easy,Maybe,No,No,No,No,Yes,,,,,,0.0
+0,More Than 1000,0.0,1.0,Yes,Yes,Yes,Yes,Very Easy,Maybe,No,Maybe,Yes,Don't know,No,,,,,,1.0
+0,6-25,1.0,,,Yes,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Yes,No,Yes,Yes,Somewhat Easy,Maybe,No,No,No,No,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Maybe,Yes,Yes,Yes,Neither Easy Nor Difficult,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,26-100,1.0,,No,No,Don't know,Don't know,Don't know,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,Maybe,No,No,Don't know,Very Difficult,Maybe,Maybe,Maybe,No,No,No,,,,,,0.0
+0,6-25,1.0,,Yes,Yes,No,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,100-500,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,No,No,Maybe,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"Sometimes, If It Comes Up",No,"Yes, Always",
+0,100-500,1.0,,Yes,No,No,Don't know,Don't know,Maybe,Maybe,No,No,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,1.0,,Maybe,No,Don't know,Don't know,Somewhat Easy,Maybe,Maybe,No,Maybe,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,1.0,Don't know,"Sometimes, If It Comes Up",Maybe,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Difficult,Maybe,No,No,Maybe,No,No,,,,,,0.0
+0,6-25,1.0,,No,No,No,Don't know,Don't know,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,100-500,1.0,,,No,Don't know,Don't know,Very Difficult,Yes,Maybe,Maybe,Maybe,Don't know,No,,,,,,
+0,500-1000,1.0,,,Yes,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,0.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,100-500,1.0,,Yes,No,Don't know,Don't know,Don't know,Yes,No,No,No,Don't know,No,,,,,,
+0,More Than 1000,1.0,,Yes,Yes,Yes,Yes,Very Easy,Maybe,No,Yes,Yes,Don't know,Yes,,,,,,1.0
+0,100-500,1.0,,Yes,No,Yes,No,Somewhat Easy,Maybe,Maybe,No,No,Don't know,Yes,,,,,,1.0
+0,More Than 1000,0.0,1.0,Maybe,No,Don't know,Yes,Neither Easy Nor Difficult,Maybe,No,Maybe,No,No,No,,,,,,
+0,1-5,1.0,,Maybe,No,No,Don't know,Somewhat Easy,Maybe,Maybe,Maybe,No,Yes,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,No,No,Yes,Don't know,Don't know,Maybe,No,No,No,No,No,,,,,,1.0
+0,100-500,1.0,,Yes,No,No,Don't know,Very Easy,No,No,Yes,Yes,No,Yes,,,,,,0.0
+0,500-1000,0.0,0.0,Yes,No,No,Yes,Somewhat Easy,Yes,Maybe,Maybe,No,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Doesn'T Matter",,"No, Because It Would Impact Me Negatively",
+0,6-25,1.0,,No,No,No,Don't know,Neither Easy Nor Difficult,No,No,Yes,Yes,Yes,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,1.0,,Maybe,No,Don't know,Don't know,Very Easy,No,No,Maybe,No,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several",Not Applicable To Me,Maybe,Not Applicable To Me,
+0,More Than 1000,1.0,,No,Don't know,Yes,Don't know,Somewhat Difficult,Maybe,Maybe,Yes,Yes,Yes,No,,,,,,1.0
+0,6-25,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,Yes,Maybe,No,No,Yes,No,,,,,,
+0,100-500,1.0,,Yes,Don't know,Don't know,Yes,Somewhat Easy,No,No,Yes,Yes,Don't know,No,,,,,,
+0,100-500,1.0,,No,No,No,Don't know,Somewhat Difficult,Maybe,No,No,Maybe,No,No,,,,,,0.0
+0,26-100,1.0,,No,No,No,Don't know,Somewhat Easy,Maybe,No,No,No,No,No,,,,,,0.0
+0,More Than 1000,1.0,,Yes,Don't know,Yes,Yes,Don't know,Maybe,Maybe,Maybe,Maybe,Yes,No,,,,,,1.0
+0,100-500,1.0,,Maybe,Yes,Yes,Don't know,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,Don't know,"No, Because It Doesn'T Matter",Maybe,"No, Because It Doesn'T Matter",
+0,100-500,1.0,,Maybe,No,No,Don't know,Neither Easy Nor Difficult,Maybe,No,No,Maybe,Don't know,Yes,,,,,,0.0
+0,6-25,0.0,1.0,Yes,No,No,Yes,Somewhat Easy,Maybe,No,Maybe,No,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Doesn'T Matter",,"Sometimes, If It Comes Up",
+0,26-100,1.0,,No,No,Don't know,Don't know,Somewhat Easy,Maybe,Maybe,No,No,No,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,6-25,1.0,,No,No,No,Don't know,Neither Easy Nor Difficult,Yes,Maybe,No,Maybe,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Yes,Yes,Yes,Yes,Somewhat Easy,Maybe,No,Maybe,Yes,Don't know,Yes,,,,,,1.0
+0,More Than 1000,1.0,,No,Don't know,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,Yes,Maybe,Don't know,No,,,,,,
+0,6-25,1.0,,,No,No,Don't know,Somewhat Difficult,Yes,Yes,No,Yes,Don't know,No,,,,,,0.0
+0,26-100,0.0,1.0,Maybe,No,No,Don't know,Very Difficult,Yes,Yes,No,No,No,Yes,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,100-500,1.0,,No,No,No,Don't know,Somewhat Difficult,Maybe,Maybe,Maybe,No,No,Yes,,,,,,0.0
+0,100-500,0.0,1.0,Maybe,No,No,Don't know,Neither Easy Nor Difficult,Maybe,No,No,Maybe,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,Maybe,Not Applicable To Me,
+0,1-5,1.0,,No,No,No,No,Very Easy,No,Maybe,Maybe,No,Don't know,Yes,,,,,,0.0
+0,More Than 1000,1.0,,Maybe,No,No,Yes,Somewhat Easy,Maybe,No,Yes,Maybe,Don't know,No,,,,,,0.0
+0,100-500,0.0,1.0,No,No,Don't know,Don't know,Don't know,Maybe,No,Maybe,Yes,Don't know,No,,,,,,
+0,6-25,1.0,,,No,No,Don't know,Somewhat Difficult,No,No,Maybe,Yes,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"Sometimes, If It Comes Up",Yes,"Sometimes, If It Comes Up",
+0,6-25,1.0,,Maybe,No,No,Yes,Neither Easy Nor Difficult,Maybe,No,Yes,No,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,Maybe,No,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,No,No,Yes,No,,,,,,
+0,6-25,1.0,,Maybe,No,No,Don't know,Very Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,Yes,"No, Because It Would Impact Me Negatively",
+0,26-100,0.0,1.0,No,No,No,Don't know,Very Difficult,Maybe,No,No,No,Don't know,No,,,,,,0.0
+0,26-100,0.0,1.0,No,No,No,Don't know,Very Difficult,Maybe,No,No,No,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several",Not Applicable To Me,,Not Applicable To Me,
+0,6-25,1.0,,No,No,No,Don't know,Don't know,Yes,Maybe,No,No,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Maybe,Don't know,Yes,Don't know,Don't know,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,1.0
+0,More Than 1000,1.0,,Yes,No,No,No,Very Difficult,Maybe,No,No,No,No,No,,,,,,0.0
+0,100-500,1.0,,No,Don't know,Don't know,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,6-25,1.0,,Maybe,No,No,Don't know,Don't know,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,500-1000,1.0,,No,No,Yes,Don't know,Don't know,Maybe,No,No,No,No,No,,,,,,1.0
+0,More Than 1000,1.0,,Maybe,No,Don't know,Don't know,Somewhat Easy,No,No,No,No,Don't know,No,,,,,,
+0,More Than 1000,1.0,,Yes,Yes,Yes,Yes,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,6-25,1.0,,No,No,No,Don't know,Somewhat Difficult,No,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,26-100,1.0,,No,No,No,Don't know,Somewhat Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,500-1000,1.0,,Yes,No,Don't know,Yes,Neither Easy Nor Difficult,No,No,Maybe,Yes,Don't know,No,,,,,,
+0,26-100,1.0,,No,No,No,Don't know,Don't know,No,No,Maybe,No,No,No,,,,,,0.0
+0,6-25,1.0,,Maybe,Don't know,Don't know,Don't know,Somewhat Easy,No,No,Maybe,Yes,Don't know,No,,,,,,
+0,6-25,1.0,,Maybe,No,No,Don't know,Very Difficult,Yes,Maybe,Maybe,Maybe,Yes,Yes,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",Yes,"Sometimes, If It Comes Up",
+0,26-100,0.0,1.0,No,No,No,No,Very Difficult,Yes,Yes,No,No,No,No,,,,,,0.0
+0,6-25,1.0,,No,No,Don't know,Yes,Very Difficult,No,No,No,Maybe,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,Don't know,"Sometimes, If It Comes Up",Maybe,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Yes,No,No,Yes,Somewhat Easy,No,No,Yes,Yes,No,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,Maybe,Yes,Don't know,Don't know,Somewhat Easy,Maybe,No,Maybe,Yes,Don't know,No,,,,,,
+0,100-500,1.0,,Yes,No,Don't know,Yes,Somewhat Easy,Yes,Maybe,Yes,Yes,No,Yes,,,,,,
+0,6-25,1.0,,Maybe,No,No,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,No,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,Maybe,Yes,Yes,Don't know,Very Difficult,Yes,No,No,No,Don't know,No,,,,,,1.0
+0,6-25,1.0,,Yes,Yes,Yes,Yes,Neither Easy Nor Difficult,No,No,Maybe,No,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,0.0,1.0,Maybe,Don't know,Yes,Yes,Neither Easy Nor Difficult,Maybe,No,No,Maybe,Yes,No,,,,,,1.0
+0,26-100,0.0,1.0,Maybe,Yes,Don't know,Yes,Somewhat Difficult,Yes,No,No,No,Don't know,No,,,,,,
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Difficult,Maybe,No,No,No,Don't know,No,,,,,,0.0
+0,100-500,1.0,,No,No,Don't know,Don't know,Very Easy,Maybe,No,No,Maybe,Don't know,No,,,,,,
+0,6-25,1.0,,Maybe,No,Don't know,Don't know,Somewhat Easy,Maybe,No,Yes,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",Yes,"Sometimes, If It Comes Up",
+0,More Than 1000,1.0,,Maybe,Yes,No,Yes,Very Difficult,Yes,No,Yes,No,No,Yes,,,,,,0.0
+0,6-25,1.0,,Maybe,Don't know,Yes,Yes,Very Easy,No,No,Maybe,Maybe,Yes,No,,,,,,1.0
+0,6-25,1.0,,No,Don't know,Don't know,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,100-500,1.0,,No,No,No,Don't know,Somewhat Easy,Maybe,No,Yes,Maybe,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Maybe,No,No,Don't know,Don't know,Maybe,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,,Yes,Yes,Don't know,Somewhat Easy,No,No,Maybe,Yes,No,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Maybe,Yes,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,6-25,1.0,,No,No,Don't know,Don't know,Very Easy,No,No,Maybe,Yes,Don't know,No,,,,,,
+0,1-5,1.0,,,No,No,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,100-500,1.0,,Maybe,No,No,Don't know,Somewhat Difficult,Yes,Maybe,No,No,No,Yes,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"Sometimes, If It Comes Up",Maybe,Not Applicable To Me,
+0,1-5,1.0,,,No,Yes,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,No,No,No,Don't know,Very Difficult,Yes,No,No,No,No,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,Don't know,Don't know,Somewhat Easy,Yes,Maybe,No,Maybe,No,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Doesn'T Matter",No,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",Yes,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",Maybe,"Sometimes, If It Comes Up",
+0,100-500,1.0,,No,No,Don't know,Don't know,Very Difficult,Yes,Maybe,Maybe,Maybe,No,Yes,,,,,,
+0,6-25,1.0,,Maybe,No,No,Don't know,Somewhat Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,More Than 1000,1.0,,No,No,No,Don't know,Don't know,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,0.0,1.0,Yes,Don't know,Yes,Yes,Somewhat Easy,Maybe,No,Maybe,Yes,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Doesn'T Matter",Maybe,"No, Because It Doesn'T Matter",
+0,6-25,1.0,,,No,Don't know,Don't know,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+0,More Than 1000,0.0,1.0,Yes,No,Yes,No,Very Easy,Yes,No,No,No,No,No,,,,,,1.0
+0,26-100,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,Maybe,Maybe,No,No,No,No,,,,,,
+0,More Than 1000,1.0,,No,No,Don't know,Don't know,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+0,26-100,1.0,,Maybe,No,Don't know,Yes,Neither Easy Nor Difficult,Maybe,No,No,No,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,I Know Some,"Sometimes, If It Comes Up",No,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,No,Not Applicable To Me,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",Maybe,Not Applicable To Me,
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",Yes,"Sometimes, If It Comes Up",
+0,26-100,0.0,1.0,Maybe,Yes,No,Don't know,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,500-1000,0.0,1.0,No,No,Yes,Yes,Neither Easy Nor Difficult,No,No,Yes,Yes,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,Not Applicable To Me,
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,1-5,1.0,,,No,No,No,Very Easy,No,No,Yes,Yes,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",No,"Yes, Always",
+0,More Than 1000,0.0,1.0,,No,Yes,Don't know,Neither Easy Nor Difficult,Maybe,No,No,Maybe,No,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",No,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several",Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,0.0,1.0,Yes,No,Don't know,Don't know,Somewhat Difficult,Yes,Maybe,Maybe,Maybe,No,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"Sometimes, If It Comes Up",No,"No, Because It Would Impact Me Negatively",
+1,,,,,,,,,,,,,,,0.0,I Know Some,"Sometimes, If It Comes Up",No,"Yes, Always",
+0,26-100,1.0,,,No,No,Don't know,Neither Easy Nor Difficult,Maybe,No,Yes,Yes,Don't know,No,,,,,,0.0
+0,6-25,0.0,1.0,No,No,Don't know,Don't know,Somewhat Difficult,Maybe,No,No,Yes,Don't know,No,,,,,,
+0,6-25,1.0,,No,No,Yes,Yes,Don't know,No,No,No,Yes,Yes,Yes,,,,,,1.0
+0,500-1000,0.0,1.0,,Don't know,Don't know,Don't know,Very Difficult,Yes,Maybe,No,No,No,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,100-500,0.0,1.0,Yes,No,No,Yes,Somewhat Difficult,Maybe,No,Maybe,Maybe,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,0.0,1.0,Yes,No,No,Don't know,Somewhat Easy,Maybe,No,No,No,No,No,,,,,,0.0
+0,1-5,1.0,,Yes,No,No,Don't know,Somewhat Easy,Maybe,No,Maybe,Maybe,Yes,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",No,"Yes, Always",
+0,6-25,1.0,,,No,No,Don't know,Somewhat Easy,No,No,No,No,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Doesn'T Matter",,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Maybe,Yes,No,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,Don't know,Yes,Somewhat Easy,Maybe,No,Maybe,Yes,Yes,No,,,,,,
+0,6-25,1.0,,No,No,No,No,Don't know,Maybe,No,No,No,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several","Sometimes, If It Comes Up",Maybe,"Sometimes, If It Comes Up",
+0,6-25,1.0,,,Yes,No,Yes,Very Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"Sometimes, If It Comes Up",Maybe,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,0.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,0.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,26-100,1.0,,No,No,Don't know,Don't know,Very Easy,No,No,No,Maybe,Yes,No,,,,,,
+0,26-100,1.0,,Maybe,Don't know,Don't know,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,100-500,1.0,,,Don't know,Don't know,Don't know,Don't know,No,No,Maybe,Maybe,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several",Not Applicable To Me,,Not Applicable To Me,
+0,500-1000,1.0,,No,No,Don't know,Don't know,Very Easy,No,No,No,Maybe,Don't know,No,,,,,,
+0,6-25,1.0,,Maybe,Yes,No,Don't know,Somewhat Easy,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,1-5,1.0,,Yes,No,No,No,Somewhat Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,6-25,1.0,,Yes,Yes,Yes,No,Very Easy,Maybe,No,Maybe,Yes,No,No,,,,,,1.0
+0,More Than 1000,1.0,,No,Don't know,Don't know,Don't know,Somewhat Easy,Yes,Maybe,No,No,Don't know,No,,,,,,
+0,26-100,1.0,,Maybe,No,No,Yes,Somewhat Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,6-25,1.0,,Maybe,No,Don't know,Don't know,Somewhat Difficult,Maybe,Maybe,Yes,Maybe,No,No,,,,,,
+0,26-100,1.0,,Maybe,No,No,Yes,Somewhat Easy,No,No,Maybe,Yes,Don't know,Yes,,,,,,0.0
+0,500-1000,1.0,,,Don't know,No,Don't know,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,100-500,1.0,,Maybe,Yes,Don't know,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Don't know,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+0,26-100,0.0,1.0,,No,No,Don't know,Somewhat Difficult,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,26-100,1.0,,No,No,No,Don't know,Somewhat Easy,Maybe,No,No,No,Don't know,No,,,,,,0.0
+0,26-100,1.0,,,Don't know,Don't know,Don't know,Very Easy,No,No,No,Maybe,Yes,No,,,,,,
+0,500-1000,1.0,,No,No,Yes,Don't know,Somewhat Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,1.0
+0,500-1000,0.0,1.0,Yes,Don't know,Yes,Don't know,Somewhat Easy,Maybe,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,1.0,,Maybe,Don't know,Don't know,Yes,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,6-25,1.0,,No,No,No,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,100-500,0.0,1.0,Maybe,No,No,Don't know,Neither Easy Nor Difficult,Yes,Maybe,No,Maybe,No,Yes,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Doesn'T Matter",,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Difficult,Maybe,No,No,Maybe,Don't know,No,,,,,,0.0
+0,6-25,1.0,,No,No,Don't know,Don't know,Don't know,No,No,Yes,Yes,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Doesn'T Matter",Maybe,"Sometimes, If It Comes Up",
+0,More Than 1000,0.0,1.0,No,Yes,Yes,Yes,Somewhat Easy,Maybe,No,No,Maybe,Yes,No,,,,,,1.0
+0,More Than 1000,1.0,,Yes,Yes,Yes,Yes,Very Easy,No,No,Maybe,Yes,Don't know,No,,,,,,1.0
+0,100-500,1.0,,No,No,No,Don't know,Don't know,Yes,No,No,No,Don't know,No,,,,,,0.0
+0,100-500,0.0,1.0,Maybe,No,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,Yes,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,More Than 1000,0.0,1.0,No,Don't know,Don't know,Don't know,Don't know,Maybe,Maybe,No,No,Don't know,No,,,,,,
+0,26-100,1.0,,Maybe,Yes,Yes,Yes,Neither Easy Nor Difficult,Maybe,No,Maybe,Yes,Don't know,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Maybe,No,Yes,Yes,Very Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,1.0
+0,100-500,0.0,1.0,No,No,Don't know,Yes,Somewhat Easy,No,No,Yes,Maybe,No,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,500-1000,0.0,1.0,Maybe,No,No,Don't know,Very Easy,No,No,Yes,Maybe,No,No,,,,,,0.0
+0,6-25,0.0,1.0,No,No,Don't know,Don't know,Don't know,Maybe,No,No,Maybe,Don't know,No,,,,,,
+0,26-100,0.0,1.0,No,No,No,No,Somewhat Difficult,Yes,No,Maybe,Yes,No,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,No,Don't know,Somewhat Easy,Maybe,No,No,Maybe,Don't know,No,,,,,,0.0
+0,100-500,0.0,1.0,Yes,No,No,Yes,Somewhat Difficult,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,26-100,0.0,1.0,Maybe,No,Yes,Yes,Neither Easy Nor Difficult,Maybe,Maybe,Yes,Yes,Don't know,No,,,,,,1.0
+0,26-100,1.0,,,No,No,Don't know,Very Easy,No,No,Yes,Yes,No,No,,,,,,0.0
+0,More Than 1000,1.0,,Yes,No,Yes,Don't know,Don't know,Yes,Maybe,No,No,Don't know,Yes,,,,,,1.0
+0,More Than 1000,1.0,,Maybe,No,Don't know,Yes,Very Easy,Maybe,No,Maybe,Yes,No,No,,,,,,
+0,100-500,1.0,,Yes,Yes,Yes,Yes,Somewhat Difficult,Yes,No,Yes,Yes,No,No,,,,,,1.0
+0,500-1000,1.0,,Yes,Yes,Yes,Don't know,Somewhat Easy,No,No,Yes,Yes,Yes,Yes,,,,,,1.0
+0,More Than 1000,0.0,1.0,,No,No,Don't know,Neither Easy Nor Difficult,Yes,No,No,No,Don't know,Yes,,,,,,0.0
+0,26-100,1.0,,No,No,No,Don't know,Very Difficult,Maybe,No,Maybe,Maybe,No,No,,,,,,0.0
+0,6-25,1.0,,,Yes,No,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,100-500,0.0,1.0,Maybe,No,No,Don't know,Very Difficult,Yes,No,No,No,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Yes,No,No,Don't know,Very Difficult,Yes,Yes,No,No,No,No,,,,,,0.0
+0,100-500,0.0,1.0,Yes,Yes,Yes,Yes,Don't know,Maybe,No,No,Maybe,Yes,No,,,,,,1.0
+0,100-500,1.0,,Maybe,Yes,No,Yes,Don't know,Maybe,No,Maybe,No,Don't know,Yes,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Easy,Maybe,Maybe,Yes,Yes,No,No,,,,,,0.0
+0,6-25,1.0,,Maybe,Don't know,Don't know,Don't know,Don't know,Yes,No,Maybe,No,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Doesn'T Matter",,"No, Because It Doesn'T Matter",
+0,26-100,0.0,1.0,No,No,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,Yes,Don't know,No,,,,,,
+0,100-500,1.0,,Yes,Don't know,Yes,Yes,Neither Easy Nor Difficult,No,No,Yes,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",Yes,"No, Because It Would Impact Me Negatively",
+0,100-500,1.0,,,No,Yes,Don't know,Don't know,Yes,No,Yes,Yes,No,Yes,,,,,,1.0
+0,1-5,1.0,,No,No,No,Don't know,Somewhat Easy,Maybe,No,No,Maybe,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",No,"Yes, Always",
+0,500-1000,1.0,,No,No,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,No,Yes,Yes,Yes,No,,,,,,
+0,More Than 1000,1.0,,Maybe,Yes,Yes,Don't know,Somewhat Difficult,No,No,No,Maybe,Yes,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Yes,Don't know,Don't know,Yes,Neither Easy Nor Difficult,Maybe,No,Maybe,Yes,No,No,,,,,,
+0,26-100,1.0,,No,No,No,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,500-1000,0.0,1.0,Maybe,No,Don't know,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,More Than 1000,1.0,,No,Don't know,Don't know,Don't know,Don't know,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+0,100-500,1.0,,No,No,Don't know,Yes,Somewhat Difficult,Maybe,No,No,No,No,No,,,,,,
+0,100-500,1.0,,Maybe,No,Don't know,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,26-100,0.0,1.0,No,No,No,Don't know,Somewhat Easy,Maybe,No,Yes,Yes,Don't know,No,,,,,,0.0
+0,26-100,1.0,,No,No,No,Don't know,Somewhat Easy,No,Maybe,No,Maybe,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"Sometimes, If It Comes Up",No,"Sometimes, If It Comes Up",
+0,1-5,1.0,,,No,No,Don't know,Somewhat Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,100-500,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,Yes,Maybe,Maybe,No,No,No,,,,,,
+0,More Than 1000,1.0,,Maybe,Don't know,Yes,Don't know,Somewhat Easy,Maybe,No,Maybe,Yes,Yes,Yes,,,,,,1.0
+0,100-500,1.0,,Yes,No,Don't know,Yes,Very Easy,Maybe,Maybe,No,No,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,I Know Some,"Sometimes, If It Comes Up",Maybe,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Yes,Don't know,Don't know,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Maybe,No,No,,,,,,
+0,6-25,1.0,,Maybe,No,Don't know,Don't know,Somewhat Easy,No,No,Yes,Yes,Don't know,No,,,,,,
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,100-500,1.0,,Maybe,No,No,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,No,Maybe,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Doesn'T Matter",,"Sometimes, If It Comes Up",
+0,100-500,1.0,,Maybe,No,Yes,Yes,Somewhat Easy,No,No,Maybe,Yes,Don't know,No,,,,,,1.0
+0,500-1000,1.0,,Yes,Yes,Yes,Yes,Somewhat Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,1.0
+0,More Than 1000,1.0,,Yes,No,Yes,Yes,Neither Easy Nor Difficult,Maybe,No,No,Maybe,No,No,,,,,,1.0
+0,More Than 1000,1.0,,Maybe,No,Yes,Don't know,Somewhat Difficult,Maybe,Maybe,No,No,No,No,,,,,,1.0
+0,100-500,1.0,,Maybe,Don't know,Don't know,Don't know,Very Easy,No,No,Yes,Yes,Don't know,No,,,,,,
+0,More Than 1000,0.0,1.0,Yes,Yes,Yes,Don't know,Somewhat Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Yes,Yes,Yes,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,Yes,Yes,Yes,No,,,,,,1.0
+0,100-500,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,Yes,Maybe,Maybe,Maybe,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,1.0,,No,No,Don't know,Don't know,Very Difficult,Yes,Maybe,No,Maybe,No,Yes,,,,,,
+0,More Than 1000,0.0,1.0,Yes,Yes,Yes,Don't know,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,100-500,1.0,,Yes,No,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,Yes,,,,,,1.0
+0,100-500,1.0,,Yes,No,Don't know,Don't know,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+0,More Than 1000,1.0,,Maybe,Don't know,Yes,Don't know,Don't know,Maybe,No,Maybe,Maybe,No,No,,,,,,1.0
+0,More Than 1000,1.0,,No,No,No,Don't know,Neither Easy Nor Difficult,Maybe,No,No,No,No,No,,,,,,0.0
+0,6-25,1.0,,Yes,Yes,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,Don't know,"No, Because It Doesn'T Matter",No,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,26-100,0.0,1.0,Maybe,No,No,Don't know,Very Difficult,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,No,No,Yes,Don't know,Somewhat Easy,Maybe,No,No,Maybe,Yes,No,,,,,,1.0
+0,26-100,0.0,1.0,,No,No,Don't know,Somewhat Difficult,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,100-500,0.0,1.0,Yes,No,Yes,Yes,Don't know,Yes,No,Maybe,Yes,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,1.0,,,No,Don't know,Don't know,Very Difficult,Yes,No,No,No,No,Yes,,,,,,
+0,More Than 1000,0.0,1.0,Maybe,Don't know,Yes,Don't know,Somewhat Easy,Maybe,No,Yes,Maybe,Don't know,No,,,,,,1.0
+0,100-500,1.0,,,No,No,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,More Than 1000,1.0,,Maybe,No,Don't know,Don't know,Very Difficult,Yes,Maybe,Maybe,Maybe,No,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Somewhat Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,No,No,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,No,No,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,26-100,1.0,,No,No,No,No,Very Difficult,Yes,No,No,No,No,No,,,,,,0.0
+0,100-500,1.0,,,No,No,No,Don't know,Yes,Maybe,No,No,No,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,Yes,No,Yes,Don't know,Somewhat Easy,Maybe,No,Yes,Yes,No,Yes,,,,,,1.0
+0,100-500,1.0,,,No,No,Don't know,Very Difficult,Maybe,No,Yes,No,Don't know,No,,,,,,0.0
+0,26-100,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,Yes,No,Maybe,Yes,No,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several",Not Applicable To Me,,Not Applicable To Me,
+0,26-100,1.0,,,No,No,Don't know,Very Difficult,Yes,No,No,No,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"Sometimes, If It Comes Up",
+0,More Than 1000,0.0,1.0,Maybe,No,No,Don't know,Very Easy,No,No,No,No,Yes,No,,,,,,0.0
+0,More Than 1000,1.0,,No,No,No,Don't know,Don't know,Maybe,Maybe,Yes,Maybe,Yes,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,Don't know,Don't know,Maybe,No,Maybe,Maybe,No,No,,,,,,0.0
+0,500-1000,1.0,,Maybe,Yes,Yes,Yes,Somewhat Easy,Maybe,Maybe,Maybe,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"Sometimes, If It Comes Up",
+0,1-5,1.0,,,No,Don't know,No,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,100-500,1.0,,Maybe,No,Yes,Don't know,Somewhat Difficult,Maybe,Maybe,No,Maybe,No,No,,,,,,1.0
+0,More Than 1000,1.0,,,Yes,Yes,Don't know,Somewhat Difficult,Yes,No,No,No,No,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"No, Because It Would Impact Me Negatively",
+0,More Than 1000,0.0,1.0,No,No,Yes,Yes,Don't know,Yes,Yes,No,No,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,6-25,1.0,,,No,No,Don't know,Don't know,Maybe,No,Maybe,Maybe,No,No,,,,,,0.0
+0,100-500,1.0,,,Yes,No,Don't know,Somewhat Difficult,Maybe,No,No,No,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,Yes,Somewhat Easy,No,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,More Than 1000,1.0,,No,Yes,No,Yes,Somewhat Easy,Maybe,No,Yes,Yes,Yes,No,,,,,,0.0
+0,More Than 1000,1.0,,No,Yes,No,Don't know,Very Easy,Maybe,No,No,Maybe,Yes,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Yes, Always",No,"Yes, Always",
+0,More Than 1000,1.0,,Maybe,No,Don't know,No,Somewhat Difficult,Yes,Yes,Maybe,No,No,No,,,,,,
+0,More Than 1000,1.0,,Maybe,Yes,Yes,Yes,Very Easy,No,No,Maybe,Yes,Don't know,No,,,,,,1.0
+0,26-100,1.0,,,No,No,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,More Than 1000,1.0,,Yes,No,Yes,Yes,Very Difficult,Yes,Yes,Yes,No,No,No,,,,,,1.0
+0,100-500,1.0,,Maybe,Don't know,Don't know,No,Don't know,No,No,No,Maybe,Yes,No,,,,,,
+0,100-500,1.0,,No,No,Yes,Don't know,Very Difficult,Yes,Maybe,No,No,No,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Maybe,Yes,Yes,Yes,Don't know,Yes,Maybe,No,Maybe,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Doesn'T Matter",Maybe,"Sometimes, If It Comes Up",
+0,More Than 1000,1.0,,Yes,No,No,Yes,Don't know,Maybe,No,Maybe,Maybe,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"Sometimes, If It Comes Up",Maybe,"Sometimes, If It Comes Up",
+0,100-500,1.0,,,Yes,Don't know,Don't know,Somewhat Easy,No,No,Maybe,Maybe,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"No, Because It Would Impact Me Negatively",
+0,100-500,1.0,,,No,No,Don't know,Somewhat Easy,Maybe,No,No,Maybe,No,Yes,,,,,,0.0
+0,More Than 1000,1.0,,No,No,Don't know,Don't know,Very Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+0,6-25,0.0,1.0,,No,No,Don't know,Somewhat Difficult,Maybe,Yes,No,No,No,No,,,,,,0.0
+0,26-100,1.0,,Yes,Yes,Don't know,Don't know,Somewhat Easy,Maybe,No,No,Maybe,Yes,No,,,,,,
+0,26-100,1.0,,,No,No,Don't know,Don't know,Yes,Maybe,No,No,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several","No, Because It Doesn'T Matter",Yes,"No, Because It Doesn'T Matter",
+0,500-1000,0.0,1.0,No,No,Don't know,Don't know,Somewhat Easy,Maybe,Maybe,No,Maybe,No,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,1-5,1.0,,,Don't know,Don't know,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Doesn'T Matter",No,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several","Sometimes, If It Comes Up",Maybe,"No, Because It Doesn'T Matter",
+0,500-1000,1.0,,Yes,No,Yes,Don't know,Very Difficult,Yes,Maybe,No,No,No,No,,,,,,1.0
+0,26-100,1.0,,Maybe,No,No,Don't know,Very Difficult,Yes,Yes,No,No,No,Yes,,,,,,0.0
+0,More Than 1000,0.0,1.0,Maybe,Don't know,Yes,Don't know,Somewhat Easy,No,No,Maybe,Yes,No,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,Don't know,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,More Than 1000,1.0,,,No,No,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,No,Yes,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,Maybe,Yes,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,No,Yes,Maybe,Don't know,No,,,,,,
+0,1-5,1.0,,No,No,No,No,Somewhat Difficult,Yes,No,Maybe,Maybe,Yes,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Doesn'T Matter",,"Sometimes, If It Comes Up",
+0,100-500,1.0,,Maybe,No,No,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,No,Maybe,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,Maybe,Don't know,Yes,Yes,Neither Easy Nor Difficult,Yes,Maybe,No,No,Yes,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Maybe,Yes,Yes,Don't know,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"Sometimes, If It Comes Up",
+0,100-500,1.0,,Maybe,No,Yes,Yes,Very Difficult,Yes,Yes,Maybe,No,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,1-5,1.0,,,No,No,Yes,Somewhat Difficult,No,No,No,No,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,Yes,Somewhat Easy,Maybe,No,No,No,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",No,Not Applicable To Me,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several",Not Applicable To Me,,Not Applicable To Me,
+0,6-25,1.0,,,No,No,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,6-25,1.0,,Maybe,No,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,No,Don't know,No,,,,,,0.0
+0,6-25,0.0,1.0,No,No,No,Don't know,Very Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,More Than 1000,1.0,,,Yes,Yes,Yes,Somewhat Easy,Yes,Yes,No,No,Yes,No,,,,,,1.0
+0,26-100,1.0,,No,No,Don't know,Don't know,Somewhat Easy,No,No,Yes,Yes,Don't know,No,,,,,,
+0,100-500,1.0,,Yes,No,No,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,No,No,No,,,,,,0.0
+0,6-25,1.0,,,No,No,Don't know,Very Easy,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,100-500,1.0,,,No,No,Yes,Neither Easy Nor Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,100-500,0.0,0.0,No,Yes,No,Yes,Somewhat Difficult,Yes,Maybe,Yes,Yes,No,Yes,,,,,,0.0
+0,100-500,0.0,1.0,Maybe,Yes,Yes,Don't know,Very Easy,Maybe,No,No,Yes,Yes,No,,,,,,1.0
+0,6-25,1.0,,Yes,No,No,No,Neither Easy Nor Difficult,Yes,Maybe,No,No,No,Yes,,,,,,0.0
+0,100-500,0.0,1.0,Maybe,No,No,Don't know,Somewhat Difficult,Yes,No,No,Maybe,Don't know,No,,,,,,0.0
+0,100-500,0.0,1.0,Yes,Yes,Yes,Yes,Very Easy,No,Maybe,Maybe,Yes,No,Yes,,,,,,1.0
+0,More Than 1000,1.0,,Yes,No,Don't know,Don't know,Somewhat Difficult,Yes,Maybe,No,No,Don't know,No,,,,,,
+0,26-100,1.0,,Yes,No,No,Don't know,Neither Easy Nor Difficult,Yes,Maybe,Maybe,No,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Doesn'T Matter",,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Yes,No,No,Don't know,Don't know,Yes,No,No,No,Don't know,No,,,,,,0.0
+0,6-25,1.0,,No,No,No,Yes,Very Difficult,Yes,Maybe,No,No,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,Yes,No,Don't know,Don't know,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+0,6-25,1.0,,Maybe,No,No,Don't know,Somewhat Difficult,Maybe,No,No,Maybe,Don't know,No,,,,,,0.0
+0,100-500,0.0,1.0,No,Don't know,Yes,Yes,Don't know,Yes,Maybe,No,No,Don't know,No,,,,,,1.0
+0,1-5,1.0,,No,No,No,Don't know,Very Difficult,Maybe,No,Yes,Maybe,Yes,No,,,,,,0.0
+0,6-25,1.0,,Yes,No,No,Yes,Don't know,Maybe,No,No,Maybe,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Somewhat Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,Yes,No,No,Yes,Neither Easy Nor Difficult,Maybe,No,Yes,Yes,No,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,Yes,No,Yes,Yes,Somewhat Easy,Maybe,Maybe,Yes,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Yes,Yes,Yes,Don't know,Neither Easy Nor Difficult,Maybe,No,Yes,Maybe,No,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Yes,Yes,Yes,Don't know,Don't know,Yes,Maybe,No,No,Don't know,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,,No,Don't know,Don't know,Very Difficult,Yes,Maybe,No,No,No,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",No,"No, Because It Would Impact Me Negatively",
+0,More Than 1000,1.0,,No,No,No,Don't know,Don't know,Maybe,No,Yes,Yes,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",Yes,"Yes, Always",
+0,1-5,1.0,,Maybe,No,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,Maybe,No,No,,,,,,0.0
+0,100-500,1.0,,Yes,No,No,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,Don't know,Don't know,Somewhat Easy,No,No,Yes,Yes,Don't know,No,,,,,,
+0,26-100,1.0,,Maybe,No,Don't know,Don't know,Very Easy,Maybe,No,Yes,Yes,Don't know,No,,,,,,
+0,26-100,1.0,,No,No,No,Don't know,Very Easy,Maybe,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,Yes,Don't know,Very Easy,Maybe,No,Yes,Yes,Yes,No,,,,,,1.0
+0,26-100,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,Maybe,Maybe,No,No,Don't know,No,,,,,,
+0,26-100,1.0,,No,No,No,Yes,Very Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,26-100,1.0,,No,No,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,100-500,1.0,,No,No,No,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,26-100,1.0,,No,No,Don't know,Yes,Don't know,Maybe,Maybe,No,No,Don't know,No,,,,,,
+0,26-100,1.0,,No,No,No,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,Yes,Somewhat Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,6-25,1.0,,Maybe,No,No,Don't know,Somewhat Difficult,Yes,No,No,No,Don't know,No,,,,,,0.0
+0,26-100,1.0,,No,No,Don't know,Don't know,Very Easy,Maybe,No,Maybe,Yes,Yes,No,,,,,,
+0,26-100,1.0,,Maybe,No,No,Don't know,Very Difficult,Maybe,No,No,No,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,No,Don't know,Yes,Don't know,Don't know,Yes,Maybe,No,No,Don't know,No,,,,,,1.0
+0,26-100,1.0,,No,Don't know,Yes,Yes,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,1-5,1.0,,Maybe,Yes,Don't know,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,500-1000,0.0,1.0,No,No,No,No,Neither Easy Nor Difficult,Yes,Maybe,No,No,Don't know,No,,,,,,0.0
+0,100-500,1.0,,No,No,Don't know,Don't know,Very Easy,No,No,Maybe,Maybe,Yes,No,,,,,,
+0,More Than 1000,0.0,1.0,Yes,No,Don't know,Don't know,Very Difficult,Maybe,No,Maybe,Maybe,No,No,,,,,,
+0,More Than 1000,1.0,,Maybe,No,No,Don't know,Very Easy,Maybe,Maybe,No,No,No,No,,,,,,0.0
+0,6-25,1.0,,,No,No,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,26-100,1.0,,Yes,Yes,Yes,Yes,Very Difficult,Yes,Maybe,No,No,No,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Yes,Yes,Yes,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,1.0,,Maybe,No,Don't know,Don't know,Very Difficult,Yes,Yes,No,No,No,Yes,,,,,,
+0,More Than 1000,0.0,1.0,No,No,No,Don't know,Very Difficult,Maybe,No,No,No,No,No,,,,,,0.0
+0,More Than 1000,1.0,,Yes,No,Yes,Don't know,Very Difficult,Yes,No,No,No,No,No,,,,,,1.0
+0,More Than 1000,1.0,,No,No,Don't know,Yes,Neither Easy Nor Difficult,Maybe,No,No,Maybe,No,No,,,,,,
+0,26-100,1.0,,No,No,No,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,Don't know,"No, Because It Doesn'T Matter",,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,0.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,0.0,1.0,,Yes,No,Don't know,Very Easy,No,No,No,No,Yes,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,Yes,No,No,Don't know,Very Difficult,Maybe,Maybe,Maybe,Maybe,No,No,,,,,,0.0
+0,1-5,1.0,,No,No,No,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,More Than 1000,1.0,,Maybe,No,Yes,Yes,Somewhat Easy,Maybe,Maybe,Maybe,Yes,Don't know,No,,,,,,1.0
+0,26-100,1.0,,Yes,No,No,Don't know,Very Difficult,Yes,Yes,Maybe,Maybe,Yes,No,,,,,,0.0
+0,100-500,1.0,,,Don't know,Don't know,Don't know,Very Easy,No,No,No,Maybe,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",Maybe,"Sometimes, If It Comes Up",
+0,100-500,1.0,,No,No,No,Don't know,Somewhat Difficult,Yes,Maybe,No,No,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Yes,Yes,Yes,Yes,Somewhat Easy,Maybe,No,Maybe,No,Don't know,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,,No,No,Don't know,Somewhat Easy,No,No,Yes,Maybe,Yes,No,,,,,,0.0
+0,6-25,1.0,,Maybe,No,No,No,Very Difficult,Yes,No,Maybe,No,No,No,,,,,,0.0
+0,More Than 1000,1.0,,No,No,Don't know,Don't know,Neither Easy Nor Difficult,No,No,Yes,Maybe,No,No,,,,,,
+0,26-100,1.0,,Yes,No,No,Don't know,Somewhat Difficult,Yes,No,No,No,No,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,No,Yes,Yes,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,No,No,No,Don't know,Very Easy,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,Don't know,"No, Because It Would Impact Me Negatively",Maybe,"Sometimes, If It Comes Up",
+0,26-100,1.0,,No,No,No,Don't know,Somewhat Difficult,Yes,Maybe,No,Maybe,Don't know,No,,,,,,0.0
+0,6-25,0.0,1.0,Maybe,No,No,Don't know,Very Difficult,Yes,No,Maybe,Maybe,No,No,,,,,,0.0
+0,1-5,1.0,,,No,No,Don't know,Very Difficult,No,Maybe,Maybe,Yes,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,No,Don't know,Don't know,Maybe,No,No,Maybe,Don't know,No,,,,,,0.0
+0,26-100,0.0,1.0,No,No,Yes,Don't know,Somewhat Difficult,Maybe,Maybe,Maybe,Yes,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"Sometimes, If It Comes Up",
+0,6-25,1.0,,No,Yes,No,Yes,Somewhat Difficult,Yes,Yes,No,No,No,Yes,,,,,,0.0
+0,100-500,0.0,1.0,Yes,Yes,Yes,Don't know,Somewhat Difficult,Yes,Maybe,No,Yes,Yes,No,,,,,,1.0
+0,6-25,1.0,,Maybe,No,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,No,No,No,No,No,,,,,,
+0,6-25,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,Maybe,No,No,Maybe,Don't know,No,,,,,,
+0,100-500,1.0,,Maybe,No,No,Don't know,Somewhat Easy,Maybe,Maybe,Maybe,No,No,No,,,,,,0.0
+0,6-25,1.0,,No,No,No,Don't know,Very Easy,No,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,26-100,1.0,,No,No,Don't know,Don't know,Very Difficult,Maybe,No,No,No,Don't know,No,,,,,,
+0,26-100,0.0,1.0,No,Yes,Yes,Don't know,Somewhat Difficult,Maybe,No,Maybe,No,Yes,No,,,,,,1.0
+0,More Than 1000,1.0,,Yes,Don't know,Don't know,No,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,
+0,100-500,1.0,,No,No,Don't know,Yes,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+0,6-25,0.0,0.0,Maybe,No,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,26-100,0.0,1.0,Maybe,No,Don't know,Don't know,Somewhat Difficult,Maybe,No,No,Maybe,Don't know,No,,,,,,
+0,500-1000,1.0,,Yes,Don't know,Don't know,Don't know,Somewhat Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,No,No,No,Don't know,Neither Easy Nor Difficult,No,No,No,No,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,26-100,1.0,,No,No,Don't know,Don't know,Don't know,Maybe,No,No,Maybe,Don't know,No,,,,,,
+0,100-500,1.0,,Maybe,Don't know,Yes,No,Somewhat Easy,Maybe,Maybe,Maybe,No,Don't know,Yes,,,,,,1.0
+0,26-100,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,No,No,Maybe,Maybe,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"Sometimes, If It Comes Up",
+0,More Than 1000,0.0,1.0,No,Yes,Yes,Don't know,Somewhat Easy,Maybe,Maybe,No,No,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,500-1000,1.0,,Yes,No,Don't know,Yes,Neither Easy Nor Difficult,Maybe,Maybe,Maybe,No,No,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",Yes,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",Yes,"No, Because It Would Impact Me Negatively",
+0,26-100,1.0,,Yes,No,No,Yes,Neither Easy Nor Difficult,No,No,Yes,Yes,Don't know,No,,,,,,0.0
+0,6-25,1.0,,,No,No,Don't know,Neither Easy Nor Difficult,Maybe,No,No,Maybe,Yes,No,,,,,,0.0
+0,26-100,1.0,,Maybe,Don't know,Don't know,Don't know,Neither Easy Nor Difficult,No,Maybe,Yes,Yes,Yes,No,,,,,,
+0,More Than 1000,0.0,1.0,Yes,Don't know,Yes,Yes,Neither Easy Nor Difficult,No,No,Yes,Yes,Don't know,No,,,,,,1.0
+0,26-100,1.0,,Yes,Yes,Yes,Yes,Somewhat Difficult,No,No,Maybe,Maybe,Don't know,No,,,,,,1.0
+0,26-100,1.0,,Yes,No,Don't know,Don't know,Very Easy,Maybe,No,Maybe,Maybe,Yes,No,,,,,,
+0,6-25,1.0,,No,No,No,Don't know,Somewhat Easy,No,No,Maybe,Maybe,Yes,No,,,,,,0.0
+0,26-100,1.0,,,No,No,Don't know,Very Difficult,Yes,Yes,No,No,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"Sometimes, If It Comes Up",
+0,500-1000,1.0,,No,Yes,No,Don't know,Somewhat Easy,Maybe,Maybe,Maybe,Yes,Don't know,No,,,,,,0.0
+0,100-500,0.0,1.0,Yes,No,No,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,No,Yes,Somewhat Easy,Maybe,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,100-500,1.0,,Yes,No,No,Yes,Somewhat Easy,Maybe,Maybe,Maybe,Yes,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Yes,Don't know,Yes,Yes,Somewhat Difficult,Maybe,Maybe,Maybe,Yes,Yes,No,,,,,,1.0
+0,100-500,1.0,,Yes,No,No,Don't know,Don't know,Yes,No,Maybe,Maybe,No,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,No,Don't know,Neither Easy Nor Difficult,No,No,No,No,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Difficult,Maybe,No,No,Maybe,Don't know,No,,,,,,0.0
+0,More Than 1000,1.0,,Maybe,No,Don't know,Don't know,Don't know,Maybe,No,Maybe,No,No,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",,"Sometimes, If It Comes Up",
+0,6-25,1.0,,,No,No,Don't know,Very Difficult,Maybe,No,No,No,Don't know,No,,,,,,0.0
+0,26-100,1.0,,No,No,Don't know,Don't know,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+0,26-100,1.0,,,No,No,No,Somewhat Difficult,Maybe,Maybe,No,No,No,No,,,,,,0.0
+0,100-500,1.0,,No,No,No,Don't know,Somewhat Easy,Maybe,Maybe,No,No,No,No,,,,,,0.0
+0,100-500,1.0,,No,No,No,Don't know,Very Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Don't know,No,No,Maybe,Maybe,Yes,No,,,,,,
+0,6-25,1.0,,No,No,No,Yes,Somewhat Easy,Yes,Yes,Yes,Yes,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",Yes,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,1.0,I Know Some,"Sometimes, If It Comes Up",Yes,"Sometimes, If It Comes Up",
+0,26-100,1.0,,Yes,Yes,Yes,Don't know,Don't know,Maybe,Maybe,Maybe,Maybe,Yes,No,,,,,,1.0
+0,More Than 1000,1.0,,Yes,No,No,Don't know,Very Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,26-100,1.0,,No,No,Don't know,Yes,Somewhat Easy,Maybe,Maybe,Maybe,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"Sometimes, If It Comes Up",Maybe,Not Applicable To Me,
+0,100-500,0.0,1.0,No,Yes,Don't know,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,Maybe,Not Applicable To Me,
+0,6-25,1.0,,No,No,No,Don't know,Don't know,Yes,No,No,No,Don't know,Yes,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"Sometimes, If It Comes Up",Maybe,"Sometimes, If It Comes Up",
+0,More Than 1000,1.0,,Yes,No,Yes,Don't know,Very Easy,Maybe,No,Maybe,No,Don't know,No,,,,,,1.0
+0,26-100,0.0,1.0,Maybe,No,No,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,100-500,1.0,,,No,No,Don't know,Very Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,Maybe,No,No,No,Somewhat Difficult,Yes,Maybe,No,No,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",Maybe,"No, Because It Would Impact Me Negatively",
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several",Not Applicable To Me,,Not Applicable To Me,
+0,6-25,1.0,,No,No,No,Don't know,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,More Than 1000,0.0,0.0,Maybe,No,No,Don't know,Very Difficult,Yes,No,No,No,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Doesn'T Matter",,"No, Because It Doesn'T Matter",
+0,100-500,0.0,1.0,Yes,No,Yes,Don't know,Neither Easy Nor Difficult,No,No,Maybe,Maybe,Don't know,No,,,,,,1.0
+0,1-5,1.0,,,No,No,Don't know,Very Easy,Maybe,Maybe,No,No,Don't know,Yes,,,,,,0.0
+0,More Than 1000,1.0,,No,Don't know,Don't know,Don't know,Very Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,
+0,More Than 1000,0.0,1.0,Yes,Yes,No,Yes,Somewhat Difficult,Maybe,No,Maybe,Yes,No,No,,,,,,0.0
+0,6-25,1.0,,Yes,Yes,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,26-100,1.0,,No,No,Don't know,Don't know,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,1.0,,Maybe,Yes,No,Yes,Somewhat Difficult,Yes,No,Yes,Yes,No,Yes,,,,,,0.0
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Don't know,No,No,Yes,Yes,Don't know,No,,,,,,
+0,500-1000,0.0,1.0,Yes,Yes,Yes,Yes,Somewhat Easy,Maybe,No,No,No,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Doesn'T Matter",,"No, Because It Doesn'T Matter",
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"Sometimes, If It Comes Up",
+0,6-25,1.0,,Maybe,No,No,Don't know,Somewhat Easy,Maybe,Maybe,Yes,Yes,Don't know,No,,,,,,0.0
+0,1-5,1.0,,,Yes,Yes,Yes,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,6-25,1.0,,,No,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,Maybe,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,26-100,0.0,1.0,Maybe,No,No,Don't know,Don't know,Maybe,No,No,Maybe,No,No,,,,,,0.0
+0,More Than 1000,1.0,,No,No,Don't know,Don't know,Don't know,No,No,No,No,Don't know,No,,,,,,
+0,26-100,1.0,,No,No,No,Don't know,Very Difficult,Yes,No,Maybe,No,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,Maybe,Don't know,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,Maybe,No,Don't know,No,,,,,,
+0,More Than 1000,0.0,1.0,Yes,No,No,Yes,Somewhat Difficult,Yes,Yes,No,No,No,No,,,,,,0.0
+0,26-100,0.0,1.0,No,No,No,Yes,Don't know,No,No,Yes,Yes,Yes,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,6-25,1.0,,,No,No,Don't know,Don't know,Maybe,Maybe,No,No,No,No,,,,,,0.0
+0,More Than 1000,1.0,,Yes,No,Don't know,Don't know,Very Difficult,Maybe,No,Maybe,No,No,No,,,,,,
+0,26-100,1.0,,No,Yes,No,Yes,Very Easy,No,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,6-25,1.0,,,No,No,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,No,Don't know,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",Yes,"No, Because It Would Impact Me Negatively",
+0,More Than 1000,1.0,,No,No,No,Don't know,Somewhat Difficult,Maybe,Maybe,No,No,Don't know,No,,,,,,0.0
+0,1-5,0.0,0.0,No,No,No,No,Very Difficult,Yes,Yes,No,No,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Yes,No,No,Don't know,Somewhat Easy,Maybe,No,No,Maybe,Don't know,No,,,,,,0.0
+0,26-100,1.0,,No,No,No,Don't know,Somewhat Easy,No,No,Maybe,No,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Yes,Yes,Yes,Yes,Very Easy,No,No,No,Maybe,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",Maybe,"Yes, Always",
+0,6-25,1.0,,No,Yes,Don't know,Yes,Somewhat Easy,No,No,Yes,Yes,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,,Not Applicable To Me,
+0,6-25,1.0,,Maybe,No,No,Don't know,Don't know,Maybe,No,No,No,Don't know,No,,,,,,0.0
+0,1-5,0.0,1.0,Maybe,No,Don't know,No,Very Difficult,Yes,Maybe,No,No,No,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,Don't know,"No, Because It Would Impact Me Negatively",Yes,"No, Because It Would Impact Me Negatively",
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several",Not Applicable To Me,No,Not Applicable To Me,
+0,6-25,0.0,1.0,No,No,No,Don't know,Very Difficult,Yes,Yes,Maybe,Yes,Don't know,No,,,,,,0.0
+0,More Than 1000,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,Yes,No,No,No,Don't know,No,,,,,,
+0,More Than 1000,0.0,1.0,Maybe,No,Yes,Don't know,Neither Easy Nor Difficult,Maybe,No,No,No,No,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several",Not Applicable To Me,,Not Applicable To Me,
+0,More Than 1000,0.0,1.0,Maybe,Yes,Yes,Yes,Somewhat Easy,Maybe,Maybe,No,No,Don't know,No,,,,,,1.0
+0,500-1000,1.0,,Yes,Yes,Yes,Don't know,Somewhat Easy,No,No,Yes,Yes,No,No,,,,,,1.0
+0,100-500,0.0,1.0,No,No,No,Yes,Don't know,Yes,Yes,No,No,No,Yes,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"Sometimes, If It Comes Up",
+0,More Than 1000,1.0,,Maybe,Don't know,Yes,Yes,Neither Easy Nor Difficult,Yes,Yes,No,No,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"No, Because It Would Impact Me Negatively",
+0,1-5,1.0,,Maybe,Don't know,No,Don't know,Somewhat Easy,Maybe,No,Yes,Yes,Yes,No,,,,,,0.0
+0,26-100,1.0,,Yes,Yes,Yes,Yes,Don't know,No,No,Maybe,Yes,Don't know,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Maybe,Don't know,Don't know,Don't know,Don't know,Maybe,No,No,Maybe,Don't know,No,,,,,,
+0,100-500,0.0,1.0,No,No,No,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,No,No,Don't know,No,,,,,,0.0
+0,More Than 1000,1.0,,Yes,No,Don't know,Yes,Somewhat Difficult,Yes,Maybe,No,No,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,Don't know,"Sometimes, If It Comes Up",,"Sometimes, If It Comes Up",
+0,26-100,1.0,,No,Don't know,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,Yes,No,Yes,Yes,Very Difficult,Yes,Maybe,Maybe,Maybe,No,No,,,,,,1.0
+0,100-500,1.0,,Maybe,Yes,No,Yes,Somewhat Easy,No,No,Yes,Yes,No,No,,,,,,0.0
+0,100-500,0.0,1.0,Yes,Yes,Yes,Don't know,Somewhat Easy,Maybe,Maybe,Yes,Yes,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","No, Because It Would Impact Me Negatively",Yes,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",Yes,"No, Because It Would Impact Me Negatively",
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Easy,Maybe,No,Yes,Yes,Yes,No,,,,,,0.0
+0,More Than 1000,1.0,,Maybe,No,No,Don't know,Somewhat Easy,Yes,Maybe,No,No,Don't know,No,,,,,,0.0
+0,26-100,0.0,1.0,Yes,No,No,Don't know,Very Difficult,Yes,Maybe,Yes,Maybe,No,Yes,,,,,,0.0
+0,1-5,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,No,No,Maybe,Yes,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,0.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,100-500,1.0,,Yes,No,Don't know,Don't know,Very Difficult,Yes,No,No,No,Don't know,No,,,,,,
+0,More Than 1000,0.0,1.0,,No,Yes,Yes,Very Easy,No,No,Yes,Yes,No,No,,,,,,1.0
+0,1-5,1.0,,No,No,No,No,Somewhat Difficult,Maybe,Maybe,No,No,Don't know,No,,,,,,0.0
+0,6-25,1.0,,,No,No,Don't know,Somewhat Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,No,No,No,Don't know,Very Easy,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,6-25,1.0,,,No,No,Don't know,Neither Easy Nor Difficult,Yes,Maybe,Maybe,No,No,Yes,,,,,,0.0
+0,26-100,1.0,,No,No,No,Don't know,Somewhat Difficult,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,6-25,1.0,,No,No,No,No,Somewhat Difficult,Yes,Maybe,No,No,No,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,Yes,Yes,Yes,Don't know,Don't know,No,No,Maybe,Yes,Yes,Yes,,,,,,1.0
+0,6-25,1.0,,No,Don't know,Don't know,No,Very Difficult,Yes,No,Maybe,No,No,No,,,,,,
+0,26-100,0.0,1.0,,No,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,No,Don't know,No,,,,,,0.0
+0,6-25,0.0,1.0,No,No,No,Don't know,Neither Easy Nor Difficult,Yes,No,No,Yes,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,No,Yes,Yes,Yes,Somewhat Easy,No,No,Maybe,Yes,Yes,Yes,,,,,,1.0
+0,More Than 1000,1.0,,Yes,No,Yes,Yes,Very Easy,No,No,No,Yes,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,0.0,"Yes, I Know Several","Sometimes, If It Comes Up",No,"Sometimes, If It Comes Up",
+0,1-5,0.0,1.0,No,No,No,No,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,6-25,0.0,1.0,Maybe,No,No,Don't know,Don't know,Maybe,No,No,Maybe,No,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,No,No,Somewhat Easy,Maybe,Maybe,No,No,No,No,,,,,,0.0
+0,6-25,1.0,,No,No,Don't know,Don't know,Somewhat Difficult,Maybe,No,Yes,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,Yes,No,Don't know,Don't know,Very Easy,Maybe,No,No,Yes,Don't know,No,,,,,,
+0,More Than 1000,1.0,,Yes,Yes,Yes,Don't know,Somewhat Difficult,Yes,Yes,No,Maybe,No,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",No,"Sometimes, If It Comes Up",
+0,100-500,1.0,,No,No,No,No,Somewhat Difficult,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,6-25,0.0,1.0,No,No,No,Yes,Neither Easy Nor Difficult,No,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Yes,Yes,Yes,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,100-500,1.0,,Yes,No,Yes,Yes,Somewhat Easy,No,No,Yes,Yes,Don't know,No,,,,,,1.0
+0,More Than 1000,1.0,,No,No,Don't know,Don't know,Somewhat Easy,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,
+0,100-500,1.0,,,No,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,No,No,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,Don't know,Don't know,Neither Easy Nor Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+0,26-100,1.0,,Maybe,No,Yes,Yes,Somewhat Difficult,Maybe,Maybe,Maybe,Maybe,No,No,,,,,,1.0
+0,100-500,1.0,,No,No,No,Don't know,Somewhat Easy,Maybe,No,No,No,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",Maybe,"Sometimes, If It Comes Up",
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",,"Sometimes, If It Comes Up",
+0,More Than 1000,0.0,1.0,Yes,No,Yes,Don't know,Somewhat Easy,Maybe,No,Maybe,Maybe,Yes,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,Not Applicable To Me,Maybe,Not Applicable To Me,
+0,More Than 1000,0.0,1.0,Maybe,Don't know,Yes,Yes,Somewhat Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several",Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,0.0,I Know Some,"Sometimes, If It Comes Up",No,"Sometimes, If It Comes Up",
+0,500-1000,0.0,1.0,Maybe,Yes,Yes,Don't know,Somewhat Difficult,Maybe,No,No,Maybe,Don't know,No,,,,,,1.0
+0,More Than 1000,1.0,,Yes,No,Yes,Don't know,Somewhat Difficult,Maybe,No,No,No,Don't know,No,,,,,,1.0
+0,100-500,1.0,,No,No,Don't know,Don't know,Don't know,Yes,Maybe,Maybe,No,Don't know,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",,"No, Because It Would Impact Me Negatively",
+0,More Than 1000,1.0,,Maybe,No,No,Don't know,Very Difficult,Yes,Maybe,No,No,No,Yes,,,,,,0.0
+0,More Than 1000,1.0,,Maybe,Yes,Yes,Don't know,Very Difficult,Maybe,No,No,No,Don't know,Yes,,,,,,1.0
+0,6-25,1.0,,No,No,No,Yes,Neither Easy Nor Difficult,Maybe,No,Yes,No,Don't know,No,,,,,,0.0
+0,More Than 1000,1.0,,No,No,Yes,Don't know,Don't know,Yes,No,No,No,Don't know,No,,,,,,1.0
+0,26-100,1.0,,Yes,No,No,Yes,Neither Easy Nor Difficult,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,No,Don't know,Very Difficult,Maybe,No,Maybe,Maybe,No,No,,,,,,0.0
+0,More Than 1000,1.0,,No,No,No,Don't know,Somewhat Easy,Maybe,No,No,Maybe,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several","Sometimes, If It Comes Up",Yes,"No, Because It Would Impact Me Negatively",
+0,100-500,1.0,,,No,No,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,No,Don't know,Somewhat Difficult,Maybe,Maybe,No,Maybe,Don't know,No,,,,,,0.0
+0,6-25,0.0,1.0,Yes,No,No,Don't know,Don't know,Maybe,No,No,No,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Yes,No,No,Don't know,Neither Easy Nor Difficult,Maybe,Maybe,No,No,Don't know,No,,,,,,0.0
+0,100-500,0.0,1.0,Maybe,Yes,Yes,Don't know,Somewhat Easy,Maybe,No,Maybe,Yes,Don't know,No,,,,,,1.0
+0,26-100,1.0,,No,No,Don't know,Yes,Somewhat Difficult,Maybe,No,Maybe,No,Don't know,No,,,,,,
+0,More Than 1000,1.0,,Maybe,Yes,Yes,Don't know,Somewhat Easy,Maybe,No,Yes,Yes,Don't know,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,Maybe,No,No,Don't know,Neither Easy Nor Difficult,Yes,No,No,Maybe,No,No,,,,,,0.0
+0,26-100,1.0,,No,No,No,Don't know,Very Difficult,Yes,Maybe,No,No,No,No,,,,,,0.0
+0,1-5,1.0,,Yes,No,No,No,Don't know,Yes,Yes,No,No,Don't know,No,,,,,,0.0
+0,More Than 1000,0.0,1.0,,Yes,Yes,Yes,Neither Easy Nor Difficult,Maybe,No,Yes,Maybe,Yes,No,,,,,,1.0
+0,26-100,1.0,,Yes,No,No,No,Neither Easy Nor Difficult,Yes,Maybe,Maybe,Maybe,No,Yes,,,,,,0.0
+0,1-5,1.0,,No,No,No,Don't know,Somewhat Difficult,Yes,No,Maybe,No,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Would Impact Me Negatively",Yes,"No, Because It Would Impact Me Negatively",
+0,26-100,1.0,,Yes,No,Don't know,Don't know,Very Difficult,Yes,Maybe,No,No,No,No,,,,,,
+0,More Than 1000,1.0,,Yes,No,No,Don't know,Very Easy,No,No,Yes,Yes,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Yes,No,No,Yes,Somewhat Easy,No,No,Maybe,Yes,Don't know,No,,,,,,0.0
+0,6-25,1.0,,Yes,Yes,Yes,Don't know,Very Easy,No,No,Yes,Yes,Yes,No,,,,,,1.0
+0,More Than 1000,0.0,1.0,No,No,Yes,Don't know,Don't know,Maybe,Maybe,Maybe,Yes,No,No,,,,,,1.0
+0,26-100,1.0,,Yes,Yes,No,No,Don't know,Maybe,No,Maybe,Yes,Yes,No,,,,,,0.0
+0,6-25,1.0,,Maybe,Yes,No,Don't know,Somewhat Difficult,Yes,Maybe,No,Yes,No,No,,,,,,0.0
+1,,,,,,,,,,,,,,,0.0,I Know Some,"No, Because It Would Impact Me Negatively",Maybe,"No, Because It Would Impact Me Negatively",
+0,More Than 1000,1.0,,Maybe,No,No,Don't know,Don't know,Maybe,No,No,No,Don't know,No,,,,,,0.0
+0,6-25,1.0,,No,No,No,No,Somewhat Difficult,Yes,No,No,No,No,No,,,,,,0.0
+0,100-500,1.0,,Maybe,No,Don't know,Yes,Don't know,Maybe,No,No,No,No,No,,,,,,
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,100-500,1.0,,Yes,Yes,Yes,Yes,Neither Easy Nor Difficult,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,26-100,1.0,,No,No,No,Don't know,Very Difficult,Yes,Yes,No,No,No,Yes,,,,,,0.0
+0,6-25,1.0,,Maybe,No,No,Yes,Very Easy,Yes,Yes,No,No,Yes,No,,,,,,0.0
+0,1-5,1.0,,Maybe,Yes,Yes,Yes,Neither Easy Nor Difficult,No,No,Maybe,Maybe,No,No,,,,,,1.0
+0,100-500,0.0,1.0,Yes,No,Don't know,Yes,Somewhat Easy,No,No,Yes,Yes,Don't know,No,,,,,,
+0,500-1000,1.0,,Yes,No,Don't know,Yes,Very Difficult,No,No,Yes,Maybe,No,No,,,,,,
+0,More Than 1000,0.0,1.0,Maybe,No,Don't know,Don't know,Very Difficult,Maybe,No,Maybe,No,Don't know,No,,,,,,
+0,500-1000,1.0,,No,No,No,Don't know,Somewhat Easy,Maybe,No,No,Maybe,Don't know,No,,,,,,0.0
+0,26-100,1.0,,,No,No,Don't know,Very Difficult,Yes,Maybe,No,No,No,Yes,,,,,,0.0
+0,26-100,1.0,,Maybe,Yes,No,Don't know,Neither Easy Nor Difficult,Yes,No,No,No,Yes,No,,,,,,0.0
+0,More Than 1000,1.0,,Yes,Yes,Yes,Yes,Somewhat Easy,Maybe,Maybe,Yes,No,No,Yes,,,,,,1.0
+1,,,,,,,,,,,,,,,1.0,Don't know,Not Applicable To Me,,Not Applicable To Me,
+0,26-100,1.0,,No,No,No,Yes,Very Easy,Maybe,No,Yes,Maybe,Don't know,No,,,,,,0.0
+0,26-100,1.0,,Maybe,No,Don't know,Don't know,Don't know,Maybe,Maybe,Maybe,Maybe,Don't know,No,,,,,,
+0,100-500,1.0,,Maybe,Yes,Don't know,Don't know,Somewhat Easy,No,No,No,Maybe,No,No,,,,,,
+0,100-500,1.0,,,No,No,Don't know,Somewhat Difficult,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,0.0
+0,100-500,1.0,,Maybe,Yes,Yes,Yes,Somewhat Easy,No,No,Maybe,Yes,Yes,No,,,,,,1.0
+0,100-500,1.0,,Maybe,No,Don't know,Don't know,Somewhat Easy,Maybe,No,Maybe,Maybe,Don't know,No,,,,,,
+0,500-1000,1.0,,No,No,No,Yes,Somewhat Easy,No,No,Yes,Yes,Yes,No,,,,,,0.0
+1,,,,,,,,,,,,,,,1.0,"Yes, I Know Several",Not Applicable To Me,,Not Applicable To Me,
+1,,,,,,,,,,,,,,,1.0,I Know Some,"No, Because It Doesn'T Matter",No,"No, Because It Doesn'T Matter",
+0,100-500,1.0,,Yes,Yes,Yes,Don't know,Somewhat Difficult,Maybe,Maybe,Yes,Yes,Don't know,Yes,,,,,,1.0
+0,100-500,0.0,1.0,Maybe,No,Yes,Don't know,Somewhat Difficult,Maybe,No,Maybe,Yes,No,No,,,,,,1.0
+0,100-500,1.0,,No,No,No,Don't know,Very Difficult,Maybe,No,Maybe,Maybe,No,No,,,,,,0.0
