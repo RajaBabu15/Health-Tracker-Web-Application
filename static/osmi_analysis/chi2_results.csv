@@ -1,0 +1,9 @@
+,feature,chi2,p_value,cramers_v
+3,Does your employer provide mental health benefits as part of healthcare coverage?,325.81762797893487,1.3040834821314608e-65,0.3332349705866543
+0,How many employees does your company or organization have?,241.04731147186487,1.0038369165038155e-44,0.2828915998686052
+4,"If a mental health issue prompted you to request a medical leave from work, asking for that leave would be:",233.9973489091858,2.9420013971337585e-43,0.27850378019679095
+5,Would you feel comfortable discussing a mental health disorder with your coworkers?,197.52386560233305,6.385294181174226e-40,0.25868550593049966
+6,Have you heard of or observed negative consequences for co-workers who have been open about mental health issues in your workplace?,147.7411506349836,6.204802107706981e-31,0.22410509790734431
+1,Is your employer primarily a tech company/organization?,143.13479317448235,6.0175003011613854e-30,0.22048493000043556
+7,Do you have medical coverage (private insurance or state-provided) which includes treatment of  mental health issues?,140.89950255844045,1.811600739550334e-29,0.21870660625633545
+2,Is your primary role within your company related to tech/IT?,16.33320302021046,0.002603145123521202,0.06563782039037355
