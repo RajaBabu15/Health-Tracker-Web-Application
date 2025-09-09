@@ -1,621 +1,763 @@
 """
-🧠 OSMI Mental Health Risk Predictor - Streamlit App
+Health Tracker Web Application - Flask Backend API
 
-A user-friendly web application to predict likelihood of seeking mental health treatment
-based on workplace and personal factors.
+A comprehensive health tracking application with user authentication, 
+health metric management, wearable device integration, and analytics.
 """
 
-import streamlit as st
+import os
+import re
+import logging
+from datetime import datetime, timedelta, timezone
+from typing import Optional, List, Dict, Any
+import secrets
+import json
+import uuid
+from dataclasses import dataclass
+from functools import wraps
+
+from flask import Flask, request, jsonify, render_template, send_from_directory
+from flask_sqlalchemy import SQLAlchemy
+from flask_jwt_extended import JWTManager, create_access_token, verify_jwt_in_request, get_jwt_identity
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
+from flask_cors import CORS
+from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.exceptions import BadRequest, Unauthorized, NotFound
+import sqlalchemy as sa
+from sqlalchemy.exc import IntegrityError
+from sqlalchemy import func, and_, or_, text
+
 import pandas as pd
 import numpy as np
-import joblib
-import plotly.graph_objects as go
-import plotly.express as px
-from pathlib import Path
-import json
-from datetime import datetime
-import warnings
-warnings.filterwarnings('ignore')
+import matplotlib
+matplotlib.use('Agg')  # Use non-interactive backend
+import matplotlib.pyplot as plt
+import seaborn as sns
+from apscheduler.schedulers.background import BackgroundScheduler
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
-# Configure page
-st.set_page_config(
-    page_title="🧠 Mental Health Risk Predictor",
-    page_icon="🧠",
-    layout="wide",
-    initial_sidebar_state="expanded"
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
+logger = logging.getLogger(__name__)
 
-# Load model and metadata
-@st.cache_resource
-def load_model():
-    """Load the trained model and metadata"""
-    try:
-        model_path = Path("models/trained/best_calibrated_model.joblib")
-        metadata_path = Path("models/trained/best_calibrated_model_metadata.json")
-        results_path = Path("models/trained/best_calibrated_model_results.json")
-        
-        model = joblib.load(model_path)
-        
-        with open(metadata_path, 'r') as f:
-            metadata = json.load(f)
-            
-        with open(results_path, 'r') as f:
-            results = json.load(f)
-            
-        return model, metadata, results
-    except Exception as e:
-        st.error(f"Error loading model: {str(e)}")
-        return None, None, None
+# Initialize Flask extensions (will be configured in create_app)
+db = SQLAlchemy()
+jwt = JWTManager()
+limiter = Limiter(key_func=get_remote_address)
 
-# Helper functions
-def get_risk_level(probability, threshold=0.34):
-    """Convert probability to risk level"""
-    if probability < 0.2:
-        return "Very Low", "#4CAF50", "🟢"
-    elif probability < threshold:
-        return "Low", "#8BC34A", "🟡"  
-    elif probability < 0.6:
-        return "Medium", "#FF9800", "🟠"
-    elif probability < 0.8:
-        return "High", "#FF5722", "🔴"
-    else:
-        return "Very High", "#D32F2F", "⚫"
+# Database Models
+class User(db.Model):
+    """User account model with authentication and profile info"""
+    __tablename__ = 'users'
+    
+    id = db.Column(db.Integer, primary_key=True)
+    email = db.Column(db.String(120), unique=True, nullable=False, index=True)
+    password_hash = db.Column(db.String(256), nullable=False)
+    name = db.Column(db.String(100), nullable=False)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    last_login = db.Column(db.DateTime)
+    is_active = db.Column(db.Boolean, default=True)
+    
+    # Relationships
+    health_metrics = db.relationship('HealthMetric', backref='user', lazy='dynamic', cascade='all, delete-orphan')
+    device_connections = db.relationship('DeviceConnection', backref='user', lazy='dynamic', cascade='all, delete-orphan')
+    
+    def set_password(self, password: str):
+        """Hash and set password"""
+        self.password_hash = generate_password_hash(password)
+    
+    def check_password(self, password: str) -> bool:
+        """Check if password matches hash"""
+        return check_password_hash(self.password_hash, password)
+    
+    def to_dict(self) -> Dict[str, Any]:
+        """Convert user to dictionary (excluding sensitive info)"""
+        return {
+            'id': self.id,
+            'email': self.email,
+            'name': self.name,
+            'created_at': self.created_at.isoformat() if self.created_at else None,
+            'last_login': self.last_login.isoformat() if self.last_login else None,
+            'is_active': self.is_active
+        }
 
-def get_recommendations(risk_level):
-    """Get recommendations based on risk level"""
-    recommendations = {
-        "Very Low": [
-            "🌟 Continue your current wellness practices",
-            "🧘 Consider mindfulness or meditation apps", 
-            "🏃 Maintain regular exercise routine",
-            "👥 Connect with supportive friends/family"
-        ],
-        "Low": [
-            "🌟 Continue your current wellness practices",
-            "🧘 Consider mindfulness or meditation apps",
-            "📚 Explore mental health resources available to you",
-            "👥 Build supportive relationships at work"
-        ],
-        "Medium": [
-            "👨‍⚕️ Consider scheduling check-in with mental health professional",
-            "🏢 Explore employee assistance programs (EAP)",
-            "🧘 Practice stress management techniques",
-            "⚖️ Review work-life balance strategies"
-        ],
-        "High": [
-            "🚨 Consider seeking mental health support soon",
-            "📞 Contact employee mental health resources",
-            "👨‍⚕️ Schedule appointment with therapist/counselor",
-            "👔 Consider discussing support needs with supervisor"
-        ],
-        "Very High": [
-            "🆘 Seek mental health support as soon as possible",
-            "📞 Contact mental health crisis line if needed",
-            "👨‍⚕️ Schedule urgent appointment with mental health professional",
-            "👥 Inform trusted contacts about your situation"
-        ]
+class HealthMetric(db.Model):
+    """Health metrics data model"""
+    __tablename__ = 'health_metrics'
+    
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    metric_type = db.Column(db.String(50), nullable=False, index=True)
+    value = db.Column(db.Float, nullable=False)
+    unit = db.Column(db.String(20), nullable=False)
+    recorded_at = db.Column(db.DateTime, default=datetime.utcnow, index=True)
+    source = db.Column(db.String(50), default='manual')  # manual, fitbit, apple_watch, garmin, etc.
+    notes = db.Column(db.Text)
+    
+    # Add composite index for efficient queries
+    __table_args__ = (
+        db.Index('idx_user_metric_date', 'user_id', 'metric_type', 'recorded_at'),
+    )
+    
+    VALID_METRICS = {
+        'weight': {'units': ['kg', 'lbs'], 'min_value': 0, 'max_value': 1000},
+        'height': {'units': ['cm', 'inches'], 'min_value': 0, 'max_value': 300},
+        'heart_rate': {'units': ['bpm'], 'min_value': 30, 'max_value': 250},
+        'blood_pressure': {'units': ['mmHg'], 'min_value': 50, 'max_value': 300},
+        'steps': {'units': ['count'], 'min_value': 0, 'max_value': 100000},
+        'sleep_hours': {'units': ['hours'], 'min_value': 0, 'max_value': 24},
+        'water_intake': {'units': ['ml', 'oz'], 'min_value': 0, 'max_value': 10000},
+        'calories': {'units': ['kcal'], 'min_value': 0, 'max_value': 10000},
+        'exercise_minutes': {'units': ['minutes'], 'min_value': 0, 'max_value': 1440},
+        'body_temperature': {'units': ['celsius', 'fahrenheit'], 'min_value': 30, 'max_value': 45},
     }
-    return recommendations.get(risk_level, recommendations["Medium"])
+    
+    def validate_metric(self) -> bool:
+        """Validate metric type, value, and unit"""
+        if self.metric_type not in self.VALID_METRICS:
+            return False
+        
+        metric_config = self.VALID_METRICS[self.metric_type]
+        
+        # Check unit
+        if self.unit not in metric_config['units']:
+            return False
+        
+        # Check value range
+        if not (metric_config['min_value'] <= self.value <= metric_config['max_value']):
+            return False
+        
+        return True
+    
+    def to_dict(self) -> Dict[str, Any]:
+        """Convert health metric to dictionary"""
+        return {
+            'id': self.id,
+            'user_id': self.user_id,
+            'metric_type': self.metric_type,
+            'value': self.value,
+            'unit': self.unit,
+            'recorded_at': self.recorded_at.isoformat() if self.recorded_at else None,
+            'source': self.source,
+            'notes': self.notes
+        }
 
-def create_probability_gauge(probability, risk_level, color):
-    """Create a gauge chart for probability"""
-    fig = go.Figure(go.Indicator(
-        mode = "gauge+number",
-        value = probability * 100,
-        domain = {'x': [0, 1], 'y': [0, 1]},
-        title = {'text': "Treatment Seeking Likelihood", 'font': {'size': 20}},
-        number = {'suffix': "%", 'font': {'size': 30}},
-        gauge = {
-            'axis': {'range': [None, 100], 'tickwidth': 1, 'tickcolor': "darkblue"},
-            'bar': {'color': color},
-            'steps': [
-                {'range': [0, 20], 'color': '#E8F5E8'},
-                {'range': [20, 34], 'color': '#FFF3E0'},
-                {'range': [34, 60], 'color': '#FFF0E6'},
-                {'range': [60, 80], 'color': '#FFEBEE'},
-                {'range': [80, 100], 'color': '#FFCDD2'}
-            ],
-            'threshold': {
-                'line': {'color': "red", 'width': 4},
-                'thickness': 0.75,
-                'value': 90
-            }
-        }
-    ))
+class DeviceConnection(db.Model):
+    """Wearable device connections and sync history"""
+    __tablename__ = 'device_connections'
     
-    fig.update_layout(height=400, font={'color': "darkblue", 'family': "Arial"})
-    return fig
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    device_type = db.Column(db.String(50), nullable=False)  # fitbit, apple_watch, garmin, etc.
+    device_id = db.Column(db.String(100))
+    access_token = db.Column(db.String(500))  # Encrypted in production
+    refresh_token = db.Column(db.String(500))  # Encrypted in production
+    connected_at = db.Column(db.DateTime, default=datetime.utcnow)
+    last_sync = db.Column(db.DateTime)
+    is_active = db.Column(db.Boolean, default=True)
+    sync_frequency = db.Column(db.Integer, default=60)  # minutes
+    
+    def to_dict(self) -> Dict[str, Any]:
+        """Convert device connection to dictionary"""
+        return {
+            'id': self.id,
+            'device_type': self.device_type,
+            'device_id': self.device_id,
+            'connected_at': self.connected_at.isoformat() if self.connected_at else None,
+            'last_sync': self.last_sync.isoformat() if self.last_sync else None,
+            'is_active': self.is_active,
+            'sync_frequency': self.sync_frequency
+        }
 
-# Main app
-def main():
-    model, metadata, results = load_model()
+# Validation Functions
+def validate_email(email: str) -> bool:
+    """Validate email format"""
+    pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+    return bool(re.match(pattern, email))
+
+def validate_password(password: str) -> tuple[bool, str]:
+    """Validate password strength"""
+    if len(password) < 8:
+        return False, "Password must be at least 8 characters long"
+    if not re.search(r'[A-Za-z]', password):
+        return False, "Password must contain at least one letter"
+    if not re.search(r'\d', password):
+        return False, "Password must contain at least one number"
+    return True, "Password is valid"
+
+# Authentication Decorators
+def jwt_required_custom(f):
+    """Custom JWT required decorator with better error handling"""
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        try:
+            verify_jwt_in_request()
+            return f(*args, **kwargs)
+        except Exception as e:
+            logger.warning(f"JWT verification failed: {str(e)}")
+            return jsonify({'error': 'Invalid or missing token'}), 401
+    return decorated
+
+# Device Integration Services (Stubs)
+class DeviceSyncService:
+    """Service for syncing data from wearable devices"""
     
-    if model is None:
-        st.error("Failed to load model. Please check if the model files exist.")
-        return
-    
-    # Header
-    st.title("🧠 Mental Health Treatment Predictor")
-    st.markdown("""
-    **Predict the likelihood of seeking mental health treatment based on workplace and personal factors.**
-    
-    This tool uses machine learning to assess treatment-seeking likelihood based on responses from the 
-    Open Sourcing Mental Illness (OSMI) survey data.
-    """)
-    
-    # Sidebar with model info
-    with st.sidebar:
-        st.header("ℹ️ Model Information")
-        if results:
-            st.metric("Model Accuracy", f"{results['accuracy']:.1%}")
-            st.metric("ROC AUC Score", f"{results['roc_auc']:.3f}")
-            st.metric("F1 Score", f"{results['f1']:.3f}")
+    @staticmethod
+    def sync_fitbit_data(user_id: int, access_token: str) -> Dict[str, Any]:
+        """Sync data from Fitbit API (stub implementation)"""
+        logger.info(f"Syncing Fitbit data for user {user_id}")
         
-        st.markdown("---")
-        st.markdown("**Model Details:**")
-        st.write(f"• Training Date: {metadata['timestamp'][:10] if metadata else 'Unknown'}")
-        st.write("• Model Type: Calibrated LightGBM")
-        st.write("• Dataset: OSMI Mental Health Survey")
+        # Stub: Simulate successful sync with mock data
+        mock_metrics = [
+            {'metric_type': 'steps', 'value': 8547, 'unit': 'count', 'source': 'fitbit'},
+            {'metric_type': 'heart_rate', 'value': 72, 'unit': 'bpm', 'source': 'fitbit'},
+            {'metric_type': 'sleep_hours', 'value': 7.5, 'unit': 'hours', 'source': 'fitbit'},
+            {'metric_type': 'calories', 'value': 2340, 'unit': 'kcal', 'source': 'fitbit'}
+        ]
         
-        # Risk level legend
-        st.markdown("---")
-        st.markdown("**Risk Levels:**")
-        st.write("🟢 Very Low (0-20%)")
-        st.write("🟡 Low (20-34%)")
-        st.write("🟠 Medium (34-60%)")
-        st.write("🔴 High (60-80%)")
-        st.write("⚫ Very High (80-100%)")
+        # Save metrics to database
+        synced_count = 0
+        for metric_data in mock_metrics:
+            metric = HealthMetric(
+                user_id=user_id,
+                metric_type=metric_data['metric_type'],
+                value=metric_data['value'],
+                unit=metric_data['unit'],
+                source=metric_data['source'],
+                notes=f"Synced from Fitbit at {datetime.utcnow()}"
+            )
+            if metric.validate_metric():
+                db.session.add(metric)
+                synced_count += 1
         
-        # Test cases section
-        st.markdown("---")
-        st.markdown("**🧪 Try Sample Cases**")
-        st.markdown("*Test with real data from our dataset:*")
-        st.info("📊 These are actual cases where we verified the model's accuracy.")
+        try:
+            db.session.commit()
+            logger.info(f"Successfully synced {synced_count} Fitbit metrics for user {user_id}")
+        except Exception as e:
+            db.session.rollback()
+            logger.error(f"Error saving Fitbit sync data: {str(e)}")
+            return {'status': 'error', 'message': 'Database error during sync'}
         
-        # Red buttons for people who actually sought treatment
-        st.markdown("**🔴 Sought Treatment:**")
-        
-        # Define test cases from our real data testing
-        positive_cases = {
-            "Case A": {
-                "are_you_selfemployed": 0,
-                "company_size": "6-25",
-                "is_your_employer_primarily_a_tech_companyorganization": 1.0,
-                "is_your_primary_role_within_your_company_related_to_techit": None,
-                "do_you_know_the_options_for_mental_health_care_available_under_your_employerprovided_coverage": "Yes",
-                "has_your_employer_ever_formally_discussed_mental_health_for_example_as_part_of_a_wellness_campaign_or_other_official_communication": "Yes",
-                "is_your_anonymity_protected_if_you_choose_to_take_advantage_of_mental_health_or_substance_abuse_treatment_resources_provided_by_your_employer": "Yes",
-                "if_a_mental_health_issue_prompted_you_to_request_a_medical_leave_from_work_asking_for_that_leave_would_be": "Somewhat Easy",
-                "do_you_think_that_discussing_a_mental_health_disorder_with_your_employer_would_have_negative_consequences": "No",
-                "do_you_think_that_discussing_a_physical_health_issue_with_your_employer_would_have_negative_consequences": "No",
-                "would_you_feel_comfortable_discussing_a_mental_health_disorder_with_your_coworkers": "Maybe",
-                "would_you_feel_comfortable_discussing_a_mental_health_disorder_with_your_direct_supervisors": "Yes",
-                "do_you_feel_that_your_employer_takes_mental_health_as_seriously_as_physical_health": None,
-                "have_you_heard_of_or_observed_negative_consequences_for_coworkers_who_have_been_open_about_mental_health_issues_in_your_workplace": None,
-                "do_you_have_medical_coverage_private_insurance_or_stateprovided_which_includes_treatment_of_mental_health_issues": None,
-                "do_you_know_local_or_online_resources_to_seek_help_for_a_mental_health_disorder": None,
-                "if_you_have_been_diagnosed_or_treated_for_a_mental_health_disorder_do_you_ever_reveal_this_to_clients_or_business_contacts": None,
-                "if_you_have_revealed_a_mental_health_issue_to_a_client_or_business_contact_do_you_believe_this_has_impacted_you_negatively": None,
-                "if_you_have_been_diagnosed_or_treated_for_a_mental_health_disorder_do_you_ever_reveal_this_to_coworkers_or_employees": None,
-                "description": "Tech worker with good support - actually sought treatment"
-            },
-            "Case B": {
-                "are_you_selfemployed": 0,
-                "company_size": "100-500",
-                "is_your_employer_primarily_a_tech_companyorganization": 0.0,
-                "is_your_primary_role_within_your_company_related_to_techit": None,
-                "do_you_know_the_options_for_mental_health_care_available_under_your_employerprovided_coverage": "Yes",
-                "has_your_employer_ever_formally_discussed_mental_health_for_example_as_part_of_a_wellness_campaign_or_other_official_communication": "Yes",
-                "is_your_anonymity_protected_if_you_choose_to_take_advantage_of_mental_health_or_substance_abuse_treatment_resources_provided_by_your_employer": "Yes",
-                "if_a_mental_health_issue_prompted_you_to_request_a_medical_leave_from_work_asking_for_that_leave_would_be": "Somewhat Easy",
-                "do_you_think_that_discussing_a_mental_health_disorder_with_your_employer_would_have_negative_consequences": "No",
-                "do_you_think_that_discussing_a_physical_health_issue_with_your_employer_would_have_negative_consequences": "No",
-                "would_you_feel_comfortable_discussing_a_mental_health_disorder_with_your_coworkers": "No",
-                "would_you_feel_comfortable_discussing_a_mental_health_disorder_with_your_direct_supervisors": "Maybe",
-                "do_you_feel_that_your_employer_takes_mental_health_as_seriously_as_physical_health": None,
-                "have_you_heard_of_or_observed_negative_consequences_for_coworkers_who_have_been_open_about_mental_health_issues_in_your_workplace": None,
-                "do_you_have_medical_coverage_private_insurance_or_stateprovided_which_includes_treatment_of_mental_health_issues": None,
-                "do_you_know_local_or_online_resources_to_seek_help_for_a_mental_health_disorder": None,
-                "if_you_have_been_diagnosed_or_treated_for_a_mental_health_disorder_do_you_ever_reveal_this_to_clients_or_business_contacts": None,
-                "if_you_have_revealed_a_mental_health_issue_to_a_client_or_business_contact_do_you_believe_this_has_impacted_you_negatively": None,
-                "if_you_have_been_diagnosed_or_treated_for_a_mental_health_disorder_do_you_ever_reveal_this_to_coworkers_or_employees": None,
-                "description": "Non-tech worker with excellent support - actually sought treatment"
-            }
+        return {
+            'status': 'success',
+            'message': f'Successfully synced {synced_count} metrics from fitbit',
+            'synced_metrics': synced_count,
+            'last_sync': datetime.utcnow().isoformat()
         }
+    
+    @staticmethod
+    def sync_apple_watch_data(user_id: int, access_token: str) -> Dict[str, Any]:
+        """Sync data from Apple HealthKit (stub implementation)"""
+        logger.info(f"Syncing Apple Watch data for user {user_id}")
         
-        # Create red buttons for positive cases
-        col_red1, col_red2 = st.columns(2)
-        with col_red1:
-            if st.button("🔴 Case A", help=positive_cases["Case A"]['description'], key="test_case_A", use_container_width=True):
-                for key, value in positive_cases["Case A"].items():
-                    if key != 'description':
-                        st.session_state[f"test_{key}"] = value
-                st.rerun()
+        # Stub: Simulate successful sync with mock data
+        mock_metrics = [
+            {'metric_type': 'steps', 'value': 9234, 'unit': 'count', 'source': 'apple_watch'},
+            {'metric_type': 'heart_rate', 'value': 68, 'unit': 'bpm', 'source': 'apple_watch'},
+            {'metric_type': 'exercise_minutes', 'value': 45, 'unit': 'minutes', 'source': 'apple_watch'},
+            {'metric_type': 'calories', 'value': 2450, 'unit': 'kcal', 'source': 'apple_watch'}
+        ]
         
-        with col_red2:
-            if st.button("🔴 Case B", help=positive_cases["Case B"]['description'], key="test_case_B", use_container_width=True):
-                for key, value in positive_cases["Case B"].items():
-                    if key != 'description':
-                        st.session_state[f"test_{key}"] = value
-                st.rerun()
+        # Save metrics to database
+        synced_count = 0
+        for metric_data in mock_metrics:
+            metric = HealthMetric(
+                user_id=user_id,
+                metric_type=metric_data['metric_type'],
+                value=metric_data['value'],
+                unit=metric_data['unit'],
+                source=metric_data['source'],
+                notes=f"Synced from Apple Watch at {datetime.utcnow()}"
+            )
+            if metric.validate_metric():
+                db.session.add(metric)
+                synced_count += 1
         
-        # Green buttons for people who did NOT seek treatment
-        st.markdown("**🟢 Did Not Seek Treatment:**")
+        try:
+            db.session.commit()
+            logger.info(f"Successfully synced {synced_count} Apple Watch metrics for user {user_id}")
+        except Exception as e:
+            db.session.rollback()
+            logger.error(f"Error saving Apple Watch sync data: {str(e)}")
+            return {'status': 'error', 'message': 'Database error during sync'}
         
-        negative_cases = {
-            "Case C": {
-                "are_you_selfemployed": 0,
-                "company_size": "26-100",
-                "is_your_employer_primarily_a_tech_companyorganization": 1.0,
-                "is_your_primary_role_within_your_company_related_to_techit": None,
-                "do_you_know_the_options_for_mental_health_care_available_under_your_employerprovided_coverage": None,
-                "has_your_employer_ever_formally_discussed_mental_health_for_example_as_part_of_a_wellness_campaign_or_other_official_communication": "No",
-                "is_your_anonymity_protected_if_you_choose_to_take_advantage_of_mental_health_or_substance_abuse_treatment_resources_provided_by_your_employer": "Don't know",
-                "if_a_mental_health_issue_prompted_you_to_request_a_medical_leave_from_work_asking_for_that_leave_would_be": "Very Difficult",
-                "do_you_think_that_discussing_a_mental_health_disorder_with_your_employer_would_have_negative_consequences": "No",
-                "do_you_think_that_discussing_a_physical_health_issue_with_your_employer_would_have_negative_consequences": "No",
-                "would_you_feel_comfortable_discussing_a_mental_health_disorder_with_your_coworkers": "Maybe",
-                "would_you_feel_comfortable_discussing_a_mental_health_disorder_with_your_direct_supervisors": "Maybe",
-                "do_you_feel_that_your_employer_takes_mental_health_as_seriously_as_physical_health": "Don't know",
-                "have_you_heard_of_or_observed_negative_consequences_for_coworkers_who_have_been_open_about_mental_health_issues_in_your_workplace": "No",
-                "do_you_have_medical_coverage_private_insurance_or_stateprovided_which_includes_treatment_of_mental_health_issues": None,
-                "do_you_know_local_or_online_resources_to_seek_help_for_a_mental_health_disorder": None,
-                "if_you_have_been_diagnosed_or_treated_for_a_mental_health_disorder_do_you_ever_reveal_this_to_clients_or_business_contacts": None,
-                "if_you_have_revealed_a_mental_health_issue_to_a_client_or_business_contact_do_you_believe_this_has_impacted_you_negatively": None,
-                "if_you_have_been_diagnosed_or_treated_for_a_mental_health_disorder_do_you_ever_reveal_this_to_coworkers_or_employees": None,
-                "description": "Tech company with limited support - actually did NOT seek treatment"
-            },
-            "Case D": {
-                "are_you_selfemployed": 0,
-                "company_size": "26-100",
-                "is_your_employer_primarily_a_tech_companyorganization": 1.0,
-                "is_your_primary_role_within_your_company_related_to_techit": None,
-                "do_you_know_the_options_for_mental_health_care_available_under_your_employerprovided_coverage": "Yes",
-                "has_your_employer_ever_formally_discussed_mental_health_for_example_as_part_of_a_wellness_campaign_or_other_official_communication": "No",
-                "is_your_anonymity_protected_if_you_choose_to_take_advantage_of_mental_health_or_substance_abuse_treatment_resources_provided_by_your_employer": "Don't know",
-                "if_a_mental_health_issue_prompted_you_to_request_a_medical_leave_from_work_asking_for_that_leave_would_be": "Neither Easy Nor Difficult",
-                "do_you_think_that_discussing_a_mental_health_disorder_with_your_employer_would_have_negative_consequences": "No",
-                "do_you_think_that_discussing_a_physical_health_issue_with_your_employer_would_have_negative_consequences": "No",
-                "would_you_feel_comfortable_discussing_a_mental_health_disorder_with_your_coworkers": "Maybe",
-                "would_you_feel_comfortable_discussing_a_mental_health_disorder_with_your_direct_supervisors": "Maybe",
-                "do_you_feel_that_your_employer_takes_mental_health_as_seriously_as_physical_health": "Don't know",
-                "have_you_heard_of_or_observed_negative_consequences_for_coworkers_who_have_been_open_about_mental_health_issues_in_your_workplace": "No",
-                "do_you_have_medical_coverage_private_insurance_or_stateprovided_which_includes_treatment_of_mental_health_issues": None,
-                "do_you_know_local_or_online_resources_to_seek_help_for_a_mental_health_disorder": None,
-                "if_you_have_been_diagnosed_or_treated_for_a_mental_health_disorder_do_you_ever_reveal_this_to_clients_or_business_contacts": None,
-                "if_you_have_revealed_a_mental_health_issue_to_a_client_or_business_contact_do_you_believe_this_has_impacted_you_negatively": None,
-                "if_you_have_been_diagnosed_or_treated_for_a_mental_health_disorder_do_you_ever_reveal_this_to_coworkers_or_employees": None,
-                "description": "Tech company with mixed support - actually did NOT seek treatment"
-            }
+        return {
+            'status': 'success',
+            'message': f'Successfully synced {synced_count} metrics from apple_watch',
+            'synced_metrics': synced_count,
+            'last_sync': datetime.utcnow().isoformat()
         }
-        
-        # Create green buttons for negative cases
-        col_green1, col_green2 = st.columns(2)
-        with col_green1:
-            if st.button("🟢 Case C", help=negative_cases["Case C"]['description'], key="test_case_C", use_container_width=True):
-                for key, value in negative_cases["Case C"].items():
-                    if key != 'description':
-                        st.session_state[f"test_{key}"] = value
-                st.rerun()
-        
-        with col_green2:
-            if st.button("🟢 Case D", help=negative_cases["Case D"]['description'], key="test_case_D", use_container_width=True):
-                for key, value in negative_cases["Case D"].items():
-                    if key != 'description':
-                        st.session_state[f"test_{key}"] = value
-                st.rerun()
     
-    # Create two columns for layout
-    col1, col2 = st.columns([2, 1])
+    @staticmethod
+    def sync_garmin_data(user_id: int, access_token: str) -> Dict[str, Any]:
+        """Sync data from Garmin Connect (stub implementation)"""
+        logger.info(f"Syncing Garmin data for user {user_id}")
+        
+        # Stub: Simulate successful sync with mock data
+        mock_metrics = [
+            {'metric_type': 'steps', 'value': 7832, 'unit': 'count', 'source': 'garmin'},
+            {'metric_type': 'heart_rate', 'value': 75, 'unit': 'bpm', 'source': 'garmin'},
+            {'metric_type': 'sleep_hours', 'value': 8.2, 'unit': 'hours', 'source': 'garmin'},
+            {'metric_type': 'exercise_minutes', 'value': 60, 'unit': 'minutes', 'source': 'garmin'}
+        ]
+        
+        # Save metrics to database
+        synced_count = 0
+        for metric_data in mock_metrics:
+            metric = HealthMetric(
+                user_id=user_id,
+                metric_type=metric_data['metric_type'],
+                value=metric_data['value'],
+                unit=metric_data['unit'],
+                source=metric_data['source'],
+                notes=f"Synced from Garmin at {datetime.utcnow()}"
+            )
+            if metric.validate_metric():
+                db.session.add(metric)
+                synced_count += 1
+        
+        try:
+            db.session.commit()
+            logger.info(f"Successfully synced {synced_count} Garmin metrics for user {user_id}")
+        except Exception as e:
+            db.session.rollback()
+            logger.error(f"Error saving Garmin sync data: {str(e)}")
+            return {'status': 'error', 'message': 'Database error during sync'}
+        
+        return {
+            'status': 'success',
+            'message': f'Successfully synced {synced_count} metrics from garmin',
+            'synced_metrics': synced_count,
+            'last_sync': datetime.utcnow().isoformat()
+        }
+
+# Analytics and Visualization
+class HealthAnalytics:
+    """Service for generating health insights and visualizations"""
     
-    with col1:
-        st.header("📋 Please answer the following questions:")
-        
-        # Employment Information
-        st.subheader("👔 Employment Information")
-        
-        col1a, col1b = st.columns(2)
-        with col1a:
-            # Get default values from session state if available
-            default_self_employed = st.session_state.get("test_are_you_selfemployed", 0)
-            default_company_size = st.session_state.get("test_company_size", "1-5")
+    @staticmethod
+    def generate_chart(user_id: int, metric_type: str, days: int = 30) -> Optional[str]:
+        """Generate a chart for health metrics"""
+        try:
+            # Query metrics for the specified period
+            start_date = datetime.utcnow() - timedelta(days=days)
+            metrics = HealthMetric.query.filter(
+                and_(
+                    HealthMetric.user_id == user_id,
+                    HealthMetric.metric_type == metric_type,
+                    HealthMetric.recorded_at >= start_date
+                )
+            ).order_by(HealthMetric.recorded_at.asc()).all()
             
-            self_employed = st.selectbox(
-                "Are you self-employed?",
-                options=[0, 1],
-                index=[0, 1].index(default_self_employed),
-                format_func=lambda x: "No" if x == 0 else "Yes",
-                help="Select whether you are self-employed or work for a company"
-            )
+            if not metrics:
+                logger.warning(f"No data found for user {user_id}, metric {metric_type}")
+                return None
             
-            company_size = st.selectbox(
-                "Company size (number of employees)",
-                options=["1-5", "6-25", "26-100", "100-500", "500-1000", "More Than 1000"],
-                index=["1-5", "6-25", "26-100", "100-500", "500-1000", "More Than 1000"].index(default_company_size) if default_company_size in ["1-5", "6-25", "26-100", "100-500", "500-1000", "More Than 1000"] else 0,
-                help="Select your company's size by number of employees"
-            )
+            # Convert to pandas DataFrame
+            data = pd.DataFrame([m.to_dict() for m in metrics])
+            data['recorded_at'] = pd.to_datetime(data['recorded_at'])
             
-        with col1b:
-            # Get default values from session state if available
-            default_tech_company = st.session_state.get("test_is_your_employer_primarily_a_tech_companyorganization", 1.0)
-            default_tech_role = st.session_state.get("test_is_your_primary_role_within_your_company_related_to_techit", None)
+            # Create the plot
+            plt.figure(figsize=(12, 6))
+            plt.plot(data['recorded_at'], data['value'], marker='o', linewidth=2, markersize=4)
+            plt.title(f'{metric_type.replace("_", " ").title()} Over Time')
+            plt.xlabel('Date')
+            plt.ylabel(f'{metric_type.replace("_", " ").title()} ({data["unit"].iloc[0]})')
+            plt.xticks(rotation=45)
+            plt.grid(True, alpha=0.3)
+            plt.tight_layout()
             
-            tech_company = st.selectbox(
-                "Is your employer primarily a tech company?",
-                options=[1.0, 0.0, np.nan],
-                index=[1.0, 0.0, np.nan].index(default_tech_company) if not pd.isna(default_tech_company) else 0,
-                format_func=lambda x: "Yes" if x == 1.0 else ("No" if x == 0.0 else "Not applicable"),
-                help="Select if your employer is primarily a technology company"
-            )
+            # Save chart
+            charts_dir = os.path.join(os.path.dirname(__file__), 'static', 'charts')
+            os.makedirs(charts_dir, exist_ok=True)
             
-            tech_role = st.selectbox(
-                "Is your primary role related to tech/IT?",
-                options=[None, "Yes", "No"],
-                index=[None, "Yes", "No"].index(default_tech_role) if default_tech_role in [None, "Yes", "No"] else 0,
-                format_func=lambda x: "Not specified" if x is None else x,
-                help="Select if your primary role is technology or IT related"
-            )
-        
-        # Mental Health Coverage & Support
-        st.subheader("🏥 Mental Health Coverage & Support")
-        
-        col2a, col2b = st.columns(2)
-        with col2a:
-            # Get default values from session state if available
-            default_know_options = st.session_state.get("test_do_you_know_the_options_for_mental_health_care_available_under_your_employerprovided_coverage", "No")
-            default_employer_discussion = st.session_state.get("test_has_your_employer_ever_formally_discussed_mental_health_for_example_as_part_of_a_wellness_campaign_or_other_official_communication", "No")
-            default_anonymity = st.session_state.get("test_is_your_anonymity_protected_if_you_choose_to_take_advantage_of_mental_health_or_substance_abuse_treatment_resources_provided_by_your_employer", "Don't know")
+            filename = f"{user_id}_{metric_type}_{days}days_{int(datetime.utcnow().timestamp())}.png"
+            filepath = os.path.join(charts_dir, filename)
+            plt.savefig(filepath, dpi=150, bbox_inches='tight')
+            plt.close()
             
-            know_options = st.selectbox(
-                "Do you know mental health care options under your coverage?",
-                options=["No", "Maybe", "Yes"],
-                index=["No", "Maybe", "Yes"].index(default_know_options) if default_know_options in ["No", "Maybe", "Yes"] else 0,
-                help="Do you know what mental health care options are available under your employer coverage?"
-            )
+            logger.info(f"Generated chart for user {user_id}: {filename}")
+            return f'/static/charts/{filename}'
             
-            employer_discussion = st.selectbox(
-                "Has employer formally discussed mental health?",
-                options=["No", "Yes"],
-                index=["No", "Yes"].index(default_employer_discussion) if default_employer_discussion in ["No", "Yes"] else 0,
-                help="Has your employer ever formally discussed mental health (e.g., wellness campaign)?"
-            )
+        except Exception as e:
+            logger.error(f"Error generating chart: {str(e)}")
+            return None
+
+# Application Factory
+def create_app(config_name: Optional[str] = None) -> tuple[Flask, SQLAlchemy]:
+    """Create and configure Flask application"""
+    app = Flask(__name__)
+    
+    # Configuration
+    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', secrets.token_hex(32))
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get(
+        'DATABASE_URL', 
+        'sqlite:///health_tracker.db'
+    )
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    app.config['JWT_SECRET_KEY'] = os.environ.get('JWT_SECRET_KEY', secrets.token_hex(32))
+    app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=24)
+    
+    # Initialize extensions
+    db.init_app(app)
+    jwt.init_app(app)
+    limiter.init_app(app)
+    CORS(app)
+    
+    # Ensure static directories exist
+    os.makedirs(os.path.join(app.root_path, 'static', 'charts'), exist_ok=True)
+    
+    # API Routes
+    @app.route('/api/health', methods=['GET'])
+    def health_check():
+        """Health check endpoint"""
+        return jsonify({
+            'status': 'healthy',
+            'timestamp': datetime.utcnow().isoformat(),
+            'version': '1.0.0'
+        })
+    
+    # Authentication Routes
+    @app.route('/api/auth/register', methods=['POST'])
+    @limiter.limit("5 per minute")
+    def register():
+        """User registration endpoint"""
+        try:
+            data = request.get_json()
             
-            anonymity = st.selectbox(
-                "Is anonymity protected when seeking mental health treatment?",
-                options=["Don't know", "Yes", "No"],
-                index=["Don't know", "Yes", "No"].index(default_anonymity) if default_anonymity in ["Don't know", "Yes", "No"] else 0,
-                help="Is your anonymity protected if you use employer mental health resources?"
-            )
+            if not data:
+                return jsonify({'error': 'No data provided'}), 400
             
-        with col2b:
-            # Get default values from session state if available
-            default_leave_ease = st.session_state.get("test_if_a_mental_health_issue_prompted_you_to_request_a_medical_leave_from_work_asking_for_that_leave_would_be", "Very Easy")
-            default_negative_consequences = st.session_state.get("test_do_you_think_that_discussing_a_mental_health_disorder_with_your_employer_would_have_negative_consequences", "No")
-            default_physical_consequences = st.session_state.get("test_do_you_think_that_discussing_a_physical_health_issue_with_your_employer_would_have_negative_consequences", "No")
+            email = data.get('email', '').strip().lower()
+            password = data.get('password', '')
+            name = data.get('name', '').strip()
             
-            leave_ease = st.selectbox(
-                "How easy would requesting mental health leave be?",
-                options=["Very Easy", "Somewhat Easy", "Neither Easy Nor Difficult", 
-                        "Somewhat Difficult", "Very Difficult"],
-                index=["Very Easy", "Somewhat Easy", "Neither Easy Nor Difficult", "Somewhat Difficult", "Very Difficult"].index(default_leave_ease) if default_leave_ease in ["Very Easy", "Somewhat Easy", "Neither Easy Nor Difficult", "Somewhat Difficult", "Very Difficult"] else 0,
-                help="If you needed mental health leave, how easy would requesting it be?"
-            )
+            # Validation
+            if not all([email, password, name]):
+                return jsonify({'error': 'Email, password, and name are required'}), 400
             
-            negative_consequences = st.selectbox(
-                "Would discussing mental health have negative consequences?",
-                options=["No", "Maybe", "Yes"],
-                index=["No", "Maybe", "Yes"].index(default_negative_consequences) if default_negative_consequences in ["No", "Maybe", "Yes"] else 0,
-                help="Do you think discussing mental health with employer would have negative consequences?"
-            )
+            if not validate_email(email):
+                return jsonify({'error': 'Invalid email format'}), 400
             
-            physical_consequences = st.selectbox(
-                "Would discussing physical health have negative consequences?",
-                options=["No", "Maybe", "Yes"],
-                index=["No", "Maybe", "Yes"].index(default_physical_consequences) if default_physical_consequences in ["No", "Maybe", "Yes"] else 0,
-                help="Do you think discussing physical health issues would have negative consequences?"
-            )
-        
-        # Workplace Comfort & Culture
-        st.subheader("💬 Workplace Comfort & Culture")
-        
-        col3a, col3b = st.columns(2)
-        with col3a:
-            # Get default values from session state if available
-            default_coworker_comfort = st.session_state.get("test_would_you_feel_comfortable_discussing_a_mental_health_disorder_with_your_coworkers", "Maybe")
-            default_supervisor_comfort = st.session_state.get("test_would_you_feel_comfortable_discussing_a_mental_health_disorder_with_your_direct_supervisors", "Maybe")
+            is_valid_password, password_message = validate_password(password)
+            if not is_valid_password:
+                return jsonify({'error': password_message}), 400
             
-            coworker_comfort = st.selectbox(
-                "Comfortable discussing mental health with coworkers?",
-                options=["Maybe", "Yes", "No"],
-                index=["Maybe", "Yes", "No"].index(default_coworker_comfort) if default_coworker_comfort in ["Maybe", "Yes", "No"] else 0,
-                help="Would you feel comfortable discussing mental health with coworkers?"
-            )
+            # Check if user exists
+            if User.query.filter_by(email=email).first():
+                return jsonify({'error': 'Email already registered'}), 400
             
-            supervisor_comfort = st.selectbox(
-                "Comfortable discussing mental health with supervisors?",
-                options=["Maybe", "Yes", "No"],
-                index=["Maybe", "Yes", "No"].index(default_supervisor_comfort) if default_supervisor_comfort in ["Maybe", "Yes", "No"] else 0,
-                help="Would you feel comfortable discussing mental health with direct supervisors?"
-            )
+            # Create user
+            user = User(email=email, name=name)
+            user.set_password(password)
             
-        with col3b:
-            # Get default values from session state if available
-            default_employer_seriousness = st.session_state.get("test_do_you_feel_that_your_employer_takes_mental_health_as_seriously_as_physical_health", "Don't know")
-            default_observed_consequences = st.session_state.get("test_have_you_heard_of_or_observed_negative_consequences_for_coworkers_who_have_been_open_about_mental_health_issues_in_your_workplace", "No")
+            db.session.add(user)
+            db.session.commit()
             
-            employer_seriousness = st.selectbox(
-                "Does employer take mental health as seriously as physical?",
-                options=["Don't know", "Yes", "No"],
-                index=["Don't know", "Yes", "No"].index(default_employer_seriousness) if default_employer_seriousness in ["Don't know", "Yes", "No"] else 0,
-                help="Do you feel your employer takes mental health as seriously as physical health?"
-            )
+            logger.info(f"New user registered: {email}")
             
-            observed_consequences = st.selectbox(
-                "Observed negative consequences for coworkers?",
-                options=["No", "Yes"],
-                index=["No", "Yes"].index(default_observed_consequences) if default_observed_consequences in ["No", "Yes"] else 0,
-                help="Have you observed negative consequences for coworkers open about mental health?"
-            )
-        
-        # Additional Information
-        st.subheader("ℹ️ Additional Information")
-        
-        col4a, col4b = st.columns(2)
-        with col4a:
-            # Get default values from session state if available
-            default_medical_coverage = st.session_state.get("test_do_you_have_medical_coverage_private_insurance_or_stateprovided_which_includes_treatment_of_mental_health_issues", None)
-            default_know_resources = st.session_state.get("test_do_you_know_local_or_online_resources_to_seek_help_for_a_mental_health_disorder", None)
+            return jsonify({
+                'message': 'User created successfully',
+                'user_id': user.id
+            }), 201
             
-            medical_coverage = st.selectbox(
-                "Do you have medical coverage for mental health?",
-                options=[None, "Yes", "No"],
-                index=[None, "Yes", "No"].index(default_medical_coverage) if default_medical_coverage in [None, "Yes", "No"] else 0,
-                format_func=lambda x: "Not specified" if x is None else x,
-                help="Do you have medical coverage that includes mental health treatment?"
-            )
+        except IntegrityError:
+            db.session.rollback()
+            return jsonify({'error': 'Email already registered'}), 400
+        except Exception as e:
+            db.session.rollback()
+            logger.error(f"Registration error: {str(e)}")
+            return jsonify({'error': 'Internal server error'}), 500
+    
+    @app.route('/api/auth/login', methods=['POST'])
+    @limiter.limit("10 per minute")
+    def login():
+        """User login endpoint"""
+        try:
+            data = request.get_json()
             
-            know_resources = st.selectbox(
-                "Do you know local/online mental health resources?",
-                options=[None, "Yes", "No"],
-                index=[None, "Yes", "No"].index(default_know_resources) if default_know_resources in [None, "Yes", "No"] else 0,
-                format_func=lambda x: "Not specified" if x is None else x,
-                help="Do you know local or online resources for mental health help?"
-            )
+            if not data:
+                return jsonify({'error': 'No data provided'}), 400
             
-        with col4b:
-            # Get default values from session state if available
-            default_reveal_clients = st.session_state.get("test_if_you_have_been_diagnosed_or_treated_for_a_mental_health_disorder_do_you_ever_reveal_this_to_clients_or_business_contacts", None)
-            default_client_impact = st.session_state.get("test_if_you_have_revealed_a_mental_health_issue_to_a_client_or_business_contact_do_you_believe_this_has_impacted_you_negatively", None)
+            email = data.get('email', '').strip().lower()
+            password = data.get('password', '')
             
-            reveal_clients = st.selectbox(
-                "Would you reveal mental health issues to clients?",
-                options=[None, "Sometimes, If It Comes Up", "Never", "Yes"],
-                index=[None, "Sometimes, If It Comes Up", "Never", "Yes"].index(default_reveal_clients) if default_reveal_clients in [None, "Sometimes, If It Comes Up", "Never", "Yes"] else 0,
-                format_func=lambda x: "Not specified" if x is None else x,
-                help="Would you reveal mental health diagnosis to clients/business contacts?"
-            )
+            if not all([email, password]):
+                return jsonify({'error': 'Email and password are required'}), 400
             
-            client_impact = st.selectbox(
-                "Has revealing to clients impacted you negatively?",
-                options=[None, "Maybe", "No", "Yes"],
-                index=[None, "Maybe", "No", "Yes"].index(default_client_impact) if default_client_impact in [None, "Maybe", "No", "Yes"] else 0,
-                format_func=lambda x: "Not specified" if x is None else x,
-                help="If you've revealed to clients, has it impacted you negatively?"
-            )
-        
-        # Get default value from session state if available
-        default_reveal_coworkers = st.session_state.get("test_if_you_have_been_diagnosed_or_treated_for_a_mental_health_disorder_do_you_ever_reveal_this_to_coworkers_or_employees", None)
-        
-        reveal_coworkers = st.selectbox(
-            "Would you reveal mental health issues to coworkers?",
-            options=[None, "Sometimes, If It Comes Up", "Never", "Yes"],
-            index=[None, "Sometimes, If It Comes Up", "Never", "Yes"].index(default_reveal_coworkers) if default_reveal_coworkers in [None, "Sometimes, If It Comes Up", "Never", "Yes"] else 0,
-            format_func=lambda x: "Not specified" if x is None else x,
-            help="Would you reveal mental health diagnosis to coworkers/employees?"
-        )
-        
-        # Add some spacing and buttons
-        st.markdown("---")
-        
-        # Create two columns for buttons
-        btn_col1, btn_col2 = st.columns(2)
-        
-        with btn_col1:
-            # Clear form button
-            if st.button("🗑️ Clear Form", help="Reset all fields to default values", use_container_width=True):
-                # Clear all test session state variables
-                keys_to_remove = [key for key in st.session_state.keys() if key.startswith('test_')]
-                for key in keys_to_remove:
-                    del st.session_state[key]
-                st.rerun()
-        
-        with btn_col2:
-            # Predict button
-            predict_button = st.button("🔮 Predict Treatment Likelihood", type="primary", use_container_width=True)
-        
-        if predict_button:
-            # Prepare input data
-            input_data = pd.DataFrame({
-                'are_you_selfemployed': [self_employed],
-                'company_size': [company_size],
-                'is_your_employer_primarily_a_tech_companyorganization': [tech_company],
-                'is_your_primary_role_within_your_company_related_to_techit': [tech_role],
-                'do_you_know_the_options_for_mental_health_care_available_under_your_employerprovided_coverage': [know_options],
-                'has_your_employer_ever_formally_discussed_mental_health_for_example_as_part_of_a_wellness_campaign_or_other_official_communication': [employer_discussion],
-                'does_your_employer_offer_resources_to_learn_more_about_mental_health_concerns_and_options_for_seeking_help': [None],  # Not collected but exists in model
-                'is_your_anonymity_protected_if_you_choose_to_take_advantage_of_mental_health_or_substance_abuse_treatment_resources_provided_by_your_employer': [anonymity],
-                'if_a_mental_health_issue_prompted_you_to_request_a_medical_leave_from_work_asking_for_that_leave_would_be': [leave_ease],
-                'do_you_think_that_discussing_a_mental_health_disorder_with_your_employer_would_have_negative_consequences': [negative_consequences],
-                'do_you_think_that_discussing_a_physical_health_issue_with_your_employer_would_have_negative_consequences': [physical_consequences],
-                'would_you_feel_comfortable_discussing_a_mental_health_disorder_with_your_coworkers': [coworker_comfort],
-                'would_you_feel_comfortable_discussing_a_mental_health_disorder_with_your_direct_supervisors': [supervisor_comfort],
-                'do_you_feel_that_your_employer_takes_mental_health_as_seriously_as_physical_health': [employer_seriousness],
-                'have_you_heard_of_or_observed_negative_consequences_for_coworkers_who_have_been_open_about_mental_health_issues_in_your_workplace': [observed_consequences],
-                'do_you_have_medical_coverage_private_insurance_or_stateprovided_which_includes_treatment_of_mental_health_issues': [medical_coverage],
-                'do_you_know_local_or_online_resources_to_seek_help_for_a_mental_health_disorder': [know_resources],
-                'if_you_have_been_diagnosed_or_treated_for_a_mental_health_disorder_do_you_ever_reveal_this_to_clients_or_business_contacts': [reveal_clients],
-                'if_you_have_revealed_a_mental_health_issue_to_a_client_or_business_contact_do_you_believe_this_has_impacted_you_negatively': [client_impact],
-                'if_you_have_been_diagnosed_or_treated_for_a_mental_health_disorder_do_you_ever_reveal_this_to_coworkers_or_employees': [reveal_coworkers]
+            user = User.query.filter_by(email=email).first()
+            
+            if not user or not user.check_password(password):
+                return jsonify({'error': 'Invalid email or password'}), 401
+            
+            if not user.is_active:
+                return jsonify({'error': 'Account is deactivated'}), 401
+            
+            # Update last login
+            user.last_login = datetime.utcnow()
+            db.session.commit()
+            
+            # Create access token
+            access_token = create_access_token(identity=str(user.id))
+            
+            logger.info(f"User logged in: {email}")
+            
+            return jsonify({
+                'access_token': access_token,
+                'user_id': user.id,
+                'user': user.to_dict()
             })
             
+        except Exception as e:
+            logger.error(f"Login error: {str(e)}")
+            return jsonify({'error': 'Internal server error'}), 500
+    
+    # Health Metrics Routes
+    @app.route('/api/metrics', methods=['POST'])
+    @jwt_required_custom
+    @limiter.limit("30 per minute")
+    def create_metric():
+        """Create a new health metric"""
+        try:
+            user_id = int(get_jwt_identity())
+            data = request.get_json()
+            
+            if not data:
+                return jsonify({'error': 'No data provided'}), 400
+            
+            metric_type = data.get('metric_type')
+            value = data.get('value')
+            unit = data.get('unit')
+            notes = data.get('notes', '')
+            
+            if not all([metric_type, value is not None, unit]):
+                return jsonify({'error': 'metric_type, value, and unit are required'}), 400
+            
             try:
-                # Make prediction
-                probability = model.predict_proba(input_data)[0][1]
-                risk_level, color, emoji = get_risk_level(probability)
-                
-                # Store results in session state for display in right column
-                st.session_state.probability = probability
-                st.session_state.risk_level = risk_level
-                st.session_state.color = color
-                st.session_state.emoji = emoji
-                st.session_state.show_results = True
-                
+                value = float(value)
+            except (ValueError, TypeError):
+                return jsonify({'error': 'Value must be a number'}), 400
+            
+            # Create and validate metric
+            metric = HealthMetric(
+                user_id=user_id,
+                metric_type=metric_type,
+                value=value,
+                unit=unit,
+                notes=notes,
+                source='manual'
+            )
+            
+            if not metric.validate_metric():
+                return jsonify({'error': 'Invalid metric type, value, or unit'}), 400
+            
+            db.session.add(metric)
+            db.session.commit()
+            
+            logger.info(f"New metric created by user {user_id}: {metric_type}")
+            
+            return jsonify({
+                'message': 'Metric created successfully',
+                'id': metric.id,
+                'metric': metric.to_dict()
+            }), 201
+            
+        except Exception as e:
+            db.session.rollback()
+            logger.error(f"Create metric error: {str(e)}")
+            return jsonify({'error': 'Internal server error'}), 500
+    
+    @app.route('/api/metrics', methods=['GET'])
+    @jwt_required_custom
+    def get_metrics():
+        """Get user's health metrics with optional filtering"""
+        try:
+            user_id = int(get_jwt_identity())
+            
+            # Query parameters
+            metric_type = request.args.get('metric_type')
+            start_date = request.args.get('start_date')
+            end_date = request.args.get('end_date')
+            limit = request.args.get('limit', 100, type=int)
+            
+            query = HealthMetric.query.filter_by(user_id=user_id)
+            
+            if metric_type:
+                query = query.filter_by(metric_type=metric_type)
+            
+            if start_date:
+                try:
+                    start_dt = datetime.fromisoformat(start_date.replace('Z', '+00:00'))
+                    query = query.filter(HealthMetric.recorded_at >= start_dt)
+                except ValueError:
+                    return jsonify({'error': 'Invalid start_date format'}), 400
+            
+            if end_date:
+                try:
+                    end_dt = datetime.fromisoformat(end_date.replace('Z', '+00:00'))
+                    query = query.filter(HealthMetric.recorded_at <= end_dt)
+                except ValueError:
+                    return jsonify({'error': 'Invalid end_date format'}), 400
+            
+            metrics = query.order_by(HealthMetric.recorded_at.desc()).limit(limit).all()
+            
+            return jsonify([metric.to_dict() for metric in metrics])
+            
+        except Exception as e:
+            logger.error(f"Get metrics error: {str(e)}")
+            return jsonify({'error': 'Internal server error'}), 500
+    
+    # Device Sync Routes
+    @app.route('/api/sync/devices', methods=['POST'])
+    @jwt_required_custom
+    @limiter.limit("5 per minute")
+    def sync_device():
+        """Sync data from wearable devices"""
+        try:
+            user_id = int(get_jwt_identity())
+            data = request.get_json()
+            
+            if not data:
+                return jsonify({'error': 'No data provided'}), 400
+            
+            device_type = data.get('device_type')
+            auth_token = data.get('auth_token')
+            
+            if not all([device_type, auth_token]):
+                return jsonify({'error': 'device_type and auth_token are required'}), 400
+            
+            # Validate device type
+            supported_devices = ['fitbit', 'apple_watch', 'garmin']
+            if device_type not in supported_devices:
+                return jsonify({'error': f'Unsupported device type. Supported: {supported_devices}'}), 400
+            
+            # Call appropriate sync service
+            if device_type == 'fitbit':
+                result = DeviceSyncService.sync_fitbit_data(user_id, auth_token)
+            elif device_type == 'apple_watch':
+                result = DeviceSyncService.sync_apple_watch_data(user_id, auth_token)
+            elif device_type == 'garmin':
+                result = DeviceSyncService.sync_garmin_data(user_id, auth_token)
+            
+            logger.info(f"Device sync completed for user {user_id}: {device_type}")
+            
+            return jsonify(result)
+            
+        except Exception as e:
+            logger.error(f"Device sync error: {str(e)}")
+            return jsonify({'error': 'Internal server error'}), 500
+    
+    # Dashboard and Analytics Routes
+    @app.route('/api/dashboard/chart', methods=['GET'])
+    @jwt_required_custom
+    def generate_chart():
+        """Generate charts for health metrics"""
+        try:
+            user_id = int(get_jwt_identity())
+            
+            metric_type = request.args.get('metric_type')
+            days = request.args.get('days', 30, type=int)
+            
+            if not metric_type:
+                return jsonify({'error': 'metric_type parameter is required'}), 400
+            
+            # Validate metric type
+            if metric_type not in HealthMetric.VALID_METRICS:
+                return jsonify({'error': f'Invalid metric type: {metric_type}'}), 400
+            
+            chart_url = HealthAnalytics.generate_chart(user_id, metric_type, days)
+            
+            if not chart_url:
+                return jsonify({'error': 'No data available for chart generation'}), 404
+            
+            return jsonify({
+                'chart_url': chart_url,
+                'metric_type': metric_type,
+                'days': days,
+                'generated_at': datetime.utcnow().isoformat()
+            })
+            
+        except Exception as e:
+            logger.error(f"Chart generation error: {str(e)}")
+            return jsonify({'error': 'Internal server error'}), 500
+    
+    # Static file serving
+    @app.route('/static/charts/<filename>')
+    def serve_chart(filename):
+        """Serve generated chart files"""
+        charts_dir = os.path.join(app.root_path, 'static', 'charts')
+        return send_from_directory(charts_dir, filename)
+    
+    # Error Handlers
+    @app.errorhandler(400)
+    def bad_request(error):
+        return jsonify({'error': 'Bad request'}), 400
+    
+    @app.errorhandler(401)
+    def unauthorized(error):
+        return jsonify({'error': 'Unauthorized'}), 401
+    
+    @app.errorhandler(404)
+    def not_found(error):
+        return jsonify({'error': 'Not found'}), 404
+    
+    @app.errorhandler(429)
+    def rate_limit_exceeded(error):
+        return jsonify({'error': 'Rate limit exceeded'}), 429
+    
+    @app.errorhandler(500)
+    def internal_error(error):
+        db.session.rollback()
+        return jsonify({'error': 'Internal server error'}), 500
+    
+    # Initialize database and create demo data
+    with app.app_context():
+        db.create_all()
+        
+        # Create demo user if it doesn't exist
+        demo_user = User.query.filter_by(email='demo@healthtracker.com').first()
+        if not demo_user:
+            demo_user = User(
+                email='demo@healthtracker.com',
+                name='Demo User'
+            )
+            demo_user.set_password('password')
+            db.session.add(demo_user)
+            
+            # Add some sample metrics
+            sample_metrics = [
+                HealthMetric(user_id=1, metric_type='weight', value=70.5, unit='kg'),
+                HealthMetric(user_id=1, metric_type='heart_rate', value=72, unit='bpm'),
+                HealthMetric(user_id=1, metric_type='steps', value=8500, unit='count'),
+                HealthMetric(user_id=1, metric_type='sleep_hours', value=7.5, unit='hours'),
+            ]
+            
+            for metric in sample_metrics:
+                db.session.add(metric)
+            
+            try:
+                db.session.commit()
+                logger.info("Demo user and sample data created")
             except Exception as e:
-                st.error(f"Error making prediction: {str(e)}")
-                st.session_state.show_results = False
+                db.session.rollback()
+                logger.error(f"Error creating demo data: {str(e)}")
     
-    # Right column - Results
-    with col2:
-        if hasattr(st.session_state, 'show_results') and st.session_state.show_results:
-            st.header("📊 Results")
-            
-            # Gauge chart
-            fig = create_probability_gauge(st.session_state.probability, st.session_state.risk_level, st.session_state.color)
-            st.plotly_chart(fig, use_container_width=True)
-            
-            # Risk level display
-            st.markdown(f"""
-            <div style="text-align: center; padding: 20px; background-color: {st.session_state.color}20; border-radius: 10px; margin: 10px 0;">
-                <h2 style="color: {st.session_state.color}; margin: 0;">{st.session_state.emoji} {st.session_state.risk_level} Risk</h2>
-                <p style="font-size: 18px; margin: 5px 0;">{st.session_state.probability:.1%} likelihood</p>
-            </div>
-            """, unsafe_allow_html=True)
-            
-            # Recommendations
-            st.subheader("💡 Recommendations")
-            recommendations = get_recommendations(st.session_state.risk_level)
-            for rec in recommendations:
-                st.write(f"• {rec}")
-            
-            # Important note
-            st.markdown("---")
-            st.warning("""
-            ⚠️ **Important Note:** This prediction is based on statistical patterns and should not replace professional medical advice. 
-            If you're experiencing mental health concerns, please consult with a qualified mental health professional.
-            """)
-            
-        else:
-            st.header("📊 Prediction Results")
-            st.info("👈 Fill out the form and click 'Predict Treatment Likelihood' to see your results here.")
-    
-    # Footer
-    st.markdown("---")
-    st.markdown("""
-    <div style="text-align: center; color: gray;">
-        <p>🧠 OSMI Mental Health Risk Predictor | Built with Streamlit & Machine Learning</p>
-        <p>Data source: <a href="https://osmihelp.org/" target="_blank">Open Sourcing Mental Illness (OSMI)</a></p>
-    </div>
-    """, unsafe_allow_html=True)
+    return app, db
 
-if __name__ == "__main__":
-    main()
+# Main application entry point
+if __name__ == '__main__':
+    app, db_instance = create_app()
+    
+    # Development server
+    debug_mode = os.environ.get('FLASK_ENV') == 'development'
+    app.run(
+        host='0.0.0.0',
+        port=int(os.environ.get('PORT', 5000)),
+        debug=debug_mode
+    )

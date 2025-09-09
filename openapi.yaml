@@ -1,0 +1,390 @@
+openapi: 3.0.0
+info:
+  title: Health Tracker API
+  version: 1.0.0
+  description: Health metrics tracking with user auth and device sync
+  contact:
+    email: support@healthtracker.com
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+
+servers:
+  - url: http://localhost:5000
+    description: Development server
+  - url: https://api.healthtracker.com
+    description: Production server
+
+paths:
+  /api/auth/register:
+    post:
+      summary: User registration
+      description: Register a new user account
+      tags:
+        - Authentication
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  format: email
+                  example: user@example.com
+                password:
+                  type: string
+                  minLength: 8
+                  example: securepassword123
+                name:
+                  type: string
+                  example: John Doe
+              required: [email, password, name]
+      responses:
+        201:
+          description: User created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: User created successfully
+                  user_id:
+                    type: integer
+                    example: 123
+        400:
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        429:
+          description: Rate limit exceeded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /api/auth/login:
+    post:
+      summary: User login
+      description: Authenticate user and get access token
+      tags:
+        - Authentication
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  format: email
+                  example: user@example.com
+                password:
+                  type: string
+                  example: securepassword123
+              required: [email, password]
+      responses:
+        200:
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  access_token:
+                    type: string
+                    example: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...
+                  user_id:
+                    type: integer
+                    example: 123
+        401:
+          description: Invalid credentials
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        429:
+          description: Rate limit exceeded
+
+  /api/metrics:
+    get:
+      summary: Get user health metrics
+      description: Retrieve health metrics for authenticated user
+      tags:
+        - Health Metrics
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: start_date
+          in: query
+          description: Start date for filtering metrics
+          schema:
+            type: string
+            format: date
+            example: 2022-10-01
+        - name: end_date
+          in: query
+          description: End date for filtering metrics
+          schema:
+            type: string
+            format: date
+            example: 2022-12-31
+        - name: metric_type
+          in: query
+          description: Filter by specific metric type
+          schema:
+            type: string
+            enum: [weight, blood_pressure, heart_rate, steps]
+      responses:
+        200:
+          description: Health metrics list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/HealthMetric'
+        401:
+          description: Unauthorized
+        500:
+          description: Server error
+
+    post:
+      summary: Create health metric
+      description: Add a new health metric entry
+      tags:
+        - Health Metrics
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                metric_type:
+                  type: string
+                  enum: [weight, blood_pressure, heart_rate, steps]
+                  example: weight
+                value:
+                  type: number
+                  minimum: 0
+                  example: 75.5
+                unit:
+                  type: string
+                  example: kg
+                notes:
+                  type: string
+                  example: Morning measurement
+              required: [metric_type, value, unit]
+      responses:
+        201:
+          description: Metric created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Metric created successfully
+                  id:
+                    type: integer
+                    example: 456
+        400:
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        401:
+          description: Unauthorized
+
+  /api/sync/devices:
+    post:
+      summary: Sync with wearable device (stubbed)
+      description: Initiate sync with wearable device - returns mocked data
+      tags:
+        - Device Sync
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                device_type:
+                  type: string
+                  enum: [fitbit, apple_watch, garmin]
+                  example: fitbit
+                auth_token:
+                  type: string
+                  example: mock_token_12345
+              required: [device_type, auth_token]
+      responses:
+        200:
+          description: Sync completed (mocked response)
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  synced_metrics:
+                    type: integer
+                    example: 5
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: Mocked sync from fitbit
+                  last_sync:
+                    type: string
+                    format: date-time
+                    example: 2022-12-01T10:00:00Z
+        401:
+          description: Unauthorized
+        400:
+          description: Invalid device type
+
+  /api/dashboard/chart:
+    get:
+      summary: Generate health chart
+      description: Generate matplotlib chart for health metrics visualization
+      tags:
+        - Dashboard
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: metric_type
+          in: query
+          required: true
+          description: Type of metric to visualize
+          schema:
+            type: string
+            enum: [weight, blood_pressure, heart_rate, steps]
+            example: weight
+        - name: days
+          in: query
+          description: Number of days to include in chart
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 365
+            default: 30
+            example: 30
+      responses:
+        200:
+          description: Chart generated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  chart_url:
+                    type: string
+                    example: /static/charts/chart_123_weight_abc123def.png
+                  metric_type:
+                    type: string
+                    example: weight
+                  data_points:
+                    type: integer
+                    example: 15
+        404:
+          description: No data available for chart generation
+        401:
+          description: Unauthorized
+
+  /static/charts/{filename}:
+    get:
+      summary: Serve chart image
+      description: Serve generated chart image files
+      tags:
+        - Static Files
+      parameters:
+        - name: filename
+          in: path
+          required: true
+          description: Chart filename
+          schema:
+            type: string
+            example: chart_123_weight_abc123def.png
+      responses:
+        200:
+          description: Chart image
+          content:
+            image/png:
+              schema:
+                type: string
+                format: binary
+        404:
+          description: Chart not found
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: JWT token obtained from login endpoint
+
+  schemas:
+    HealthMetric:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 456
+        metric_type:
+          type: string
+          enum: [weight, blood_pressure, heart_rate, steps]
+          example: weight
+        value:
+          type: number
+          example: 75.5
+        unit:
+          type: string
+          example: kg
+        notes:
+          type: string
+          example: Morning measurement
+        recorded_at:
+          type: string
+          format: date-time
+          example: 2022-12-01T08:30:00Z
+      required: [id, metric_type, value, unit, recorded_at]
+
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+          example: Invalid input data
+        details:
+          type: object
+          additionalProperties: true
+      required: [error]
+
+security:
+  - bearerAuth: []
+
+tags:
+  - name: Authentication
+    description: User registration and login operations
+  - name: Health Metrics
+    description: CRUD operations for health metrics
+  - name: Device Sync
+    description: Wearable device synchronization (stubbed)
+  - name: Dashboard
+    description: Data visualization and chart generation
+  - name: Static Files
+    description: Static file serving
