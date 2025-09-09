@@ -4,7 +4,7 @@ Flask-SQLAlchemy==3.0.5
 Flask-Login==0.6.2
 Werkzeug==2.3.6
 
-# Core ML and Data Science
+# Core Data Science
 numpy==1.26.4
 pandas==2.0.3
 scipy==1.11.1
