@@ -1,2 +1,96 @@
-__pycache__
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
 .venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Flask
+instance/
+.webassets-cache
+*.db
+*.sqlite
+*.sqlite3
+
+# Streamlit
+.streamlit/
+streamlit.log
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Model files (too large for git)
+models/trained/*.joblib
+*.joblib
+
+# Data files (can be large)
+data/raw/*.csv
+data/processed/*.csv
+
+# Charts and generated images
+static/charts/*.png
+charts/*.png
+
+# Environment files with secrets
+.env.production
+.env.development
+
+# AWS credentials
+.aws/
+credentials
+
+# Docker
+.dockerignore
+
+# Temporary test files
+test_*.py
+temp_*
+
+# Generated analysis files (can be regenerated)
+feature_importance_sklearn.png
+permutation_importance.png
+correlation_matrix.png
