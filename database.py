@@ -43,7 +43,7 @@ class HealthDataAnalyzer:
         start_date = end_date - timedelta(days=days)
         
         # Import models (avoiding circular import)
-        from flask_app import HealthMetric, WearableData
+        from app import HealthMetric, DeviceConnection
         
         # Get manual health metrics
         manual_data = HealthMetric.query.filter(
@@ -51,25 +51,17 @@ class HealthDataAnalyzer:
             HealthMetric.recorded_at >= datetime.combine(start_date, datetime.min.time())
         ).all()
         
-        # Get wearable data
-        wearable_data = WearableData.query.filter(
-            WearableData.user_id == user_id,
-            WearableData.date_recorded >= start_date
+        # Get device connection data (stub - would integrate with actual device APIs)
+        device_data = DeviceConnection.query.filter(
+            DeviceConnection.user_id == user_id,
+            DeviceConnection.is_active == True
         ).all()
         
         # Convert to DataFrames
         manual_df = self._convert_manual_to_df(manual_data)
-        wearable_df = self._convert_wearable_to_df(wearable_data)
         
-        # Merge datasets by date
-        if not manual_df.empty and not wearable_df.empty:
-            df = pd.merge(manual_df, wearable_df, on='date', how='outer')
-        elif not manual_df.empty:
-            df = manual_df
-        elif not wearable_df.empty:
-            df = wearable_df
-        else:
-            df = pd.DataFrame()
+        # For now, just use manual data (device integration would be added here)
+        df = manual_df if not manual_df.empty else pd.DataFrame()
         
         if not df.empty:
             df = df.sort_values('date').reset_index(drop=True)
